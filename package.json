@@ -1,0 +1,25 @@
+{
+  "name": "uploadcare-node",
+  "version": "0.1.2",
+  "description": "mirror of the uploadcare-bower library to use with npm ",
+  "main": "uploadcare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CareerCruising/uploadcare-node.git"
+  },
+  "keywords": [
+    "uploadcare"
+  ],
+  "dependencies": {
+     "jquery": ">=1.10.2"
+  },
+  "author": "Uploadcare <support@uploadcare.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CareerCruising/uploadcare-node/issues"
+  },
+  "homepage": "https://github.com/CareerCruising/uploadcare-node#readme"
+}
