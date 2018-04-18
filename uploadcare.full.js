@@ -3404,96 +3404,134 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
+  uploadcare.namespace('locale.translations', function (ns) {
     return ns.es = {
       uploading: 'Subiendo... Por favor espere.',
-      loadingInfo: 'Cargando Información...',
+      loadingInfo: 'Cargando información...',
       errors: {
         "default": 'Error',
         baddata: 'Valor incorrecto',
-        size: 'Demasiado grande',
-        upload: 'No se ha podido subir',
+        size: 'Archivo demasiado grande',
+        upload: 'No se puede subir',
         user: 'Subida cancelada',
-        info: 'No se pudo cargar la información',
-        image: 'Sólo se permiten imagenes'
+        info: 'No se puede cargar la información',
+        image: 'Solo se permiten imágenes',
+        createGroup: 'No se puede crear el grupo de archivos',
+        deleted: 'El archivo fue eliminado'
       },
-      draghere: 'Arrastra los archivos hasta aquí',
+      draghere: 'Arrastra un archivo aquí',
       file: {
         one: '%1 archivo',
         other: '%1 archivos'
       },
       buttons: {
         cancel: 'Cancelar',
-        remove: 'Eliminar'
+        remove: 'Eliminar',
+        choose: {
+          files: {
+            one: 'Escoge un archivo',
+            other: 'Escoge archivos'
+          },
+          images: {
+            one: 'Escoge una imagen',
+            other: 'Escoge imágenes'
+          }
+        }
       },
       dialog: {
+        done: 'Hecho',
+        showFiles: 'Mostrar archivos',
         tabs: {
           names: {
-            preview: 'Avance',
-            file: 'Computadora',
-            url: 'Una dirección cualquiera'
+            'empty-pubkey': 'Bienvenido',
+            preview: 'Previsualización',
+            file: 'Archivos locales',
+            url: 'Enlaces arbitrarios',
+            camera: 'Cámara'
           },
           file: {
             drag: 'Arrastra una archivo aquí',
-            nodrop: 'Sube fotos desde tu computadora',
+            nodrop: 'Sube fotos desde tu ordenador',
+            cloudsTip: 'Almacenamiento en la nube<br>y redes sociales',
             or: 'o',
-            button: 'Elige un archivo desde tu computadora',
+            button: 'Elige un archivo de tu ordenador',
             also: 'Tambien puedes seleccionarlo de'
           },
           url: {
-            title: 'Archivos de la web',
-            line1: 'Selecciona cualquier archivo de la web.',
-            line2: 'Sólo danos el link.',
-            input: 'Copia tu link aquí...',
+            title: 'Archivos de la Web',
+            line1: 'Coge cualquier archivo de la web.',
+            line2: 'Solo danos el link.',
+            input: 'Pega tu link aquí...',
             button: 'Subir'
+          },
+          camera: {
+            capture: 'Hacer una foto',
+            mirror: 'Espejo',
+            retry: 'Solicitar permisos de nuevo',
+            pleaseAllow: {
+              title: 'Por favor, permite el acceso a tu cámara',
+              text: 'Este sitio ha pedido permiso para acceder a la cámara. ' + 'Para tomar imágenes con tu cámara debes aceptar esta petición.'
+            },
+            notFound: {
+              title: 'No se ha detectado ninguna cámara',
+              text: 'Parece que no tienes ninguna cámara conectada a este dispositivo.'
+            }
           },
           preview: {
             unknownName: 'desconocido',
             change: 'Cancelar',
-            back: 'Atras',
-            done: 'Subir',
+            back: 'Atrás',
+            done: 'Añadir',
             unknown: {
               title: 'Subiendo. Por favor espera para una vista previa.',
               done: 'Saltar vista previa y aceptar'
             },
             regular: {
               title: '¿Quieres subir este archivo?',
-              line1: 'Estás por subir el archivo de arriba.',
-              line2: 'Confirma por favor.'
+              line1: 'Estás a punto de subir el archivo de arriba.',
+              line2: 'Confírmalo por favor.'
             },
             image: {
               title: '¿Quieres subir esta imagen?',
               change: 'Cancelar'
             },
             crop: {
-              title: 'Cortar y subir esta imagen',
-              done: 'Listo'
+              title: 'Cortar y añadir esta imagen',
+              done: 'Listo',
+              free: 'libre'
             },
             error: {
               "default": {
-                title: 'La subida falló',
-                line1: 'Algo salio mal durante la subida.',
-                line2: 'Por favor, trata de nuevo.'
+                title: 'Ups!',
+                text: 'Algo salió mal durante la subida.',
+                back: 'Por favor, inténtalo de nuevo.'
               },
               image: {
-                title: 'Sólo imagenes',
-                line1: 'Sólo se aceptan archivos de imagenes.',
-                line2: 'Por favor, trata de nuevo con otro archivo.'
+                title: 'Solo se aceptan archivos de imagen.',
+                text: 'Por favor, inténtalo de nuevo con otro archivo.',
+                back: 'Escoger imagen'
               },
               size: {
-                title: 'Límite de tamaño',
-                line1: 'El archivo que has seleccinado sobrepasa el límite de los 100MB.',
-                line2: 'Por favor trata de nuevo con otro archivo.'
+                title: 'El archivo que has seleccinado excede el límite.',
+                text: 'Por favor, inténtalo de nuevo con otro archivo.'
               },
               loadImage: {
                 title: 'Error',
-                text: 'No se pudo cargar la imangen'
+                text: 'No puede cargar la imagen'
               }
+            },
+            multiple: {
+              title: 'Has escogido %files%',
+              question: '¿Quieres añadir todos estos archivos?',
+              tooManyFiles: 'Has escogido demasiados archivos. %max% es el máximo.',
+              tooFewFiles: 'Has escogido %files%. Hacen falta al menos %min%.',
+              clear: 'Eliminar todo',
+              done: 'Hecho'
             }
           }
         },
         footer: {
-          text: 'Los archivos ha sido subidos, gestionados y procesados por'
+          text: 'Subido, almacenado y procesado por'
         }
       }
     };
