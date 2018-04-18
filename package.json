@@ -1,6 +1,6 @@
 {
   "name": "uploadcare-node",
-  "version": "0.1.5",
+  "version": "0.1.51",
   "description": "mirror of the uploadcare-bower library to use with npm ",
   "main": "uploadcare.js",
   "scripts": {
