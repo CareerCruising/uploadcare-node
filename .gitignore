@@ -1,3 +1,5 @@
 /node_modules
 /bower_components
+.idea/vcs.xml
+.idea/workspace.xml
 .vscode

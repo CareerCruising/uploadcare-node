@@ -1,26 +1,31 @@
 /*
- * Uploadcare (2.5.9)
- * Date: 2015-12-07 23:58:36 +0300
- * Rev: de567ec54a
+ * Uploadcare (2.1.6)
+ * Date: 2015-05-28 17:53:45 +0300
+ * Rev: 21f1c9bc05
  */
-;(function(uploadcare, SCRIPT_BASE){/*! jQuery v2.1.4 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
+;(function(uploadcare, SCRIPT_BASE){/*! jQuery v1.11.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
 
-!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=a.document,m="2.1.4",n=function(a,b){return new n.fn.init(a,b)},o=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,p=/^-ms-/,q=/-([\da-z])/gi,r=function(a,b){return b.toUpperCase()};n.fn=n.prototype={jquery:m,constructor:n,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=n.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return n.each(this,a,b)},map:function(a){return this.pushStack(n.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},n.extend=n.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||n.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(a=arguments[h]))for(b in a)c=g[b],d=a[b],g!==d&&(j&&d&&(n.isPlainObject(d)||(e=n.isArray(d)))?(e?(e=!1,f=c&&n.isArray(c)?c:[]):f=c&&n.isPlainObject(c)?c:{},g[b]=n.extend(j,f,d)):void 0!==d&&(g[b]=d));return g},n.extend({expando:"jQuery"+(m+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===n.type(a)},isArray:Array.isArray,isWindow:function(a){return null!=a&&a===a.window},isNumeric:function(a){return!n.isArray(a)&&a-parseFloat(a)+1>=0},isPlainObject:function(a){return"object"!==n.type(a)||a.nodeType||n.isWindow(a)?!1:a.constructor&&!j.call(a.constructor.prototype,"isPrototypeOf")?!1:!0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(a){var b,c=eval;a=n.trim(a),a&&(1===a.indexOf("use strict")?(b=l.createElement("script"),b.text=a,l.head.appendChild(b).parentNode.removeChild(b)):c(a))},camelCase:function(a){return a.replace(p,"ms-").replace(q,r)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=s(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(o,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(s(Object(a))?n.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){return null==b?-1:g.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;d++)a[e++]=b[d];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=s(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(c=a[b],b=a,a=c),n.isFunction(a)?(e=d.call(arguments,2),f=function(){return a.apply(b||this,e.concat(d.call(arguments)))},f.guid=a.guid=a.guid||n.guid++,f):void 0},now:Date.now,support:k}),n.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function s(a){var b="length"in a&&a.length,c=n.type(a);return"function"===c||n.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var t=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);n.find=t,n.expr=t.selectors,n.expr[":"]=n.expr.pseudos,n.unique=t.uniqueSort,n.text=t.getText,n.isXMLDoc=t.isXML,n.contains=t.contains;var u=n.expr.match.needsContext,v=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,w=/^.[^:#\[\.,]*$/;function x(a,b,c){if(n.isFunction(b))return n.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return n.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(w.test(b))return n.filter(b,a,c);b=n.filter(b,a)}return n.grep(a,function(a){return g.call(b,a)>=0!==c})}n.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?n.find.matchesSelector(d,a)?[d]:[]:n.find.matches(a,n.grep(b,function(a){return 1===a.nodeType}))},n.fn.extend({find:function(a){var b,c=this.length,d=[],e=this;if("string"!=typeof a)return this.pushStack(n(a).filter(function(){for(b=0;c>b;b++)if(n.contains(e[b],this))return!0}));for(b=0;c>b;b++)n.find(a,e[b],d);return d=this.pushStack(c>1?n.unique(d):d),d.selector=this.selector?this.selector+" "+a:a,d},filter:function(a){return this.pushStack(x(this,a||[],!1))},not:function(a){return this.pushStack(x(this,a||[],!0))},is:function(a){return!!x(this,"string"==typeof a&&u.test(a)?n(a):a||[],!1).length}});var y,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=n.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a[0]&&">"===a[a.length-1]&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||y).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof n?b[0]:b,n.merge(this,n.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:l,!0)),v.test(c[1])&&n.isPlainObject(b))for(c in b)n.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}return d=l.getElementById(c[2]),d&&d.parentNode&&(this.length=1,this[0]=d),this.context=l,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):n.isFunction(a)?"undefined"!=typeof y.ready?y.ready(a):a(n):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),n.makeArray(a,this))};A.prototype=n.fn,y=n(l);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};n.extend({dir:function(a,b,c){var d=[],e=void 0!==c;while((a=a[b])&&9!==a.nodeType)if(1===a.nodeType){if(e&&n(a).is(c))break;d.push(a)}return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),n.fn.extend({has:function(a){var b=n(a,this),c=b.length;return this.filter(function(){for(var a=0;c>a;a++)if(n.contains(this,b[a]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=u.test(a)||"string"!=typeof a?n(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&n.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?n.unique(f):f)},index:function(a){return a?"string"==typeof a?g.call(n(a),this[0]):g.call(this,a.jquery?a[0]:a):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(n.unique(n.merge(this.get(),n(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){while((a=a[b])&&1!==a.nodeType);return a}n.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return n.dir(a,"parentNode")},parentsUntil:function(a,b,c){return n.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return n.dir(a,"nextSibling")},prevAll:function(a){return n.dir(a,"previousSibling")},nextUntil:function(a,b,c){return n.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return n.dir(a,"previousSibling",c)},siblings:function(a){return n.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return n.sibling(a.firstChild)},contents:function(a){return a.contentDocument||n.merge([],a.childNodes)}},function(a,b){n.fn[a]=function(c,d){var e=n.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=n.filter(d,e)),this.length>1&&(C[a]||n.unique(e),B.test(a)&&e.reverse()),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return n.each(a.match(E)||[],function(a,c){b[c]=!0}),b}n.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):n.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(b=a.memory&&l,c=!0,g=e||0,e=0,f=h.length,d=!0;h&&f>g;g++)if(h[g].apply(l[0],l[1])===!1&&a.stopOnFalse){b=!1;break}d=!1,h&&(i?i.length&&j(i.shift()):b?h=[]:k.disable())},k={add:function(){if(h){var c=h.length;!function g(b){n.each(b,function(b,c){var d=n.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&g(c)})}(arguments),d?f=h.length:b&&(e=c,j(b))}return this},remove:function(){return h&&n.each(arguments,function(a,b){var c;while((c=n.inArray(b,h,c))>-1)h.splice(c,1),d&&(f>=c&&f--,g>=c&&g--)}),this},has:function(a){return a?n.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],f=0,this},disable:function(){return h=i=b=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,b||k.disable(),this},locked:function(){return!i},fireWith:function(a,b){return!h||c&&!i||(b=b||[],b=[a,b.slice?b.slice():b],d?i.push(b):j(b)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!c}};return k},n.extend({Deferred:function(a){var b=[["resolve","done",n.Callbacks("once memory"),"resolved"],["reject","fail",n.Callbacks("once memory"),"rejected"],["notify","progress",n.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return n.Deferred(function(c){n.each(b,function(b,f){var g=n.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&n.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?n.extend(a,d):d}},e={};return d.pipe=d.then,n.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&n.isFunction(a.promise)?e:0,g=1===f?a:n.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&n.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;n.fn.ready=function(a){return n.ready.promise().done(a),this},n.extend({isReady:!1,readyWait:1,holdReady:function(a){a?n.readyWait++:n.ready(!0)},ready:function(a){(a===!0?--n.readyWait:n.isReady)||(n.isReady=!0,a!==!0&&--n.readyWait>0||(H.resolveWith(l,[n]),n.fn.triggerHandler&&(n(l).triggerHandler("ready"),n(l).off("ready"))))}});function I(){l.removeEventListener("DOMContentLoaded",I,!1),a.removeEventListener("load",I,!1),n.ready()}n.ready.promise=function(b){return H||(H=n.Deferred(),"complete"===l.readyState?setTimeout(n.ready):(l.addEventListener("DOMContentLoaded",I,!1),a.addEventListener("load",I,!1))),H.promise(b)},n.ready.promise();var J=n.access=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===n.type(c)){e=!0;for(h in c)n.access(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,n.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(n(a),c)})),b))for(;i>h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f};n.acceptData=function(a){return 1===a.nodeType||9===a.nodeType||!+a.nodeType};function K(){Object.defineProperty(this.cache={},0,{get:function(){return{}}}),this.expando=n.expando+K.uid++}K.uid=1,K.accepts=n.acceptData,K.prototype={key:function(a){if(!K.accepts(a))return 0;var b={},c=a[this.expando];if(!c){c=K.uid++;try{b[this.expando]={value:c},Object.defineProperties(a,b)}catch(d){b[this.expando]=c,n.extend(a,b)}}return this.cache[c]||(this.cache[c]={}),c},set:function(a,b,c){var d,e=this.key(a),f=this.cache[e];if("string"==typeof b)f[b]=c;else if(n.isEmptyObject(f))n.extend(this.cache[e],b);else for(d in b)f[d]=b[d];return f},get:function(a,b){var c=this.cache[this.key(a)];return void 0===b?c:c[b]},access:function(a,b,c){var d;return void 0===b||b&&"string"==typeof b&&void 0===c?(d=this.get(a,b),void 0!==d?d:this.get(a,n.camelCase(b))):(this.set(a,b,c),void 0!==c?c:b)},remove:function(a,b){var c,d,e,f=this.key(a),g=this.cache[f];if(void 0===b)this.cache[f]={};else{n.isArray(b)?d=b.concat(b.map(n.camelCase)):(e=n.camelCase(b),b in g?d=[b,e]:(d=e,d=d in g?[d]:d.match(E)||[])),c=d.length;while(c--)delete g[d[c]]}},hasData:function(a){return!n.isEmptyObject(this.cache[a[this.expando]]||{})},discard:function(a){a[this.expando]&&delete this.cache[a[this.expando]]}};var L=new K,M=new K,N=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,O=/([A-Z])/g;function P(a,b,c){var d;if(void 0===c&&1===a.nodeType)if(d="data-"+b.replace(O,"-$1").toLowerCase(),c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:N.test(c)?n.parseJSON(c):c}catch(e){}M.set(a,b,c)}else c=void 0;return c}n.extend({hasData:function(a){return M.hasData(a)||L.hasData(a)},data:function(a,b,c){
-return M.access(a,b,c)},removeData:function(a,b){M.remove(a,b)},_data:function(a,b,c){return L.access(a,b,c)},_removeData:function(a,b){L.remove(a,b)}}),n.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=M.get(f),1===f.nodeType&&!L.get(f,"hasDataAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=n.camelCase(d.slice(5)),P(f,d,e[d])));L.set(f,"hasDataAttrs",!0)}return e}return"object"==typeof a?this.each(function(){M.set(this,a)}):J(this,function(b){var c,d=n.camelCase(a);if(f&&void 0===b){if(c=M.get(f,a),void 0!==c)return c;if(c=M.get(f,d),void 0!==c)return c;if(c=P(f,d,void 0),void 0!==c)return c}else this.each(function(){var c=M.get(this,d);M.set(this,d,b),-1!==a.indexOf("-")&&void 0!==c&&M.set(this,a,b)})},null,b,arguments.length>1,null,!0)},removeData:function(a){return this.each(function(){M.remove(this,a)})}}),n.extend({queue:function(a,b,c){var d;return a?(b=(b||"fx")+"queue",d=L.get(a,b),c&&(!d||n.isArray(c)?d=L.access(a,b,n.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||"fx";var c=n.queue(a,b),d=c.length,e=c.shift(),f=n._queueHooks(a,b),g=function(){n.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return L.get(a,c)||L.access(a,c,{empty:n.Callbacks("once memory").add(function(){L.remove(a,[b+"queue",c])})})}}),n.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?n.queue(this[0],a):void 0===b?this:this.each(function(){var c=n.queue(this,a,b);n._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&n.dequeue(this,a)})},dequeue:function(a){return this.each(function(){n.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=n.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=L.get(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var Q=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,R=["Top","Right","Bottom","Left"],S=function(a,b){return a=b||a,"none"===n.css(a,"display")||!n.contains(a.ownerDocument,a)},T=/^(?:checkbox|radio)$/i;!function(){var a=l.createDocumentFragment(),b=a.appendChild(l.createElement("div")),c=l.createElement("input");c.setAttribute("type","radio"),c.setAttribute("checked","checked"),c.setAttribute("name","t"),b.appendChild(c),k.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,b.innerHTML="<textarea>x</textarea>",k.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue}();var U="undefined";k.focusinBubbles="onfocusin"in a;var V=/^key/,W=/^(?:mouse|pointer|contextmenu)|click/,X=/^(?:focusinfocus|focusoutblur)$/,Y=/^([^.]*)(?:\.(.+)|)$/;function Z(){return!0}function $(){return!1}function _(){try{return l.activeElement}catch(a){}}n.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.get(a);if(r){c.handler&&(f=c,c=f.handler,e=f.selector),c.guid||(c.guid=n.guid++),(i=r.events)||(i=r.events={}),(g=r.handle)||(g=r.handle=function(b){return typeof n!==U&&n.event.triggered!==b.type?n.event.dispatch.apply(a,arguments):void 0}),b=(b||"").match(E)||[""],j=b.length;while(j--)h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o&&(l=n.event.special[o]||{},o=(e?l.delegateType:l.bindType)||o,l=n.event.special[o]||{},k=n.extend({type:o,origType:q,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&n.expr.match.needsContext.test(e),namespace:p.join(".")},f),(m=i[o])||(m=i[o]=[],m.delegateCount=0,l.setup&&l.setup.call(a,d,p,g)!==!1||a.addEventListener&&a.addEventListener(o,g,!1)),l.add&&(l.add.call(a,k),k.handler.guid||(k.handler.guid=c.guid)),e?m.splice(m.delegateCount++,0,k):m.push(k),n.event.global[o]=!0)}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.hasData(a)&&L.get(a);if(r&&(i=r.events)){b=(b||"").match(E)||[""],j=b.length;while(j--)if(h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o){l=n.event.special[o]||{},o=(d?l.delegateType:l.bindType)||o,m=i[o]||[],h=h[2]&&new RegExp("(^|\\.)"+p.join("\\.(?:.*\\.|)")+"(\\.|$)"),g=f=m.length;while(f--)k=m[f],!e&&q!==k.origType||c&&c.guid!==k.guid||h&&!h.test(k.namespace)||d&&d!==k.selector&&("**"!==d||!k.selector)||(m.splice(f,1),k.selector&&m.delegateCount--,l.remove&&l.remove.call(a,k));g&&!m.length&&(l.teardown&&l.teardown.call(a,p,r.handle)!==!1||n.removeEvent(a,o,r.handle),delete i[o])}else for(o in i)n.event.remove(a,o+b[j],c,d,!0);n.isEmptyObject(i)&&(delete r.handle,L.remove(a,"events"))}},trigger:function(b,c,d,e){var f,g,h,i,k,m,o,p=[d||l],q=j.call(b,"type")?b.type:b,r=j.call(b,"namespace")?b.namespace.split("."):[];if(g=h=d=d||l,3!==d.nodeType&&8!==d.nodeType&&!X.test(q+n.event.triggered)&&(q.indexOf(".")>=0&&(r=q.split("."),q=r.shift(),r.sort()),k=q.indexOf(":")<0&&"on"+q,b=b[n.expando]?b:new n.Event(q,"object"==typeof b&&b),b.isTrigger=e?2:3,b.namespace=r.join("."),b.namespace_re=b.namespace?new RegExp("(^|\\.)"+r.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=d),c=null==c?[b]:n.makeArray(c,[b]),o=n.event.special[q]||{},e||!o.trigger||o.trigger.apply(d,c)!==!1)){if(!e&&!o.noBubble&&!n.isWindow(d)){for(i=o.delegateType||q,X.test(i+q)||(g=g.parentNode);g;g=g.parentNode)p.push(g),h=g;h===(d.ownerDocument||l)&&p.push(h.defaultView||h.parentWindow||a)}f=0;while((g=p[f++])&&!b.isPropagationStopped())b.type=f>1?i:o.bindType||q,m=(L.get(g,"events")||{})[b.type]&&L.get(g,"handle"),m&&m.apply(g,c),m=k&&g[k],m&&m.apply&&n.acceptData(g)&&(b.result=m.apply(g,c),b.result===!1&&b.preventDefault());return b.type=q,e||b.isDefaultPrevented()||o._default&&o._default.apply(p.pop(),c)!==!1||!n.acceptData(d)||k&&n.isFunction(d[q])&&!n.isWindow(d)&&(h=d[k],h&&(d[k]=null),n.event.triggered=q,d[q](),n.event.triggered=void 0,h&&(d[k]=h)),b.result}},dispatch:function(a){a=n.event.fix(a);var b,c,e,f,g,h=[],i=d.call(arguments),j=(L.get(this,"events")||{})[a.type]||[],k=n.event.special[a.type]||{};if(i[0]=a,a.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,a)!==!1){h=n.event.handlers.call(this,a,j),b=0;while((f=h[b++])&&!a.isPropagationStopped()){a.currentTarget=f.elem,c=0;while((g=f.handlers[c++])&&!a.isImmediatePropagationStopped())(!a.namespace_re||a.namespace_re.test(g.namespace))&&(a.handleObj=g,a.data=g.data,e=((n.event.special[g.origType]||{}).handle||g.handler).apply(f.elem,i),void 0!==e&&(a.result=e)===!1&&(a.preventDefault(),a.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,a),a.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&&i.nodeType&&(!a.button||"click"!==a.type))for(;i!==this;i=i.parentNode||this)if(i.disabled!==!0||"click"!==a.type){for(d=[],c=0;h>c;c++)f=b[c],e=f.selector+" ",void 0===d[e]&&(d[e]=f.needsContext?n(e,this).index(i)>=0:n.find(e,this,null,[i]).length),d[e]&&d.push(f);d.length&&g.push({elem:i,handlers:d})}return h<b.length&&g.push({elem:this,handlers:b.slice(h)}),g},props:"altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which".split(" "),fixHooks:{},keyHooks:{props:"char charCode key keyCode".split(" "),filter:function(a,b){return null==a.which&&(a.which=null!=b.charCode?b.charCode:b.keyCode),a}},mouseHooks:{props:"button buttons clientX clientY offsetX offsetY pageX pageY screenX screenY toElement".split(" "),filter:function(a,b){var c,d,e,f=b.button;return null==a.pageX&&null!=b.clientX&&(c=a.target.ownerDocument||l,d=c.documentElement,e=c.body,a.pageX=b.clientX+(d&&d.scrollLeft||e&&e.scrollLeft||0)-(d&&d.clientLeft||e&&e.clientLeft||0),a.pageY=b.clientY+(d&&d.scrollTop||e&&e.scrollTop||0)-(d&&d.clientTop||e&&e.clientTop||0)),a.which||void 0===f||(a.which=1&f?1:2&f?3:4&f?2:0),a}},fix:function(a){if(a[n.expando])return a;var b,c,d,e=a.type,f=a,g=this.fixHooks[e];g||(this.fixHooks[e]=g=W.test(e)?this.mouseHooks:V.test(e)?this.keyHooks:{}),d=g.props?this.props.concat(g.props):this.props,a=new n.Event(f),b=d.length;while(b--)c=d[b],a[c]=f[c];return a.target||(a.target=l),3===a.target.nodeType&&(a.target=a.target.parentNode),g.filter?g.filter(a,f):a},special:{load:{noBubble:!0},focus:{trigger:function(){return this!==_()&&this.focus?(this.focus(),!1):void 0},delegateType:"focusin"},blur:{trigger:function(){return this===_()&&this.blur?(this.blur(),!1):void 0},delegateType:"focusout"},click:{trigger:function(){return"checkbox"===this.type&&this.click&&n.nodeName(this,"input")?(this.click(),!1):void 0},_default:function(a){return n.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}},simulate:function(a,b,c,d){var e=n.extend(new n.Event,c,{type:a,isSimulated:!0,originalEvent:{}});d?n.event.trigger(e,null,b):n.event.dispatch.call(b,e),e.isDefaultPrevented()&&c.preventDefault()}},n.removeEvent=function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c,!1)},n.Event=function(a,b){return this instanceof n.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?Z:$):this.type=a,b&&n.extend(this,b),this.timeStamp=a&&a.timeStamp||n.now(),void(this[n.expando]=!0)):new n.Event(a,b)},n.Event.prototype={isDefaultPrevented:$,isPropagationStopped:$,isImmediatePropagationStopped:$,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=Z,a&&a.preventDefault&&a.preventDefault()},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=Z,a&&a.stopPropagation&&a.stopPropagation()},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=Z,a&&a.stopImmediatePropagation&&a.stopImmediatePropagation(),this.stopPropagation()}},n.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){n.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return(!e||e!==d&&!n.contains(d,e))&&(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),k.focusinBubbles||n.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){n.event.simulate(b,a.target,n.event.fix(a),!0)};n.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=L.access(d,b);e||d.addEventListener(a,c,!0),L.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=L.access(d,b)-1;e?L.access(d,b,e):(d.removeEventListener(a,c,!0),L.remove(d,b))}}}),n.fn.extend({on:function(a,b,c,d,e){var f,g;if("object"==typeof a){"string"!=typeof b&&(c=c||b,b=void 0);for(g in a)this.on(g,b,c,a[g],e);return this}if(null==c&&null==d?(d=b,c=b=void 0):null==d&&("string"==typeof b?(d=c,c=void 0):(d=c,c=b,b=void 0)),d===!1)d=$;else if(!d)return this;return 1===e&&(f=d,d=function(a){return n().off(a),f.apply(this,arguments)},d.guid=f.guid||(f.guid=n.guid++)),this.each(function(){n.event.add(this,a,d,c,b)})},one:function(a,b,c,d){return this.on(a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,n(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return(b===!1||"function"==typeof b)&&(c=b,b=void 0),c===!1&&(c=$),this.each(function(){n.event.remove(this,a,c,b)})},trigger:function(a,b){return this.each(function(){n.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?n.event.trigger(a,b,c,!0):void 0}});var aa=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,ba=/<([\w:]+)/,ca=/<|&#?\w+;/,da=/<(?:script|style|link)/i,ea=/checked\s*(?:[^=]|=\s*.checked.)/i,fa=/^$|\/(?:java|ecma)script/i,ga=/^true\/(.*)/,ha=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g,ia={option:[1,"<select multiple='multiple'>","</select>"],thead:[1,"<table>","</table>"],col:[2,"<table><colgroup>","</colgroup></table>"],tr:[2,"<table><tbody>","</tbody></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:[0,"",""]};ia.optgroup=ia.option,ia.tbody=ia.tfoot=ia.colgroup=ia.caption=ia.thead,ia.th=ia.td;function ja(a,b){return n.nodeName(a,"table")&&n.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a.appendChild(a.ownerDocument.createElement("tbody")):a}function ka(a){return a.type=(null!==a.getAttribute("type"))+"/"+a.type,a}function la(a){var b=ga.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function ma(a,b){for(var c=0,d=a.length;d>c;c++)L.set(a[c],"globalEval",!b||L.get(b[c],"globalEval"))}function na(a,b){var c,d,e,f,g,h,i,j;if(1===b.nodeType){if(L.hasData(a)&&(f=L.access(a),g=L.set(b,f),j=f.events)){delete g.handle,g.events={};for(e in j)for(c=0,d=j[e].length;d>c;c++)n.event.add(b,e,j[e][c])}M.hasData(a)&&(h=M.access(a),i=n.extend({},h),M.set(b,i))}}function oa(a,b){var c=a.getElementsByTagName?a.getElementsByTagName(b||"*"):a.querySelectorAll?a.querySelectorAll(b||"*"):[];return void 0===b||b&&n.nodeName(a,b)?n.merge([a],c):c}function pa(a,b){var c=b.nodeName.toLowerCase();"input"===c&&T.test(a.type)?b.checked=a.checked:("input"===c||"textarea"===c)&&(b.defaultValue=a.defaultValue)}n.extend({clone:function(a,b,c){var d,e,f,g,h=a.cloneNode(!0),i=n.contains(a.ownerDocument,a);if(!(k.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||n.isXMLDoc(a)))for(g=oa(h),f=oa(a),d=0,e=f.length;e>d;d++)pa(f[d],g[d]);if(b)if(c)for(f=f||oa(a),g=g||oa(h),d=0,e=f.length;e>d;d++)na(f[d],g[d]);else na(a,h);return g=oa(h,"script"),g.length>0&&ma(g,!i&&oa(a,"script")),h},buildFragment:function(a,b,c,d){for(var e,f,g,h,i,j,k=b.createDocumentFragment(),l=[],m=0,o=a.length;o>m;m++)if(e=a[m],e||0===e)if("object"===n.type(e))n.merge(l,e.nodeType?[e]:e);else if(ca.test(e)){f=f||k.appendChild(b.createElement("div")),g=(ba.exec(e)||["",""])[1].toLowerCase(),h=ia[g]||ia._default,f.innerHTML=h[1]+e.replace(aa,"<$1></$2>")+h[2],j=h[0];while(j--)f=f.lastChild;n.merge(l,f.childNodes),f=k.firstChild,f.textContent=""}else l.push(b.createTextNode(e));k.textContent="",m=0;while(e=l[m++])if((!d||-1===n.inArray(e,d))&&(i=n.contains(e.ownerDocument,e),f=oa(k.appendChild(e),"script"),i&&ma(f),c)){j=0;while(e=f[j++])fa.test(e.type||"")&&c.push(e)}return k},cleanData:function(a){for(var b,c,d,e,f=n.event.special,g=0;void 0!==(c=a[g]);g++){if(n.acceptData(c)&&(e=c[L.expando],e&&(b=L.cache[e]))){if(b.events)for(d in b.events)f[d]?n.event.remove(c,d):n.removeEvent(c,d,b.handle);L.cache[e]&&delete L.cache[e]}delete M.cache[c[M.expando]]}}}),n.fn.extend({text:function(a){return J(this,function(a){return void 0===a?n.text(this):this.empty().each(function(){(1===this.nodeType||11===this.nodeType||9===this.nodeType)&&(this.textContent=a)})},null,a,arguments.length)},append:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=ja(this,a);b.appendChild(a)}})},prepend:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=ja(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},remove:function(a,b){for(var c,d=a?n.filter(a,this):this,e=0;null!=(c=d[e]);e++)b||1!==c.nodeType||n.cleanData(oa(c)),c.parentNode&&(b&&n.contains(c.ownerDocument,c)&&ma(oa(c,"script")),c.parentNode.removeChild(c));return this},empty:function(){for(var a,b=0;null!=(a=this[b]);b++)1===a.nodeType&&(n.cleanData(oa(a,!1)),a.textContent="");return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return n.clone(this,a,b)})},html:function(a){return J(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a&&1===b.nodeType)return b.innerHTML;if("string"==typeof a&&!da.test(a)&&!ia[(ba.exec(a)||["",""])[1].toLowerCase()]){a=a.replace(aa,"<$1></$2>");try{for(;d>c;c++)b=this[c]||{},1===b.nodeType&&(n.cleanData(oa(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=arguments[0];return this.domManip(arguments,function(b){a=this.parentNode,n.cleanData(oa(this)),a&&a.replaceChild(b,this)}),a&&(a.length||a.nodeType)?this:this.remove()},detach:function(a){return this.remove(a,!0)},domManip:function(a,b){a=e.apply([],a);var c,d,f,g,h,i,j=0,l=this.length,m=this,o=l-1,p=a[0],q=n.isFunction(p);if(q||l>1&&"string"==typeof p&&!k.checkClone&&ea.test(p))return this.each(function(c){var d=m.eq(c);q&&(a[0]=p.call(this,c,d.html())),d.domManip(a,b)});if(l&&(c=n.buildFragment(a,this[0].ownerDocument,!1,this),d=c.firstChild,1===c.childNodes.length&&(c=d),d)){for(f=n.map(oa(c,"script"),ka),g=f.length;l>j;j++)h=c,j!==o&&(h=n.clone(h,!0,!0),g&&n.merge(f,oa(h,"script"))),b.call(this[j],h,j);if(g)for(i=f[f.length-1].ownerDocument,n.map(f,la),j=0;g>j;j++)h=f[j],fa.test(h.type||"")&&!L.access(h,"globalEval")&&n.contains(i,h)&&(h.src?n._evalUrl&&n._evalUrl(h.src):n.globalEval(h.textContent.replace(ha,"")))}return this}}),n.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){n.fn[a]=function(a){for(var c,d=[],e=n(a),g=e.length-1,h=0;g>=h;h++)c=h===g?this:this.clone(!0),n(e[h])[b](c),f.apply(d,c.get());return this.pushStack(d)}});var qa,ra={};function sa(b,c){var d,e=n(c.createElement(b)).appendTo(c.body),f=a.getDefaultComputedStyle&&(d=a.getDefaultComputedStyle(e[0]))?d.display:n.css(e[0],"display");return e.detach(),f}function ta(a){var b=l,c=ra[a];return c||(c=sa(a,b),"none"!==c&&c||(qa=(qa||n("<iframe frameborder='0' width='0' height='0'/>")).appendTo(b.documentElement),b=qa[0].contentDocument,b.write(),b.close(),c=sa(a,b),qa.detach()),ra[a]=c),c}var ua=/^margin/,va=new RegExp("^("+Q+")(?!px)[a-z%]+$","i"),wa=function(b){return b.ownerDocument.defaultView.opener?b.ownerDocument.defaultView.getComputedStyle(b,null):a.getComputedStyle(b,null)};function xa(a,b,c){var d,e,f,g,h=a.style;return c=c||wa(a),c&&(g=c.getPropertyValue(b)||c[b]),c&&(""!==g||n.contains(a.ownerDocument,a)||(g=n.style(a,b)),va.test(g)&&ua.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0!==g?g+"":g}function ya(a,b){return{get:function(){return a()?void delete this.get:(this.get=b).apply(this,arguments)}}}!function(){var b,c,d=l.documentElement,e=l.createElement("div"),f=l.createElement("div");if(f.style){f.style.backgroundClip="content-box",f.cloneNode(!0).style.backgroundClip="",k.clearCloneStyle="content-box"===f.style.backgroundClip,e.style.cssText="border:0;width:0;height:0;top:0;left:-9999px;margin-top:1px;position:absolute",e.appendChild(f);function g(){f.style.cssText="-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;margin-top:1%;top:1%;border:1px;padding:1px;width:4px;position:absolute",f.innerHTML="",d.appendChild(e);var g=a.getComputedStyle(f,null);b="1%"!==g.top,c="4px"===g.width,d.removeChild(e)}a.getComputedStyle&&n.extend(k,{pixelPosition:function(){return g(),b},boxSizingReliable:function(){return null==c&&g(),c},reliableMarginRight:function(){var b,c=f.appendChild(l.createElement("div"));return c.style.cssText=f.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:0",c.style.marginRight=c.style.width="0",f.style.width="1px",d.appendChild(e),b=!parseFloat(a.getComputedStyle(c,null).marginRight),d.removeChild(e),f.removeChild(c),b}})}}(),n.swap=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};var za=/^(none|table(?!-c[ea]).+)/,Aa=new RegExp("^("+Q+")(.*)$","i"),Ba=new RegExp("^([+-])=("+Q+")","i"),Ca={position:"absolute",visibility:"hidden",display:"block"},Da={letterSpacing:"0",fontWeight:"400"},Ea=["Webkit","O","Moz","ms"];function Fa(a,b){if(b in a)return b;var c=b[0].toUpperCase()+b.slice(1),d=b,e=Ea.length;while(e--)if(b=Ea[e]+c,b in a)return b;return d}function Ga(a,b,c){var d=Aa.exec(b);return d?Math.max(0,d[1]-(c||0))+(d[2]||"px"):b}function Ha(a,b,c,d,e){for(var f=c===(d?"border":"content")?4:"width"===b?1:0,g=0;4>f;f+=2)"margin"===c&&(g+=n.css(a,c+R[f],!0,e)),d?("content"===c&&(g-=n.css(a,"padding"+R[f],!0,e)),"margin"!==c&&(g-=n.css(a,"border"+R[f]+"Width",!0,e))):(g+=n.css(a,"padding"+R[f],!0,e),"padding"!==c&&(g+=n.css(a,"border"+R[f]+"Width",!0,e)));return g}function Ia(a,b,c){var d=!0,e="width"===b?a.offsetWidth:a.offsetHeight,f=wa(a),g="border-box"===n.css(a,"boxSizing",!1,f);if(0>=e||null==e){if(e=xa(a,b,f),(0>e||null==e)&&(e=a.style[b]),va.test(e))return e;d=g&&(k.boxSizingReliable()||e===a.style[b]),e=parseFloat(e)||0}return e+Ha(a,b,c||(g?"border":"content"),d,f)+"px"}function Ja(a,b){for(var c,d,e,f=[],g=0,h=a.length;h>g;g++)d=a[g],d.style&&(f[g]=L.get(d,"olddisplay"),c=d.style.display,b?(f[g]||"none"!==c||(d.style.display=""),""===d.style.display&&S(d)&&(f[g]=L.access(d,"olddisplay",ta(d.nodeName)))):(e=S(d),"none"===c&&e||L.set(d,"olddisplay",e?c:n.css(d,"display"))));for(g=0;h>g;g++)d=a[g],d.style&&(b&&"none"!==d.style.display&&""!==d.style.display||(d.style.display=b?f[g]||"":"none"));return a}n.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=xa(a,"opacity");return""===c?"1":c}}}},cssNumber:{columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":"cssFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=n.camelCase(b),i=a.style;return b=n.cssProps[h]||(n.cssProps[h]=Fa(i,h)),g=n.cssHooks[b]||n.cssHooks[h],void 0===c?g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b]:(f=typeof c,"string"===f&&(e=Ba.exec(c))&&(c=(e[1]+1)*e[2]+parseFloat(n.css(a,b)),f="number"),null!=c&&c===c&&("number"!==f||n.cssNumber[h]||(c+="px"),k.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),g&&"set"in g&&void 0===(c=g.set(a,c,d))||(i[b]=c)),void 0)}},css:function(a,b,c,d){var e,f,g,h=n.camelCase(b);return b=n.cssProps[h]||(n.cssProps[h]=Fa(a.style,h)),g=n.cssHooks[b]||n.cssHooks[h],g&&"get"in g&&(e=g.get(a,!0,c)),void 0===e&&(e=xa(a,b,d)),"normal"===e&&b in Da&&(e=Da[b]),""===c||c?(f=parseFloat(e),c===!0||n.isNumeric(f)?f||0:e):e}}),n.each(["height","width"],function(a,b){n.cssHooks[b]={get:function(a,c,d){return c?za.test(n.css(a,"display"))&&0===a.offsetWidth?n.swap(a,Ca,function(){return Ia(a,b,d)}):Ia(a,b,d):void 0},set:function(a,c,d){var e=d&&wa(a);return Ga(a,c,d?Ha(a,b,d,"border-box"===n.css(a,"boxSizing",!1,e),e):0)}}}),n.cssHooks.marginRight=ya(k.reliableMarginRight,function(a,b){return b?n.swap(a,{display:"inline-block"},xa,[a,"marginRight"]):void 0}),n.each({margin:"",padding:"",border:"Width"},function(a,b){n.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];4>d;d++)e[a+R[d]+b]=f[d]||f[d-2]||f[0];return e}},ua.test(a)||(n.cssHooks[a+b].set=Ga)}),n.fn.extend({css:function(a,b){return J(this,function(a,b,c){var d,e,f={},g=0;if(n.isArray(b)){for(d=wa(a),e=b.length;e>g;g++)f[b[g]]=n.css(a,b[g],!1,d);return f}return void 0!==c?n.style(a,b,c):n.css(a,b)},a,b,arguments.length>1)},show:function(){return Ja(this,!0)},hide:function(){return Ja(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){S(this)?n(this).show():n(this).hide()})}});function Ka(a,b,c,d,e){return new Ka.prototype.init(a,b,c,d,e)}n.Tween=Ka,Ka.prototype={constructor:Ka,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||"swing",this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(n.cssNumber[c]?"":"px")},cur:function(){var a=Ka.propHooks[this.prop];return a&&a.get?a.get(this):Ka.propHooks._default.get(this)},run:function(a){var b,c=Ka.propHooks[this.prop];return this.options.duration?this.pos=b=n.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):this.pos=b=a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Ka.propHooks._default.set(this),this}},Ka.prototype.init.prototype=Ka.prototype,Ka.propHooks={_default:{get:function(a){var b;return null==a.elem[a.prop]||a.elem.style&&null!=a.elem.style[a.prop]?(b=n.css(a.elem,a.prop,""),b&&"auto"!==b?b:0):a.elem[a.prop]},set:function(a){n.fx.step[a.prop]?n.fx.step[a.prop](a):a.elem.style&&(null!=a.elem.style[n.cssProps[a.prop]]||n.cssHooks[a.prop])?n.style(a.elem,a.prop,a.now+a.unit):a.elem[a.prop]=a.now}}},Ka.propHooks.scrollTop=Ka.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},n.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2}},n.fx=Ka.prototype.init,n.fx.step={};var La,Ma,Na=/^(?:toggle|show|hide)$/,Oa=new RegExp("^(?:([+-])=|)("+Q+")([a-z%]*)$","i"),Pa=/queueHooks$/,Qa=[Va],Ra={"*":[function(a,b){var c=this.createTween(a,b),d=c.cur(),e=Oa.exec(b),f=e&&e[3]||(n.cssNumber[a]?"":"px"),g=(n.cssNumber[a]||"px"!==f&&+d)&&Oa.exec(n.css(c.elem,a)),h=1,i=20;if(g&&g[3]!==f){f=f||g[3],e=e||[],g=+d||1;do h=h||".5",g/=h,n.style(c.elem,a,g+f);while(h!==(h=c.cur()/d)&&1!==h&&--i)}return e&&(g=c.start=+g||+d||0,c.unit=f,c.end=e[1]?g+(e[1]+1)*e[2]:+e[2]),c}]};function Sa(){return setTimeout(function(){La=void 0}),La=n.now()}function Ta(a,b){var c,d=0,e={height:a};for(b=b?1:0;4>d;d+=2-b)c=R[d],e["margin"+c]=e["padding"+c]=a;return b&&(e.opacity=e.width=a),e}function Ua(a,b,c){for(var d,e=(Ra[b]||[]).concat(Ra["*"]),f=0,g=e.length;g>f;f++)if(d=e[f].call(c,b,a))return d}function Va(a,b,c){var d,e,f,g,h,i,j,k,l=this,m={},o=a.style,p=a.nodeType&&S(a),q=L.get(a,"fxshow");c.queue||(h=n._queueHooks(a,"fx"),null==h.unqueued&&(h.unqueued=0,i=h.empty.fire,h.empty.fire=function(){h.unqueued||i()}),h.unqueued++,l.always(function(){l.always(function(){h.unqueued--,n.queue(a,"fx").length||h.empty.fire()})})),1===a.nodeType&&("height"in b||"width"in b)&&(c.overflow=[o.overflow,o.overflowX,o.overflowY],j=n.css(a,"display"),k="none"===j?L.get(a,"olddisplay")||ta(a.nodeName):j,"inline"===k&&"none"===n.css(a,"float")&&(o.display="inline-block")),c.overflow&&(o.overflow="hidden",l.always(function(){o.overflow=c.overflow[0],o.overflowX=c.overflow[1],o.overflowY=c.overflow[2]}));for(d in b)if(e=b[d],Na.exec(e)){if(delete b[d],f=f||"toggle"===e,e===(p?"hide":"show")){if("show"!==e||!q||void 0===q[d])continue;p=!0}m[d]=q&&q[d]||n.style(a,d)}else j=void 0;if(n.isEmptyObject(m))"inline"===("none"===j?ta(a.nodeName):j)&&(o.display=j);else{q?"hidden"in q&&(p=q.hidden):q=L.access(a,"fxshow",{}),f&&(q.hidden=!p),p?n(a).show():l.done(function(){n(a).hide()}),l.done(function(){var b;L.remove(a,"fxshow");for(b in m)n.style(a,b,m[b])});for(d in m)g=Ua(p?q[d]:0,d,l),d in q||(q[d]=g.start,p&&(g.end=g.start,g.start="width"===d||"height"===d?1:0))}}function Wa(a,b){var c,d,e,f,g;for(c in a)if(d=n.camelCase(c),e=b[d],f=a[c],n.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=n.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function Xa(a,b,c){var d,e,f=0,g=Qa.length,h=n.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=La||Sa(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i>g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1>f&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:n.extend({},b),opts:n.extend(!0,{specialEasing:{}},c),originalProperties:b,originalOptions:c,startTime:La||Sa(),duration:c.duration,tweens:[],createTween:function(b,c){var d=n.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d>c;c++)j.tweens[c].run(1);return b?h.resolveWith(a,[j,b]):h.rejectWith(a,[j,b]),this}}),k=j.props;for(Wa(k,j.opts.specialEasing);g>f;f++)if(d=Qa[f].call(j,a,k,j.opts))return d;return n.map(k,Ua,j),n.isFunction(j.opts.start)&&j.opts.start.call(a,j),n.fx.timer(n.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}n.Animation=n.extend(Xa,{tweener:function(a,b){n.isFunction(a)?(b=a,a=["*"]):a=a.split(" ");for(var c,d=0,e=a.length;e>d;d++)c=a[d],Ra[c]=Ra[c]||[],Ra[c].unshift(b)},prefilter:function(a,b){b?Qa.unshift(a):Qa.push(a)}}),n.speed=function(a,b,c){var d=a&&"object"==typeof a?n.extend({},a):{complete:c||!c&&b||n.isFunction(a)&&a,duration:a,easing:c&&b||b&&!n.isFunction(b)&&b};return d.duration=n.fx.off?0:"number"==typeof d.duration?d.duration:d.duration in n.fx.speeds?n.fx.speeds[d.duration]:n.fx.speeds._default,(null==d.queue||d.queue===!0)&&(d.queue="fx"),d.old=d.complete,d.complete=function(){n.isFunction(d.old)&&d.old.call(this),d.queue&&n.dequeue(this,d.queue)},d},n.fn.extend({fadeTo:function(a,b,c,d){return this.filter(S).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=n.isEmptyObject(a),f=n.speed(b,c,d),g=function(){var b=Xa(this,n.extend({},a),f);(e||L.get(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=n.timers,g=L.get(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&Pa.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));(b||!c)&&n.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=L.get(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=n.timers,g=d?d.length:0;for(c.finish=!0,n.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g>b;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),n.each(["toggle","show","hide"],function(a,b){var c=n.fn[b];n.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(Ta(b,!0),a,d,e)}}),n.each({slideDown:Ta("show"),slideUp:Ta("hide"),slideToggle:Ta("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){n.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),n.timers=[],n.fx.tick=function(){var a,b=0,c=n.timers;for(La=n.now();b<c.length;b++)a=c[b],a()||c[b]!==a||c.splice(b--,1);c.length||n.fx.stop(),La=void 0},n.fx.timer=function(a){n.timers.push(a),a()?n.fx.start():n.timers.pop()},n.fx.interval=13,n.fx.start=function(){Ma||(Ma=setInterval(n.fx.tick,n.fx.interval))},n.fx.stop=function(){clearInterval(Ma),Ma=null},n.fx.speeds={slow:600,fast:200,_default:400},n.fn.delay=function(a,b){return a=n.fx?n.fx.speeds[a]||a:a,b=b||"fx",this.queue(b,function(b,c){var d=setTimeout(b,a);c.stop=function(){clearTimeout(d)}})},function(){var a=l.createElement("input"),b=l.createElement("select"),c=b.appendChild(l.createElement("option"));a.type="checkbox",k.checkOn=""!==a.value,k.optSelected=c.selected,b.disabled=!0,k.optDisabled=!c.disabled,a=l.createElement("input"),a.value="t",a.type="radio",k.radioValue="t"===a.value}();var Ya,Za,$a=n.expr.attrHandle;n.fn.extend({attr:function(a,b){return J(this,n.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){n.removeAttr(this,a)})}}),n.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(a&&3!==f&&8!==f&&2!==f)return typeof a.getAttribute===U?n.prop(a,b,c):(1===f&&n.isXMLDoc(a)||(b=b.toLowerCase(),d=n.attrHooks[b]||(n.expr.match.bool.test(b)?Za:Ya)),
-void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?void 0:e):null!==c?d&&"set"in d&&void 0!==(e=d.set(a,c,b))?e:(a.setAttribute(b,c+""),c):void n.removeAttr(a,b))},removeAttr:function(a,b){var c,d,e=0,f=b&&b.match(E);if(f&&1===a.nodeType)while(c=f[e++])d=n.propFix[c]||c,n.expr.match.bool.test(c)&&(a[d]=!1),a.removeAttribute(c)},attrHooks:{type:{set:function(a,b){if(!k.radioValue&&"radio"===b&&n.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}}}),Za={set:function(a,b,c){return b===!1?n.removeAttr(a,c):a.setAttribute(c,c),c}},n.each(n.expr.match.bool.source.match(/\w+/g),function(a,b){var c=$a[b]||n.find.attr;$a[b]=function(a,b,d){var e,f;return d||(f=$a[b],$a[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$a[b]=f),e}});var _a=/^(?:input|select|textarea|button)$/i;n.fn.extend({prop:function(a,b){return J(this,n.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[n.propFix[a]||a]})}}),n.extend({propFix:{"for":"htmlFor","class":"className"},prop:function(a,b,c){var d,e,f,g=a.nodeType;if(a&&3!==g&&8!==g&&2!==g)return f=1!==g||!n.isXMLDoc(a),f&&(b=n.propFix[b]||b,e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){return a.hasAttribute("tabindex")||_a.test(a.nodeName)||a.href?a.tabIndex:-1}}}}),k.optSelected||(n.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null}}),n.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){n.propFix[this.toLowerCase()]=this});var ab=/[\t\r\n\f]/g;n.fn.extend({addClass:function(a){var b,c,d,e,f,g,h="string"==typeof a&&a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).addClass(a.call(this,b,this.className))});if(h)for(b=(a||"").match(E)||[];j>i;i++)if(c=this[i],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(ab," "):" ")){f=0;while(e=b[f++])d.indexOf(" "+e+" ")<0&&(d+=e+" ");g=n.trim(d),c.className!==g&&(c.className=g)}return this},removeClass:function(a){var b,c,d,e,f,g,h=0===arguments.length||"string"==typeof a&&a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).removeClass(a.call(this,b,this.className))});if(h)for(b=(a||"").match(E)||[];j>i;i++)if(c=this[i],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(ab," "):"")){f=0;while(e=b[f++])while(d.indexOf(" "+e+" ")>=0)d=d.replace(" "+e+" "," ");g=a?n.trim(d):"",c.className!==g&&(c.className=g)}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):this.each(n.isFunction(a)?function(c){n(this).toggleClass(a.call(this,c,this.className,b),b)}:function(){if("string"===c){var b,d=0,e=n(this),f=a.match(E)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else(c===U||"boolean"===c)&&(this.className&&L.set(this,"__className__",this.className),this.className=this.className||a===!1?"":L.get(this,"__className__")||"")})},hasClass:function(a){for(var b=" "+a+" ",c=0,d=this.length;d>c;c++)if(1===this[c].nodeType&&(" "+this[c].className+" ").replace(ab," ").indexOf(b)>=0)return!0;return!1}});var bb=/\r/g;n.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=n.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,n(this).val()):a,null==e?e="":"number"==typeof e?e+="":n.isArray(e)&&(e=n.map(e,function(a){return null==a?"":a+""})),b=n.valHooks[this.type]||n.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=n.valHooks[e.type]||n.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(bb,""):null==c?"":c)}}}),n.extend({valHooks:{option:{get:function(a){var b=n.find.attr(a,"value");return null!=b?b:n.trim(n.text(a))}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type||0>e,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],!(!c.selected&&i!==e||(k.optDisabled?c.disabled:null!==c.getAttribute("disabled"))||c.parentNode.disabled&&n.nodeName(c.parentNode,"optgroup"))){if(b=n(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=n.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=n.inArray(d.value,f)>=0)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),n.each(["radio","checkbox"],function(){n.valHooks[this]={set:function(a,b){return n.isArray(b)?a.checked=n.inArray(n(a).val(),b)>=0:void 0}},k.checkOn||(n.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})}),n.each("blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu".split(" "),function(a,b){n.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),n.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)},bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}});var cb=n.now(),db=/\?/;n.parseJSON=function(a){return JSON.parse(a+"")},n.parseXML=function(a){var b,c;if(!a||"string"!=typeof a)return null;try{c=new DOMParser,b=c.parseFromString(a,"text/xml")}catch(d){b=void 0}return(!b||b.getElementsByTagName("parsererror").length)&&n.error("Invalid XML: "+a),b};var eb=/#.*$/,fb=/([?&])_=[^&]*/,gb=/^(.*?):[ \t]*([^\r\n]*)$/gm,hb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,ib=/^(?:GET|HEAD)$/,jb=/^\/\//,kb=/^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,lb={},mb={},nb="*/".concat("*"),ob=a.location.href,pb=kb.exec(ob.toLowerCase())||[];function qb(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(E)||[];if(n.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function rb(a,b,c,d){var e={},f=a===mb;function g(h){var i;return e[h]=!0,n.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function sb(a,b){var c,d,e=n.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&n.extend(!0,a,d),a}function tb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function ub(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}n.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:ob,type:"GET",isLocal:hb.test(pb[1]),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":nb,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/xml/,html:/html/,json:/json/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":n.parseJSON,"text xml":n.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?sb(sb(a,n.ajaxSettings),b):sb(n.ajaxSettings,a)},ajaxPrefilter:qb(lb),ajaxTransport:qb(mb),ajax:function(a,b){"object"==typeof a&&(b=a,a=void 0),b=b||{};var c,d,e,f,g,h,i,j,k=n.ajaxSetup({},b),l=k.context||k,m=k.context&&(l.nodeType||l.jquery)?n(l):n.event,o=n.Deferred(),p=n.Callbacks("once memory"),q=k.statusCode||{},r={},s={},t=0,u="canceled",v={readyState:0,getResponseHeader:function(a){var b;if(2===t){if(!f){f={};while(b=gb.exec(e))f[b[1].toLowerCase()]=b[2]}b=f[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return 2===t?e:null},setRequestHeader:function(a,b){var c=a.toLowerCase();return t||(a=s[c]=s[c]||a,r[a]=b),this},overrideMimeType:function(a){return t||(k.mimeType=a),this},statusCode:function(a){var b;if(a)if(2>t)for(b in a)q[b]=[q[b],a[b]];else v.always(a[v.status]);return this},abort:function(a){var b=a||u;return c&&c.abort(b),x(0,b),this}};if(o.promise(v).complete=p.add,v.success=v.done,v.error=v.fail,k.url=((a||k.url||ob)+"").replace(eb,"").replace(jb,pb[1]+"//"),k.type=b.method||b.type||k.method||k.type,k.dataTypes=n.trim(k.dataType||"*").toLowerCase().match(E)||[""],null==k.crossDomain&&(h=kb.exec(k.url.toLowerCase()),k.crossDomain=!(!h||h[1]===pb[1]&&h[2]===pb[2]&&(h[3]||("http:"===h[1]?"80":"443"))===(pb[3]||("http:"===pb[1]?"80":"443")))),k.data&&k.processData&&"string"!=typeof k.data&&(k.data=n.param(k.data,k.traditional)),rb(lb,k,b,v),2===t)return v;i=n.event&&k.global,i&&0===n.active++&&n.event.trigger("ajaxStart"),k.type=k.type.toUpperCase(),k.hasContent=!ib.test(k.type),d=k.url,k.hasContent||(k.data&&(d=k.url+=(db.test(d)?"&":"?")+k.data,delete k.data),k.cache===!1&&(k.url=fb.test(d)?d.replace(fb,"$1_="+cb++):d+(db.test(d)?"&":"?")+"_="+cb++)),k.ifModified&&(n.lastModified[d]&&v.setRequestHeader("If-Modified-Since",n.lastModified[d]),n.etag[d]&&v.setRequestHeader("If-None-Match",n.etag[d])),(k.data&&k.hasContent&&k.contentType!==!1||b.contentType)&&v.setRequestHeader("Content-Type",k.contentType),v.setRequestHeader("Accept",k.dataTypes[0]&&k.accepts[k.dataTypes[0]]?k.accepts[k.dataTypes[0]]+("*"!==k.dataTypes[0]?", "+nb+"; q=0.01":""):k.accepts["*"]);for(j in k.headers)v.setRequestHeader(j,k.headers[j]);if(k.beforeSend&&(k.beforeSend.call(l,v,k)===!1||2===t))return v.abort();u="abort";for(j in{success:1,error:1,complete:1})v[j](k[j]);if(c=rb(mb,k,b,v)){v.readyState=1,i&&m.trigger("ajaxSend",[v,k]),k.async&&k.timeout>0&&(g=setTimeout(function(){v.abort("timeout")},k.timeout));try{t=1,c.send(r,x)}catch(w){if(!(2>t))throw w;x(-1,w)}}else x(-1,"No Transport");function x(a,b,f,h){var j,r,s,u,w,x=b;2!==t&&(t=2,g&&clearTimeout(g),c=void 0,e=h||"",v.readyState=a>0?4:0,j=a>=200&&300>a||304===a,f&&(u=tb(k,v,f)),u=ub(k,u,v,j),j?(k.ifModified&&(w=v.getResponseHeader("Last-Modified"),w&&(n.lastModified[d]=w),w=v.getResponseHeader("etag"),w&&(n.etag[d]=w)),204===a||"HEAD"===k.type?x="nocontent":304===a?x="notmodified":(x=u.state,r=u.data,s=u.error,j=!s)):(s=x,(a||!x)&&(x="error",0>a&&(a=0))),v.status=a,v.statusText=(b||x)+"",j?o.resolveWith(l,[r,x,v]):o.rejectWith(l,[v,x,s]),v.statusCode(q),q=void 0,i&&m.trigger(j?"ajaxSuccess":"ajaxError",[v,k,j?r:s]),p.fireWith(l,[v,x]),i&&(m.trigger("ajaxComplete",[v,k]),--n.active||n.event.trigger("ajaxStop")))}return v},getJSON:function(a,b,c){return n.get(a,b,c,"json")},getScript:function(a,b){return n.get(a,void 0,b,"script")}}),n.each(["get","post"],function(a,b){n[b]=function(a,c,d,e){return n.isFunction(c)&&(e=e||d,d=c,c=void 0),n.ajax({url:a,type:b,dataType:e,data:c,success:d})}}),n._evalUrl=function(a){return n.ajax({url:a,type:"GET",dataType:"script",async:!1,global:!1,"throws":!0})},n.fn.extend({wrapAll:function(a){var b;return n.isFunction(a)?this.each(function(b){n(this).wrapAll(a.call(this,b))}):(this[0]&&(b=n(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this)},wrapInner:function(a){return this.each(n.isFunction(a)?function(b){n(this).wrapInner(a.call(this,b))}:function(){var b=n(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=n.isFunction(a);return this.each(function(c){n(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(){return this.parent().each(function(){n.nodeName(this,"body")||n(this).replaceWith(this.childNodes)}).end()}}),n.expr.filters.hidden=function(a){return a.offsetWidth<=0&&a.offsetHeight<=0},n.expr.filters.visible=function(a){return!n.expr.filters.hidden(a)};var vb=/%20/g,wb=/\[\]$/,xb=/\r?\n/g,yb=/^(?:submit|button|image|reset|file)$/i,zb=/^(?:input|select|textarea|keygen)/i;function Ab(a,b,c,d){var e;if(n.isArray(b))n.each(b,function(b,e){c||wb.test(a)?d(a,e):Ab(a+"["+("object"==typeof e?b:"")+"]",e,c,d)});else if(c||"object"!==n.type(b))d(a,b);else for(e in b)Ab(a+"["+e+"]",b[e],c,d)}n.param=function(a,b){var c,d=[],e=function(a,b){b=n.isFunction(b)?b():null==b?"":b,d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(b)};if(void 0===b&&(b=n.ajaxSettings&&n.ajaxSettings.traditional),n.isArray(a)||a.jquery&&!n.isPlainObject(a))n.each(a,function(){e(this.name,this.value)});else for(c in a)Ab(c,a[c],b,e);return d.join("&").replace(vb,"+")},n.fn.extend({serialize:function(){return n.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=n.prop(this,"elements");return a?n.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!n(this).is(":disabled")&&zb.test(this.nodeName)&&!yb.test(a)&&(this.checked||!T.test(a))}).map(function(a,b){var c=n(this).val();return null==c?null:n.isArray(c)?n.map(c,function(a){return{name:b.name,value:a.replace(xb,"\r\n")}}):{name:b.name,value:c.replace(xb,"\r\n")}}).get()}}),n.ajaxSettings.xhr=function(){try{return new XMLHttpRequest}catch(a){}};var Bb=0,Cb={},Db={0:200,1223:204},Eb=n.ajaxSettings.xhr();a.attachEvent&&a.attachEvent("onunload",function(){for(var a in Cb)Cb[a]()}),k.cors=!!Eb&&"withCredentials"in Eb,k.ajax=Eb=!!Eb,n.ajaxTransport(function(a){var b;return k.cors||Eb&&!a.crossDomain?{send:function(c,d){var e,f=a.xhr(),g=++Bb;if(f.open(a.type,a.url,a.async,a.username,a.password),a.xhrFields)for(e in a.xhrFields)f[e]=a.xhrFields[e];a.mimeType&&f.overrideMimeType&&f.overrideMimeType(a.mimeType),a.crossDomain||c["X-Requested-With"]||(c["X-Requested-With"]="XMLHttpRequest");for(e in c)f.setRequestHeader(e,c[e]);b=function(a){return function(){b&&(delete Cb[g],b=f.onload=f.onerror=null,"abort"===a?f.abort():"error"===a?d(f.status,f.statusText):d(Db[f.status]||f.status,f.statusText,"string"==typeof f.responseText?{text:f.responseText}:void 0,f.getAllResponseHeaders()))}},f.onload=b(),f.onerror=b("error"),b=Cb[g]=b("abort");try{f.send(a.hasContent&&a.data||null)}catch(h){if(b)throw h}},abort:function(){b&&b()}}:void 0}),n.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/(?:java|ecma)script/},converters:{"text script":function(a){return n.globalEval(a),a}}}),n.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),n.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(d,e){b=n("<script>").prop({async:!0,charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&e("error"===a.type?404:200,a.type)}),l.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Fb=[],Gb=/(=)\?(?=&|$)|\?\?/;n.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Fb.pop()||n.expando+"_"+cb++;return this[a]=!0,a}}),n.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Gb.test(b.url)?"url":"string"==typeof b.data&&!(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Gb.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=n.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Gb,"$1"+e):b.jsonp!==!1&&(b.url+=(db.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||n.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Fb.push(e)),g&&n.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),n.parseHTML=function(a,b,c){if(!a||"string"!=typeof a)return null;"boolean"==typeof b&&(c=b,b=!1),b=b||l;var d=v.exec(a),e=!c&&[];return d?[b.createElement(d[1])]:(d=n.buildFragment([a],b,e),e&&e.length&&n(e).remove(),n.merge([],d.childNodes))};var Hb=n.fn.load;n.fn.load=function(a,b,c){if("string"!=typeof a&&Hb)return Hb.apply(this,arguments);var d,e,f,g=this,h=a.indexOf(" ");return h>=0&&(d=n.trim(a.slice(h)),a=a.slice(0,h)),n.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&n.ajax({url:a,type:e,dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?n("<div>").append(n.parseHTML(a)).find(d):a)}).complete(c&&function(a,b){g.each(c,f||[a.responseText,b,a])}),this},n.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){n.fn[b]=function(a){return this.on(b,a)}}),n.expr.filters.animated=function(a){return n.grep(n.timers,function(b){return a===b.elem}).length};var Ib=a.document.documentElement;function Jb(a){return n.isWindow(a)?a:9===a.nodeType&&a.defaultView}n.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=n.css(a,"position"),l=n(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=n.css(a,"top"),i=n.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),n.isFunction(b)&&(b=b.call(a,c,h)),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},n.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){n.offset.setOffset(this,a,b)});var b,c,d=this[0],e={top:0,left:0},f=d&&d.ownerDocument;if(f)return b=f.documentElement,n.contains(b,d)?(typeof d.getBoundingClientRect!==U&&(e=d.getBoundingClientRect()),c=Jb(f),{top:e.top+c.pageYOffset-b.clientTop,left:e.left+c.pageXOffset-b.clientLeft}):e},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===n.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),n.nodeName(a[0],"html")||(d=a.offset()),d.top+=n.css(a[0],"borderTopWidth",!0),d.left+=n.css(a[0],"borderLeftWidth",!0)),{top:b.top-d.top-n.css(c,"marginTop",!0),left:b.left-d.left-n.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent||Ib;while(a&&!n.nodeName(a,"html")&&"static"===n.css(a,"position"))a=a.offsetParent;return a||Ib})}}),n.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(b,c){var d="pageYOffset"===c;n.fn[b]=function(e){return J(this,function(b,e,f){var g=Jb(b);return void 0===f?g?g[c]:b[e]:void(g?g.scrollTo(d?a.pageXOffset:f,d?f:a.pageYOffset):b[e]=f)},b,e,arguments.length,null)}}),n.each(["top","left"],function(a,b){n.cssHooks[b]=ya(k.pixelPosition,function(a,c){return c?(c=xa(a,b),va.test(c)?n(a).position()[b]+"px":c):void 0})}),n.each({Height:"height",Width:"width"},function(a,b){n.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){var f=arguments.length&&(c||"boolean"!=typeof d),g=c||(d===!0||e===!0?"margin":"border");return J(this,function(b,c,d){var e;return n.isWindow(b)?b.document.documentElement["client"+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body["scroll"+a],e["scroll"+a],b.body["offset"+a],e["offset"+a],e["client"+a])):void 0===d?n.css(b,c,g):n.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),n.fn.size=function(){return this.length},n.fn.andSelf=n.fn.addBack,"function"==typeof define&&define.amd&&define("jquery",[],function(){return n});var Kb=a.jQuery,Lb=a.$;return n.noConflict=function(b){return a.$===n&&(a.$=Lb),b&&a.jQuery===n&&(a.jQuery=Kb),n},typeof b===U&&(a.jQuery=a.$=n),n});
+!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.1",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b=a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+-new Date,v=a.document,w=0,x=0,y=gb(),z=gb(),A=gb(),B=function(a,b){return a===b&&(l=!0),0},C="undefined",D=1<<31,E={}.hasOwnProperty,F=[],G=F.pop,H=F.push,I=F.push,J=F.slice,K=F.indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(this[b]===a)return b;return-1},L="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",M="[\\x20\\t\\r\\n\\f]",N="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",O=N.replace("w","w#"),P="\\["+M+"*("+N+")(?:"+M+"*([*^$|!~]?=)"+M+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+O+"))|)"+M+"*\\]",Q=":("+N+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+P+")*)|.*)\\)|)",R=new RegExp("^"+M+"+|((?:^|[^\\\\])(?:\\\\.)*)"+M+"+$","g"),S=new RegExp("^"+M+"*,"+M+"*"),T=new RegExp("^"+M+"*([>+~]|"+M+")"+M+"*"),U=new RegExp("="+M+"*([^\\]'\"]*?)"+M+"*\\]","g"),V=new RegExp(Q),W=new RegExp("^"+O+"$"),X={ID:new RegExp("^#("+N+")"),CLASS:new RegExp("^\\.("+N+")"),TAG:new RegExp("^("+N.replace("w","w*")+")"),ATTR:new RegExp("^"+P),PSEUDO:new RegExp("^"+Q),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+M+"*(even|odd|(([+-]|)(\\d*)n|)"+M+"*(?:([+-]|)"+M+"*(\\d+)|))"+M+"*\\)|)","i"),bool:new RegExp("^(?:"+L+")$","i"),needsContext:new RegExp("^"+M+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+M+"*((?:-\\d)?\\d*)"+M+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,ab=/[+~]/,bb=/'|\\/g,cb=new RegExp("\\\\([\\da-f]{1,6}"+M+"?|("+M+")|.)","ig"),db=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)};try{I.apply(F=J.call(v.childNodes),v.childNodes),F[v.childNodes.length].nodeType}catch(eb){I={apply:F.length?function(a,b){H.apply(a,J.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function fb(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],!a||"string"!=typeof a)return d;if(1!==(k=b.nodeType)&&9!==k)return[];if(p&&!e){if(f=_.exec(a))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return I.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName&&b.getElementsByClassName)return I.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=9===k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(bb,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+qb(o[l]);w=ab.test(a)&&ob(b.parentNode)||b,x=o.join(",")}if(x)try{return I.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function gb(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function hb(a){return a[u]=!0,a}function ib(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function jb(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function kb(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||D)-(~a.sourceIndex||D);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function lb(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function mb(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function nb(a){return hb(function(b){return b=+b,hb(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function ob(a){return a&&typeof a.getElementsByTagName!==C&&a}c=fb.support={},f=fb.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=fb.setDocument=function(a){var b,e=a?a.ownerDocument||a:v,g=e.defaultView;return e!==n&&9===e.nodeType&&e.documentElement?(n=e,o=e.documentElement,p=!f(e),g&&g!==g.top&&(g.addEventListener?g.addEventListener("unload",function(){m()},!1):g.attachEvent&&g.attachEvent("onunload",function(){m()})),c.attributes=ib(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ib(function(a){return a.appendChild(e.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(e.getElementsByClassName)&&ib(function(a){return a.innerHTML="<div class='a'></div><div class='a i'></div>",a.firstChild.className="i",2===a.getElementsByClassName("i").length}),c.getById=ib(function(a){return o.appendChild(a).id=u,!e.getElementsByName||!e.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if(typeof b.getElementById!==C&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){var c=typeof a.getAttributeNode!==C&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return typeof b.getElementsByTagName!==C?b.getElementsByTagName(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return typeof b.getElementsByClassName!==C&&p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(e.querySelectorAll))&&(ib(function(a){a.innerHTML="<select msallowclip=''><option selected=''></option></select>",a.querySelectorAll("[msallowclip^='']").length&&q.push("[*^$]="+M+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+M+"*(?:value|"+L+")"),a.querySelectorAll(":checked").length||q.push(":checked")}),ib(function(a){var b=e.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+M+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ib(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",Q)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===e||a.ownerDocument===v&&t(v,a)?-1:b===e||b.ownerDocument===v&&t(v,b)?1:k?K.call(k,a)-K.call(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,f=a.parentNode,g=b.parentNode,h=[a],i=[b];if(!f||!g)return a===e?-1:b===e?1:f?-1:g?1:k?K.call(k,a)-K.call(k,b):0;if(f===g)return kb(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?kb(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},e):n},fb.matches=function(a,b){return fb(a,null,null,b)},fb.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return fb(b,n,null,[a]).length>0},fb.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},fb.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&E.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},fb.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},fb.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=fb.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=fb.selectors={cacheLength:50,createPseudo:hb,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(cb,db),a[3]=(a[3]||a[4]||a[5]||"").replace(cb,db),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||fb.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&fb.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(cb,db).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+M+")"+a+"("+M+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||typeof a.getAttribute!==C&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=fb.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||fb.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?hb(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=K.call(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:hb(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?hb(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),!c.pop()}}),has:hb(function(a){return function(b){return fb(a,b).length>0}}),contains:hb(function(a){return function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:hb(function(a){return W.test(a||"")||fb.error("unsupported lang: "+a),a=a.replace(cb,db).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:nb(function(){return[0]}),last:nb(function(a,b){return[b-1]}),eq:nb(function(a,b,c){return[0>c?c+b:c]}),even:nb(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:nb(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:nb(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:nb(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=lb(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=mb(b);function pb(){}pb.prototype=d.filters=d.pseudos,d.setFilters=new pb,g=fb.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?fb.error(a):z(a,i).slice(0)};function qb(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function rb(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function sb(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function tb(a,b,c){for(var d=0,e=b.length;e>d;d++)fb(a,b[d],c);return c}function ub(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function vb(a,b,c,d,e,f){return d&&!d[u]&&(d=vb(d)),e&&!e[u]&&(e=vb(e,f)),hb(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||tb(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:ub(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=ub(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?K.call(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=ub(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):I.apply(g,r)})}function wb(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=rb(function(a){return a===b},h,!0),l=rb(function(a){return K.call(b,a)>-1},h,!0),m=[function(a,c,d){return!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d))}];f>i;i++)if(c=d.relative[a[i].type])m=[rb(sb(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return vb(i>1&&sb(m),i>1&&qb(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&wb(a.slice(i,e)),f>e&&wb(a=a.slice(e)),f>e&&qb(a))}m.push(c)}return sb(m)}function xb(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=G.call(i));s=ub(s)}I.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&fb.uniqueSort(i)}return k&&(w=v,j=t),r};return c?hb(f):f}return h=fb.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=wb(b[c]),f[u]?d.push(f):e.push(f);f=A(a,xb(e,d)),f.selector=a}return f},i=fb.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(cb,db),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(cb,db),ab.test(j[0].type)&&ob(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&qb(j),!a)return I.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,ab.test(a)&&ob(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ib(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ib(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||jb("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ib(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||jb("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ib(function(a){return null==a.getAttribute("disabled")})||jb(L,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),fb}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeType,j=i?m.cache:a,k=i?a[h]:a[h]&&h;
+if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c.pop()||m.guid++:h),j[k]||(j[k]=i?{}:{toJSON:m.noop}),("object"==typeof b||"function"==typeof b)&&(e?j[k]=m.extend(j[k],b):j[k].data=m.extend(j[k].data,b)),g=j[k],e||(g.data||(g.data={}),g=g.data),void 0!==d&&(g[m.camelCase(b)]=d),"string"==typeof b?(f=g[b],null==f&&(f=g[m.camelCase(b)])):f=g,f}}function R(a,b,c){if(m.acceptData(a)){var d,e,f=a.nodeType,g=f?m.cache:a,h=f?a[m.expando]:m.expando;if(g[h]){if(b&&(d=c?g[h]:g[h].data)){m.isArray(b)?b=b.concat(m.map(b,m.camelCase)):b in d?b=[b]:(b=m.camelCase(b),b=b in d?[b]:b.split(" ")),e=b.length;while(e--)delete d[b[e]];if(c?!P(d):!m.isEmptyObject(d))return}(c||(delete g[h].data,P(g[h])))&&(f?m.cleanData([a],!0):k.deleteExpando||g!=g.window?delete g[h]:g[h]=null)}}}m.extend({cache:{},noData:{"applet ":!0,"embed ":!0,"object ":"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"},hasData:function(a){return a=a.nodeType?m.cache[a[m.expando]]:a[m.expando],!!a&&!P(a)},data:function(a,b,c){return Q(a,b,c)},removeData:function(a,b){return R(a,b)},_data:function(a,b,c){return Q(a,b,c,!0)},_removeData:function(a,b){return R(a,b,!0)}}),m.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=m.data(f),1===f.nodeType&&!m._data(f,"parsedAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=m.camelCase(d.slice(5)),O(f,d,e[d])));m._data(f,"parsedAttrs",!0)}return e}return"object"==typeof a?this.each(function(){m.data(this,a)}):arguments.length>1?this.each(function(){m.data(this,a,b)}):f?O(f,a,m.data(f,a)):void 0},removeData:function(a){return this.each(function(){m.removeData(this,a)})}}),m.extend({queue:function(a,b,c){var d;return a?(b=(b||"fx")+"queue",d=m._data(a,b),c&&(!d||m.isArray(c)?d=m._data(a,b,m.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||"fx";var c=m.queue(a,b),d=c.length,e=c.shift(),f=m._queueHooks(a,b),g=function(){m.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return m._data(a,c)||m._data(a,c,{empty:m.Callbacks("once memory").add(function(){m._removeData(a,b+"queue"),m._removeData(a,c)})})}}),m.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?m.queue(this[0],a):void 0===b?this:this.each(function(){var c=m.queue(this,a,b);m._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&m.dequeue(this,a)})},dequeue:function(a){return this.each(function(){m.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=m.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=m._data(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var S=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,T=["Top","Right","Bottom","Left"],U=function(a,b){return a=b||a,"none"===m.css(a,"display")||!m.contains(a.ownerDocument,a)},V=m.access=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===m.type(c)){e=!0;for(h in c)m.access(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,m.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(m(a),c)})),b))for(;i>h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f},W=/^(?:checkbox|radio)$/i;!function(){var a=y.createElement("input"),b=y.createElement("div"),c=y.createDocumentFragment();if(b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",k.leadingWhitespace=3===b.firstChild.nodeType,k.tbody=!b.getElementsByTagName("tbody").length,k.htmlSerialize=!!b.getElementsByTagName("link").length,k.html5Clone="<:nav></:nav>"!==y.createElement("nav").cloneNode(!0).outerHTML,a.type="checkbox",a.checked=!0,c.appendChild(a),k.appendChecked=a.checked,b.innerHTML="<textarea>x</textarea>",k.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue,c.appendChild(b),b.innerHTML="<input type='radio' checked='checked' name='t'/>",k.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,k.noCloneEvent=!0,b.attachEvent&&(b.attachEvent("onclick",function(){k.noCloneEvent=!1}),b.cloneNode(!0).click()),null==k.deleteExpando){k.deleteExpando=!0;try{delete b.test}catch(d){k.deleteExpando=!1}}}(),function(){var b,c,d=y.createElement("div");for(b in{submit:!0,change:!0,focusin:!0})c="on"+b,(k[b+"Bubbles"]=c in a)||(d.setAttribute(c,"t"),k[b+"Bubbles"]=d.attributes[c].expando===!1);d=null}();var X=/^(?:input|select|textarea)$/i,Y=/^key/,Z=/^(?:mouse|pointer|contextmenu)|click/,$=/^(?:focusinfocus|focusoutblur)$/,_=/^([^.]*)(?:\.(.+)|)$/;function ab(){return!0}function bb(){return!1}function cb(){try{return y.activeElement}catch(a){}}m.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,n,o,p,q,r=m._data(a);if(r){c.handler&&(i=c,c=i.handler,e=i.selector),c.guid||(c.guid=m.guid++),(g=r.events)||(g=r.events={}),(k=r.handle)||(k=r.handle=function(a){return typeof m===K||a&&m.event.triggered===a.type?void 0:m.event.dispatch.apply(k.elem,arguments)},k.elem=a),b=(b||"").match(E)||[""],h=b.length;while(h--)f=_.exec(b[h])||[],o=q=f[1],p=(f[2]||"").split(".").sort(),o&&(j=m.event.special[o]||{},o=(e?j.delegateType:j.bindType)||o,j=m.event.special[o]||{},l=m.extend({type:o,origType:q,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&m.expr.match.needsContext.test(e),namespace:p.join(".")},i),(n=g[o])||(n=g[o]=[],n.delegateCount=0,j.setup&&j.setup.call(a,d,p,k)!==!1||(a.addEventListener?a.addEventListener(o,k,!1):a.attachEvent&&a.attachEvent("on"+o,k))),j.add&&(j.add.call(a,l),l.handler.guid||(l.handler.guid=c.guid)),e?n.splice(n.delegateCount++,0,l):n.push(l),m.event.global[o]=!0);a=null}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,n,o,p,q,r=m.hasData(a)&&m._data(a);if(r&&(k=r.events)){b=(b||"").match(E)||[""],j=b.length;while(j--)if(h=_.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o){l=m.event.special[o]||{},o=(d?l.delegateType:l.bindType)||o,n=k[o]||[],h=h[2]&&new RegExp("(^|\\.)"+p.join("\\.(?:.*\\.|)")+"(\\.|$)"),i=f=n.length;while(f--)g=n[f],!e&&q!==g.origType||c&&c.guid!==g.guid||h&&!h.test(g.namespace)||d&&d!==g.selector&&("**"!==d||!g.selector)||(n.splice(f,1),g.selector&&n.delegateCount--,l.remove&&l.remove.call(a,g));i&&!n.length&&(l.teardown&&l.teardown.call(a,p,r.handle)!==!1||m.removeEvent(a,o,r.handle),delete k[o])}else for(o in k)m.event.remove(a,o+b[j],c,d,!0);m.isEmptyObject(k)&&(delete r.handle,m._removeData(a,"events"))}},trigger:function(b,c,d,e){var f,g,h,i,k,l,n,o=[d||y],p=j.call(b,"type")?b.type:b,q=j.call(b,"namespace")?b.namespace.split("."):[];if(h=l=d=d||y,3!==d.nodeType&&8!==d.nodeType&&!$.test(p+m.event.triggered)&&(p.indexOf(".")>=0&&(q=p.split("."),p=q.shift(),q.sort()),g=p.indexOf(":")<0&&"on"+p,b=b[m.expando]?b:new m.Event(p,"object"==typeof b&&b),b.isTrigger=e?2:3,b.namespace=q.join("."),b.namespace_re=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=d),c=null==c?[b]:m.makeArray(c,[b]),k=m.event.special[p]||{},e||!k.trigger||k.trigger.apply(d,c)!==!1)){if(!e&&!k.noBubble&&!m.isWindow(d)){for(i=k.delegateType||p,$.test(i+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),l=h;l===(d.ownerDocument||y)&&o.push(l.defaultView||l.parentWindow||a)}n=0;while((h=o[n++])&&!b.isPropagationStopped())b.type=n>1?i:k.bindType||p,f=(m._data(h,"events")||{})[b.type]&&m._data(h,"handle"),f&&f.apply(h,c),f=g&&h[g],f&&f.apply&&m.acceptData(h)&&(b.result=f.apply(h,c),b.result===!1&&b.preventDefault());if(b.type=p,!e&&!b.isDefaultPrevented()&&(!k._default||k._default.apply(o.pop(),c)===!1)&&m.acceptData(d)&&g&&d[p]&&!m.isWindow(d)){l=d[g],l&&(d[g]=null),m.event.triggered=p;try{d[p]()}catch(r){}m.event.triggered=void 0,l&&(d[g]=l)}return b.result}},dispatch:function(a){a=m.event.fix(a);var b,c,e,f,g,h=[],i=d.call(arguments),j=(m._data(this,"events")||{})[a.type]||[],k=m.event.special[a.type]||{};if(i[0]=a,a.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,a)!==!1){h=m.event.handlers.call(this,a,j),b=0;while((f=h[b++])&&!a.isPropagationStopped()){a.currentTarget=f.elem,g=0;while((e=f.handlers[g++])&&!a.isImmediatePropagationStopped())(!a.namespace_re||a.namespace_re.test(e.namespace))&&(a.handleObj=e,a.data=e.data,c=((m.event.special[e.origType]||{}).handle||e.handler).apply(f.elem,i),void 0!==c&&(a.result=c)===!1&&(a.preventDefault(),a.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,a),a.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&&i.nodeType&&(!a.button||"click"!==a.type))for(;i!=this;i=i.parentNode||this)if(1===i.nodeType&&(i.disabled!==!0||"click"!==a.type)){for(e=[],f=0;h>f;f++)d=b[f],c=d.selector+" ",void 0===e[c]&&(e[c]=d.needsContext?m(c,this).index(i)>=0:m.find(c,this,null,[i]).length),e[c]&&e.push(d);e.length&&g.push({elem:i,handlers:e})}return h<b.length&&g.push({elem:this,handlers:b.slice(h)}),g},fix:function(a){if(a[m.expando])return a;var b,c,d,e=a.type,f=a,g=this.fixHooks[e];g||(this.fixHooks[e]=g=Z.test(e)?this.mouseHooks:Y.test(e)?this.keyHooks:{}),d=g.props?this.props.concat(g.props):this.props,a=new m.Event(f),b=d.length;while(b--)c=d[b],a[c]=f[c];return a.target||(a.target=f.srcElement||y),3===a.target.nodeType&&(a.target=a.target.parentNode),a.metaKey=!!a.metaKey,g.filter?g.filter(a,f):a},props:"altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which".split(" "),fixHooks:{},keyHooks:{props:"char charCode key keyCode".split(" "),filter:function(a,b){return null==a.which&&(a.which=null!=b.charCode?b.charCode:b.keyCode),a}},mouseHooks:{props:"button buttons clientX clientY fromElement offsetX offsetY pageX pageY screenX screenY toElement".split(" "),filter:function(a,b){var c,d,e,f=b.button,g=b.fromElement;return null==a.pageX&&null!=b.clientX&&(d=a.target.ownerDocument||y,e=d.documentElement,c=d.body,a.pageX=b.clientX+(e&&e.scrollLeft||c&&c.scrollLeft||0)-(e&&e.clientLeft||c&&c.clientLeft||0),a.pageY=b.clientY+(e&&e.scrollTop||c&&c.scrollTop||0)-(e&&e.clientTop||c&&c.clientTop||0)),!a.relatedTarget&&g&&(a.relatedTarget=g===a.target?b.toElement:g),a.which||void 0===f||(a.which=1&f?1:2&f?3:4&f?2:0),a}},special:{load:{noBubble:!0},focus:{trigger:function(){if(this!==cb()&&this.focus)try{return this.focus(),!1}catch(a){}},delegateType:"focusin"},blur:{trigger:function(){return this===cb()&&this.blur?(this.blur(),!1):void 0},delegateType:"focusout"},click:{trigger:function(){return m.nodeName(this,"input")&&"checkbox"===this.type&&this.click?(this.click(),!1):void 0},_default:function(a){return m.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}},simulate:function(a,b,c,d){var e=m.extend(new m.Event,c,{type:a,isSimulated:!0,originalEvent:{}});d?m.event.trigger(e,null,b):m.event.dispatch.call(b,e),e.isDefaultPrevented()&&c.preventDefault()}},m.removeEvent=y.removeEventListener?function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c,!1)}:function(a,b,c){var d="on"+b;a.detachEvent&&(typeof a[d]===K&&(a[d]=null),a.detachEvent(d,c))},m.Event=function(a,b){return this instanceof m.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?ab:bb):this.type=a,b&&m.extend(this,b),this.timeStamp=a&&a.timeStamp||m.now(),void(this[m.expando]=!0)):new m.Event(a,b)},m.Event.prototype={isDefaultPrevented:bb,isPropagationStopped:bb,isImmediatePropagationStopped:bb,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=ab,a&&(a.preventDefault?a.preventDefault():a.returnValue=!1)},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=ab,a&&(a.stopPropagation&&a.stopPropagation(),a.cancelBubble=!0)},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=ab,a&&a.stopImmediatePropagation&&a.stopImmediatePropagation(),this.stopPropagation()}},m.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){m.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return(!e||e!==d&&!m.contains(d,e))&&(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),k.submitBubbles||(m.event.special.submit={setup:function(){return m.nodeName(this,"form")?!1:void m.event.add(this,"click._submit keypress._submit",function(a){var b=a.target,c=m.nodeName(b,"input")||m.nodeName(b,"button")?b.form:void 0;c&&!m._data(c,"submitBubbles")&&(m.event.add(c,"submit._submit",function(a){a._submit_bubble=!0}),m._data(c,"submitBubbles",!0))})},postDispatch:function(a){a._submit_bubble&&(delete a._submit_bubble,this.parentNode&&!a.isTrigger&&m.event.simulate("submit",this.parentNode,a,!0))},teardown:function(){return m.nodeName(this,"form")?!1:void m.event.remove(this,"._submit")}}),k.changeBubbles||(m.event.special.change={setup:function(){return X.test(this.nodeName)?(("checkbox"===this.type||"radio"===this.type)&&(m.event.add(this,"propertychange._change",function(a){"checked"===a.originalEvent.propertyName&&(this._just_changed=!0)}),m.event.add(this,"click._change",function(a){this._just_changed&&!a.isTrigger&&(this._just_changed=!1),m.event.simulate("change",this,a,!0)})),!1):void m.event.add(this,"beforeactivate._change",function(a){var b=a.target;X.test(b.nodeName)&&!m._data(b,"changeBubbles")&&(m.event.add(b,"change._change",function(a){!this.parentNode||a.isSimulated||a.isTrigger||m.event.simulate("change",this.parentNode,a,!0)}),m._data(b,"changeBubbles",!0))})},handle:function(a){var b=a.target;return this!==b||a.isSimulated||a.isTrigger||"radio"!==b.type&&"checkbox"!==b.type?a.handleObj.handler.apply(this,arguments):void 0},teardown:function(){return m.event.remove(this,"._change"),!X.test(this.nodeName)}}),k.focusinBubbles||m.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){m.event.simulate(b,a.target,m.event.fix(a),!0)};m.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=m._data(d,b);e||d.addEventListener(a,c,!0),m._data(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=m._data(d,b)-1;e?m._data(d,b,e):(d.removeEventListener(a,c,!0),m._removeData(d,b))}}}),m.fn.extend({on:function(a,b,c,d,e){var f,g;if("object"==typeof a){"string"!=typeof b&&(c=c||b,b=void 0);for(f in a)this.on(f,b,c,a[f],e);return this}if(null==c&&null==d?(d=b,c=b=void 0):null==d&&("string"==typeof b?(d=c,c=void 0):(d=c,c=b,b=void 0)),d===!1)d=bb;else if(!d)return this;return 1===e&&(g=d,d=function(a){return m().off(a),g.apply(this,arguments)},d.guid=g.guid||(g.guid=m.guid++)),this.each(function(){m.event.add(this,a,d,c,b)})},one:function(a,b,c,d){return this.on(a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,m(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return(b===!1||"function"==typeof b)&&(c=b,b=void 0),c===!1&&(c=bb),this.each(function(){m.event.remove(this,a,c,b)})},trigger:function(a,b){return this.each(function(){m.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?m.event.trigger(a,b,c,!0):void 0}});function db(a){var b=eb.split("|"),c=a.createDocumentFragment();if(c.createElement)while(b.length)c.createElement(b.pop());return c}var eb="abbr|article|aside|audio|bdi|canvas|data|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",fb=/ jQuery\d+="(?:null|\d+)"/g,gb=new RegExp("<(?:"+eb+")[\\s/>]","i"),hb=/^\s+/,ib=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,jb=/<([\w:]+)/,kb=/<tbody/i,lb=/<|&#?\w+;/,mb=/<(?:script|style|link)/i,nb=/checked\s*(?:[^=]|=\s*.checked.)/i,ob=/^$|\/(?:java|ecma)script/i,pb=/^true\/(.*)/,qb=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g,rb={option:[1,"<select multiple='multiple'>","</select>"],legend:[1,"<fieldset>","</fieldset>"],area:[1,"<map>","</map>"],param:[1,"<object>","</object>"],thead:[1,"<table>","</table>"],tr:[2,"<table><tbody>","</tbody></table>"],col:[2,"<table><tbody></tbody><colgroup>","</colgroup></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:k.htmlSerialize?[0,"",""]:[1,"X<div>","</div>"]},sb=db(y),tb=sb.appendChild(y.createElement("div"));rb.optgroup=rb.option,rb.tbody=rb.tfoot=rb.colgroup=rb.caption=rb.thead,rb.th=rb.td;function ub(a,b){var c,d,e=0,f=typeof a.getElementsByTagName!==K?a.getElementsByTagName(b||"*"):typeof a.querySelectorAll!==K?a.querySelectorAll(b||"*"):void 0;if(!f)for(f=[],c=a.childNodes||a;null!=(d=c[e]);e++)!b||m.nodeName(d,b)?f.push(d):m.merge(f,ub(d,b));return void 0===b||b&&m.nodeName(a,b)?m.merge([a],f):f}function vb(a){W.test(a.type)&&(a.defaultChecked=a.checked)}function wb(a,b){return m.nodeName(a,"table")&&m.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a.appendChild(a.ownerDocument.createElement("tbody")):a}function xb(a){return a.type=(null!==m.find.attr(a,"type"))+"/"+a.type,a}function yb(a){var b=pb.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function zb(a,b){for(var c,d=0;null!=(c=a[d]);d++)m._data(c,"globalEval",!b||m._data(b[d],"globalEval"))}function Ab(a,b){if(1===b.nodeType&&m.hasData(a)){var c,d,e,f=m._data(a),g=m._data(b,f),h=f.events;if(h){delete g.handle,g.events={};for(c in h)for(d=0,e=h[c].length;e>d;d++)m.event.add(b,c,h[c][d])}g.data&&(g.data=m.extend({},g.data))}}function Bb(a,b){var c,d,e;if(1===b.nodeType){if(c=b.nodeName.toLowerCase(),!k.noCloneEvent&&b[m.expando]){e=m._data(b);for(d in e.events)m.removeEvent(b,d,e.handle);b.removeAttribute(m.expando)}"script"===c&&b.text!==a.text?(xb(b).text=a.text,yb(b)):"object"===c?(b.parentNode&&(b.outerHTML=a.outerHTML),k.html5Clone&&a.innerHTML&&!m.trim(b.innerHTML)&&(b.innerHTML=a.innerHTML)):"input"===c&&W.test(a.type)?(b.defaultChecked=b.checked=a.checked,b.value!==a.value&&(b.value=a.value)):"option"===c?b.defaultSelected=b.selected=a.defaultSelected:("input"===c||"textarea"===c)&&(b.defaultValue=a.defaultValue)}}m.extend({clone:function(a,b,c){var d,e,f,g,h,i=m.contains(a.ownerDocument,a);if(k.html5Clone||m.isXMLDoc(a)||!gb.test("<"+a.nodeName+">")?f=a.cloneNode(!0):(tb.innerHTML=a.outerHTML,tb.removeChild(f=tb.firstChild)),!(k.noCloneEvent&&k.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||m.isXMLDoc(a)))for(d=ub(f),h=ub(a),g=0;null!=(e=h[g]);++g)d[g]&&Bb(e,d[g]);if(b)if(c)for(h=h||ub(a),d=d||ub(f),g=0;null!=(e=h[g]);g++)Ab(e,d[g]);else Ab(a,f);return d=ub(f,"script"),d.length>0&&zb(d,!i&&ub(a,"script")),d=h=e=null,f},buildFragment:function(a,b,c,d){for(var e,f,g,h,i,j,l,n=a.length,o=db(b),p=[],q=0;n>q;q++)if(f=a[q],f||0===f)if("object"===m.type(f))m.merge(p,f.nodeType?[f]:f);else if(lb.test(f)){h=h||o.appendChild(b.createElement("div")),i=(jb.exec(f)||["",""])[1].toLowerCase(),l=rb[i]||rb._default,h.innerHTML=l[1]+f.replace(ib,"<$1></$2>")+l[2],e=l[0];while(e--)h=h.lastChild;if(!k.leadingWhitespace&&hb.test(f)&&p.push(b.createTextNode(hb.exec(f)[0])),!k.tbody){f="table"!==i||kb.test(f)?"<table>"!==l[1]||kb.test(f)?0:h:h.firstChild,e=f&&f.childNodes.length;while(e--)m.nodeName(j=f.childNodes[e],"tbody")&&!j.childNodes.length&&f.removeChild(j)}m.merge(p,h.childNodes),h.textContent="";while(h.firstChild)h.removeChild(h.firstChild);h=o.lastChild}else p.push(b.createTextNode(f));h&&o.removeChild(h),k.appendChecked||m.grep(ub(p,"input"),vb),q=0;while(f=p[q++])if((!d||-1===m.inArray(f,d))&&(g=m.contains(f.ownerDocument,f),h=ub(o.appendChild(f),"script"),g&&zb(h),c)){e=0;while(f=h[e++])ob.test(f.type||"")&&c.push(f)}return h=null,o},cleanData:function(a,b){for(var d,e,f,g,h=0,i=m.expando,j=m.cache,l=k.deleteExpando,n=m.event.special;null!=(d=a[h]);h++)if((b||m.acceptData(d))&&(f=d[i],g=f&&j[f])){if(g.events)for(e in g.events)n[e]?m.event.remove(d,e):m.removeEvent(d,e,g.handle);j[f]&&(delete j[f],l?delete d[i]:typeof d.removeAttribute!==K?d.removeAttribute(i):d[i]=null,c.push(f))}}}),m.fn.extend({text:function(a){return V(this,function(a){return void 0===a?m.text(this):this.empty().append((this[0]&&this[0].ownerDocument||y).createTextNode(a))},null,a,arguments.length)},append:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=wb(this,a);b.appendChild(a)}})},prepend:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=wb(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},remove:function(a,b){for(var c,d=a?m.filter(a,this):this,e=0;null!=(c=d[e]);e++)b||1!==c.nodeType||m.cleanData(ub(c)),c.parentNode&&(b&&m.contains(c.ownerDocument,c)&&zb(ub(c,"script")),c.parentNode.removeChild(c));return this},empty:function(){for(var a,b=0;null!=(a=this[b]);b++){1===a.nodeType&&m.cleanData(ub(a,!1));while(a.firstChild)a.removeChild(a.firstChild);a.options&&m.nodeName(a,"select")&&(a.options.length=0)}return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return m.clone(this,a,b)})},html:function(a){return V(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a)return 1===b.nodeType?b.innerHTML.replace(fb,""):void 0;if(!("string"!=typeof a||mb.test(a)||!k.htmlSerialize&&gb.test(a)||!k.leadingWhitespace&&hb.test(a)||rb[(jb.exec(a)||["",""])[1].toLowerCase()])){a=a.replace(ib,"<$1></$2>");try{for(;d>c;c++)b=this[c]||{},1===b.nodeType&&(m.cleanData(ub(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=arguments[0];return this.domManip(arguments,function(b){a=this.parentNode,m.cleanData(ub(this)),a&&a.replaceChild(b,this)}),a&&(a.length||a.nodeType)?this:this.remove()},detach:function(a){return this.remove(a,!0)},domManip:function(a,b){a=e.apply([],a);var c,d,f,g,h,i,j=0,l=this.length,n=this,o=l-1,p=a[0],q=m.isFunction(p);if(q||l>1&&"string"==typeof p&&!k.checkClone&&nb.test(p))return this.each(function(c){var d=n.eq(c);q&&(a[0]=p.call(this,c,d.html())),d.domManip(a,b)});if(l&&(i=m.buildFragment(a,this[0].ownerDocument,!1,this),c=i.firstChild,1===i.childNodes.length&&(i=c),c)){for(g=m.map(ub(i,"script"),xb),f=g.length;l>j;j++)d=i,j!==o&&(d=m.clone(d,!0,!0),f&&m.merge(g,ub(d,"script"))),b.call(this[j],d,j);if(f)for(h=g[g.length-1].ownerDocument,m.map(g,yb),j=0;f>j;j++)d=g[j],ob.test(d.type||"")&&!m._data(d,"globalEval")&&m.contains(h,d)&&(d.src?m._evalUrl&&m._evalUrl(d.src):m.globalEval((d.text||d.textContent||d.innerHTML||"").replace(qb,"")));i=c=null}return this}}),m.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){m.fn[a]=function(a){for(var c,d=0,e=[],g=m(a),h=g.length-1;h>=d;d++)c=d===h?this:this.clone(!0),m(g[d])[b](c),f.apply(e,c.get());return this.pushStack(e)}});var Cb,Db={};function Eb(b,c){var d,e=m(c.createElement(b)).appendTo(c.body),f=a.getDefaultComputedStyle&&(d=a.getDefaultComputedStyle(e[0]))?d.display:m.css(e[0],"display");return e.detach(),f}function Fb(a){var b=y,c=Db[a];return c||(c=Eb(a,b),"none"!==c&&c||(Cb=(Cb||m("<iframe frameborder='0' width='0' height='0'/>")).appendTo(b.documentElement),b=(Cb[0].contentWindow||Cb[0].contentDocument).document,b.write(),b.close(),c=Eb(a,b),Cb.detach()),Db[a]=c),c}!function(){var a;k.shrinkWrapBlocks=function(){if(null!=a)return a;a=!1;var b,c,d;return c=y.getElementsByTagName("body")[0],c&&c.style?(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:1px;width:1px;zoom:1",b.appendChild(y.createElement("div")).style.width="5px",a=3!==b.offsetWidth),c.removeChild(d),a):void 0}}();var Gb=/^margin/,Hb=new RegExp("^("+S+")(?!px)[a-z%]+$","i"),Ib,Jb,Kb=/^(top|right|bottom|left)$/;a.getComputedStyle?(Ib=function(a){return a.ownerDocument.defaultView.getComputedStyle(a,null)},Jb=function(a,b,c){var d,e,f,g,h=a.style;return c=c||Ib(a),g=c?c.getPropertyValue(b)||c[b]:void 0,c&&(""!==g||m.contains(a.ownerDocument,a)||(g=m.style(a,b)),Hb.test(g)&&Gb.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0===g?g:g+""}):y.documentElement.currentStyle&&(Ib=function(a){return a.currentStyle},Jb=function(a,b,c){var d,e,f,g,h=a.style;return c=c||Ib(a),g=c?c[b]:void 0,null==g&&h&&h[b]&&(g=h[b]),Hb.test(g)&&!Kb.test(b)&&(d=h.left,e=a.runtimeStyle,f=e&&e.left,f&&(e.left=a.currentStyle.left),h.left="fontSize"===b?"1em":g,g=h.pixelLeft+"px",h.left=d,f&&(e.left=f)),void 0===g?g:g+""||"auto"});function Lb(a,b){return{get:function(){var c=a();if(null!=c)return c?void delete this.get:(this.get=b).apply(this,arguments)}}}!function(){var b,c,d,e,f,g,h;if(b=y.createElement("div"),b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",d=b.getElementsByTagName("a")[0],c=d&&d.style){c.cssText="float:left;opacity:.5",k.opacity="0.5"===c.opacity,k.cssFloat=!!c.cssFloat,b.style.backgroundClip="content-box",b.cloneNode(!0).style.backgroundClip="",k.clearCloneStyle="content-box"===b.style.backgroundClip,k.boxSizing=""===c.boxSizing||""===c.MozBoxSizing||""===c.WebkitBoxSizing,m.extend(k,{reliableHiddenOffsets:function(){return null==g&&i(),g},boxSizingReliable:function(){return null==f&&i(),f},pixelPosition:function(){return null==e&&i(),e},reliableMarginRight:function(){return null==h&&i(),h}});function i(){var b,c,d,i;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),b.style.cssText="-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;margin-top:1%;top:1%;border:1px;padding:1px;width:4px;position:absolute",e=f=!1,h=!0,a.getComputedStyle&&(e="1%"!==(a.getComputedStyle(b,null)||{}).top,f="4px"===(a.getComputedStyle(b,null)||{width:"4px"}).width,i=b.appendChild(y.createElement("div")),i.style.cssText=b.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:0",i.style.marginRight=i.style.width="0",b.style.width="1px",h=!parseFloat((a.getComputedStyle(i,null)||{}).marginRight)),b.innerHTML="<table><tr><td></td><td>t</td></tr></table>",i=b.getElementsByTagName("td"),i[0].style.cssText="margin:0;border:0;padding:0;display:none",g=0===i[0].offsetHeight,g&&(i[0].style.display="",i[1].style.display="none",g=0===i[0].offsetHeight),c.removeChild(d))}}}(),m.swap=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};var Mb=/alpha\([^)]*\)/i,Nb=/opacity\s*=\s*([^)]*)/,Ob=/^(none|table(?!-c[ea]).+)/,Pb=new RegExp("^("+S+")(.*)$","i"),Qb=new RegExp("^([+-])=("+S+")","i"),Rb={position:"absolute",visibility:"hidden",display:"block"},Sb={letterSpacing:"0",fontWeight:"400"},Tb=["Webkit","O","Moz","ms"];function Ub(a,b){if(b in a)return b;var c=b.charAt(0).toUpperCase()+b.slice(1),d=b,e=Tb.length;while(e--)if(b=Tb[e]+c,b in a)return b;return d}function Vb(a,b){for(var c,d,e,f=[],g=0,h=a.length;h>g;g++)d=a[g],d.style&&(f[g]=m._data(d,"olddisplay"),c=d.style.display,b?(f[g]||"none"!==c||(d.style.display=""),""===d.style.display&&U(d)&&(f[g]=m._data(d,"olddisplay",Fb(d.nodeName)))):(e=U(d),(c&&"none"!==c||!e)&&m._data(d,"olddisplay",e?c:m.css(d,"display"))));for(g=0;h>g;g++)d=a[g],d.style&&(b&&"none"!==d.style.display&&""!==d.style.display||(d.style.display=b?f[g]||"":"none"));return a}function Wb(a,b,c){var d=Pb.exec(b);return d?Math.max(0,d[1]-(c||0))+(d[2]||"px"):b}function Xb(a,b,c,d,e){for(var f=c===(d?"border":"content")?4:"width"===b?1:0,g=0;4>f;f+=2)"margin"===c&&(g+=m.css(a,c+T[f],!0,e)),d?("content"===c&&(g-=m.css(a,"padding"+T[f],!0,e)),"margin"!==c&&(g-=m.css(a,"border"+T[f]+"Width",!0,e))):(g+=m.css(a,"padding"+T[f],!0,e),"padding"!==c&&(g+=m.css(a,"border"+T[f]+"Width",!0,e)));return g}function Yb(a,b,c){var d=!0,e="width"===b?a.offsetWidth:a.offsetHeight,f=Ib(a),g=k.boxSizing&&"border-box"===m.css(a,"boxSizing",!1,f);if(0>=e||null==e){if(e=Jb(a,b,f),(0>e||null==e)&&(e=a.style[b]),Hb.test(e))return e;d=g&&(k.boxSizingReliable()||e===a.style[b]),e=parseFloat(e)||0}return e+Xb(a,b,c||(g?"border":"content"),d,f)+"px"}m.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=Jb(a,"opacity");return""===c?"1":c}}}},cssNumber:{columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":k.cssFloat?"cssFloat":"styleFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=m.camelCase(b),i=a.style;if(b=m.cssProps[h]||(m.cssProps[h]=Ub(i,h)),g=m.cssHooks[b]||m.cssHooks[h],void 0===c)return g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b];if(f=typeof c,"string"===f&&(e=Qb.exec(c))&&(c=(e[1]+1)*e[2]+parseFloat(m.css(a,b)),f="number"),null!=c&&c===c&&("number"!==f||m.cssNumber[h]||(c+="px"),k.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),!(g&&"set"in g&&void 0===(c=g.set(a,c,d)))))try{i[b]=c}catch(j){}}},css:function(a,b,c,d){var e,f,g,h=m.camelCase(b);return b=m.cssProps[h]||(m.cssProps[h]=Ub(a.style,h)),g=m.cssHooks[b]||m.cssHooks[h],g&&"get"in g&&(f=g.get(a,!0,c)),void 0===f&&(f=Jb(a,b,d)),"normal"===f&&b in Sb&&(f=Sb[b]),""===c||c?(e=parseFloat(f),c===!0||m.isNumeric(e)?e||0:f):f}}),m.each(["height","width"],function(a,b){m.cssHooks[b]={get:function(a,c,d){return c?Ob.test(m.css(a,"display"))&&0===a.offsetWidth?m.swap(a,Rb,function(){return Yb(a,b,d)}):Yb(a,b,d):void 0},set:function(a,c,d){var e=d&&Ib(a);return Wb(a,c,d?Xb(a,b,d,k.boxSizing&&"border-box"===m.css(a,"boxSizing",!1,e),e):0)}}}),k.opacity||(m.cssHooks.opacity={get:function(a,b){return Nb.test((b&&a.currentStyle?a.currentStyle.filter:a.style.filter)||"")?.01*parseFloat(RegExp.$1)+"":b?"1":""},set:function(a,b){var c=a.style,d=a.currentStyle,e=m.isNumeric(b)?"alpha(opacity="+100*b+")":"",f=d&&d.filter||c.filter||"";c.zoom=1,(b>=1||""===b)&&""===m.trim(f.replace(Mb,""))&&c.removeAttribute&&(c.removeAttribute("filter"),""===b||d&&!d.filter)||(c.filter=Mb.test(f)?f.replace(Mb,e):f+" "+e)}}),m.cssHooks.marginRight=Lb(k.reliableMarginRight,function(a,b){return b?m.swap(a,{display:"inline-block"},Jb,[a,"marginRight"]):void 0}),m.each({margin:"",padding:"",border:"Width"},function(a,b){m.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];4>d;d++)e[a+T[d]+b]=f[d]||f[d-2]||f[0];return e}},Gb.test(a)||(m.cssHooks[a+b].set=Wb)}),m.fn.extend({css:function(a,b){return V(this,function(a,b,c){var d,e,f={},g=0;if(m.isArray(b)){for(d=Ib(a),e=b.length;e>g;g++)f[b[g]]=m.css(a,b[g],!1,d);return f}return void 0!==c?m.style(a,b,c):m.css(a,b)},a,b,arguments.length>1)},show:function(){return Vb(this,!0)},hide:function(){return Vb(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){U(this)?m(this).show():m(this).hide()})}});function Zb(a,b,c,d,e){return new Zb.prototype.init(a,b,c,d,e)}m.Tween=Zb,Zb.prototype={constructor:Zb,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||"swing",this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(m.cssNumber[c]?"":"px")
+},cur:function(){var a=Zb.propHooks[this.prop];return a&&a.get?a.get(this):Zb.propHooks._default.get(this)},run:function(a){var b,c=Zb.propHooks[this.prop];return this.pos=b=this.options.duration?m.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Zb.propHooks._default.set(this),this}},Zb.prototype.init.prototype=Zb.prototype,Zb.propHooks={_default:{get:function(a){var b;return null==a.elem[a.prop]||a.elem.style&&null!=a.elem.style[a.prop]?(b=m.css(a.elem,a.prop,""),b&&"auto"!==b?b:0):a.elem[a.prop]},set:function(a){m.fx.step[a.prop]?m.fx.step[a.prop](a):a.elem.style&&(null!=a.elem.style[m.cssProps[a.prop]]||m.cssHooks[a.prop])?m.style(a.elem,a.prop,a.now+a.unit):a.elem[a.prop]=a.now}}},Zb.propHooks.scrollTop=Zb.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},m.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2}},m.fx=Zb.prototype.init,m.fx.step={};var $b,_b,ac=/^(?:toggle|show|hide)$/,bc=new RegExp("^(?:([+-])=|)("+S+")([a-z%]*)$","i"),cc=/queueHooks$/,dc=[ic],ec={"*":[function(a,b){var c=this.createTween(a,b),d=c.cur(),e=bc.exec(b),f=e&&e[3]||(m.cssNumber[a]?"":"px"),g=(m.cssNumber[a]||"px"!==f&&+d)&&bc.exec(m.css(c.elem,a)),h=1,i=20;if(g&&g[3]!==f){f=f||g[3],e=e||[],g=+d||1;do h=h||".5",g/=h,m.style(c.elem,a,g+f);while(h!==(h=c.cur()/d)&&1!==h&&--i)}return e&&(g=c.start=+g||+d||0,c.unit=f,c.end=e[1]?g+(e[1]+1)*e[2]:+e[2]),c}]};function fc(){return setTimeout(function(){$b=void 0}),$b=m.now()}function gc(a,b){var c,d={height:a},e=0;for(b=b?1:0;4>e;e+=2-b)c=T[e],d["margin"+c]=d["padding"+c]=a;return b&&(d.opacity=d.width=a),d}function hc(a,b,c){for(var d,e=(ec[b]||[]).concat(ec["*"]),f=0,g=e.length;g>f;f++)if(d=e[f].call(c,b,a))return d}function ic(a,b,c){var d,e,f,g,h,i,j,l,n=this,o={},p=a.style,q=a.nodeType&&U(a),r=m._data(a,"fxshow");c.queue||(h=m._queueHooks(a,"fx"),null==h.unqueued&&(h.unqueued=0,i=h.empty.fire,h.empty.fire=function(){h.unqueued||i()}),h.unqueued++,n.always(function(){n.always(function(){h.unqueued--,m.queue(a,"fx").length||h.empty.fire()})})),1===a.nodeType&&("height"in b||"width"in b)&&(c.overflow=[p.overflow,p.overflowX,p.overflowY],j=m.css(a,"display"),l="none"===j?m._data(a,"olddisplay")||Fb(a.nodeName):j,"inline"===l&&"none"===m.css(a,"float")&&(k.inlineBlockNeedsLayout&&"inline"!==Fb(a.nodeName)?p.zoom=1:p.display="inline-block")),c.overflow&&(p.overflow="hidden",k.shrinkWrapBlocks()||n.always(function(){p.overflow=c.overflow[0],p.overflowX=c.overflow[1],p.overflowY=c.overflow[2]}));for(d in b)if(e=b[d],ac.exec(e)){if(delete b[d],f=f||"toggle"===e,e===(q?"hide":"show")){if("show"!==e||!r||void 0===r[d])continue;q=!0}o[d]=r&&r[d]||m.style(a,d)}else j=void 0;if(m.isEmptyObject(o))"inline"===("none"===j?Fb(a.nodeName):j)&&(p.display=j);else{r?"hidden"in r&&(q=r.hidden):r=m._data(a,"fxshow",{}),f&&(r.hidden=!q),q?m(a).show():n.done(function(){m(a).hide()}),n.done(function(){var b;m._removeData(a,"fxshow");for(b in o)m.style(a,b,o[b])});for(d in o)g=hc(q?r[d]:0,d,n),d in r||(r[d]=g.start,q&&(g.end=g.start,g.start="width"===d||"height"===d?1:0))}}function jc(a,b){var c,d,e,f,g;for(c in a)if(d=m.camelCase(c),e=b[d],f=a[c],m.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=m.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function kc(a,b,c){var d,e,f=0,g=dc.length,h=m.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=$b||fc(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i>g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1>f&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:m.extend({},b),opts:m.extend(!0,{specialEasing:{}},c),originalProperties:b,originalOptions:c,startTime:$b||fc(),duration:c.duration,tweens:[],createTween:function(b,c){var d=m.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d>c;c++)j.tweens[c].run(1);return b?h.resolveWith(a,[j,b]):h.rejectWith(a,[j,b]),this}}),k=j.props;for(jc(k,j.opts.specialEasing);g>f;f++)if(d=dc[f].call(j,a,k,j.opts))return d;return m.map(k,hc,j),m.isFunction(j.opts.start)&&j.opts.start.call(a,j),m.fx.timer(m.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}m.Animation=m.extend(kc,{tweener:function(a,b){m.isFunction(a)?(b=a,a=["*"]):a=a.split(" ");for(var c,d=0,e=a.length;e>d;d++)c=a[d],ec[c]=ec[c]||[],ec[c].unshift(b)},prefilter:function(a,b){b?dc.unshift(a):dc.push(a)}}),m.speed=function(a,b,c){var d=a&&"object"==typeof a?m.extend({},a):{complete:c||!c&&b||m.isFunction(a)&&a,duration:a,easing:c&&b||b&&!m.isFunction(b)&&b};return d.duration=m.fx.off?0:"number"==typeof d.duration?d.duration:d.duration in m.fx.speeds?m.fx.speeds[d.duration]:m.fx.speeds._default,(null==d.queue||d.queue===!0)&&(d.queue="fx"),d.old=d.complete,d.complete=function(){m.isFunction(d.old)&&d.old.call(this),d.queue&&m.dequeue(this,d.queue)},d},m.fn.extend({fadeTo:function(a,b,c,d){return this.filter(U).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=m.isEmptyObject(a),f=m.speed(b,c,d),g=function(){var b=kc(this,m.extend({},a),f);(e||m._data(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=m.timers,g=m._data(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&cc.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));(b||!c)&&m.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=m._data(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=m.timers,g=d?d.length:0;for(c.finish=!0,m.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g>b;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),m.each(["toggle","show","hide"],function(a,b){var c=m.fn[b];m.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(gc(b,!0),a,d,e)}}),m.each({slideDown:gc("show"),slideUp:gc("hide"),slideToggle:gc("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){m.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),m.timers=[],m.fx.tick=function(){var a,b=m.timers,c=0;for($b=m.now();c<b.length;c++)a=b[c],a()||b[c]!==a||b.splice(c--,1);b.length||m.fx.stop(),$b=void 0},m.fx.timer=function(a){m.timers.push(a),a()?m.fx.start():m.timers.pop()},m.fx.interval=13,m.fx.start=function(){_b||(_b=setInterval(m.fx.tick,m.fx.interval))},m.fx.stop=function(){clearInterval(_b),_b=null},m.fx.speeds={slow:600,fast:200,_default:400},m.fn.delay=function(a,b){return a=m.fx?m.fx.speeds[a]||a:a,b=b||"fx",this.queue(b,function(b,c){var d=setTimeout(b,a);c.stop=function(){clearTimeout(d)}})},function(){var a,b,c,d,e;b=y.createElement("div"),b.setAttribute("className","t"),b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",d=b.getElementsByTagName("a")[0],c=y.createElement("select"),e=c.appendChild(y.createElement("option")),a=b.getElementsByTagName("input")[0],d.style.cssText="top:1px",k.getSetAttribute="t"!==b.className,k.style=/top/.test(d.getAttribute("style")),k.hrefNormalized="/a"===d.getAttribute("href"),k.checkOn=!!a.value,k.optSelected=e.selected,k.enctype=!!y.createElement("form").enctype,c.disabled=!0,k.optDisabled=!e.disabled,a=y.createElement("input"),a.setAttribute("value",""),k.input=""===a.getAttribute("value"),a.value="t",a.setAttribute("type","radio"),k.radioValue="t"===a.value}();var lc=/\r/g;m.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=m.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,m(this).val()):a,null==e?e="":"number"==typeof e?e+="":m.isArray(e)&&(e=m.map(e,function(a){return null==a?"":a+""})),b=m.valHooks[this.type]||m.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=m.valHooks[e.type]||m.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(lc,""):null==c?"":c)}}}),m.extend({valHooks:{option:{get:function(a){var b=m.find.attr(a,"value");return null!=b?b:m.trim(m.text(a))}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type||0>e,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],!(!c.selected&&i!==e||(k.optDisabled?c.disabled:null!==c.getAttribute("disabled"))||c.parentNode.disabled&&m.nodeName(c.parentNode,"optgroup"))){if(b=m(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=m.makeArray(b),g=e.length;while(g--)if(d=e[g],m.inArray(m.valHooks.option.get(d),f)>=0)try{d.selected=c=!0}catch(h){d.scrollHeight}else d.selected=!1;return c||(a.selectedIndex=-1),e}}}}),m.each(["radio","checkbox"],function(){m.valHooks[this]={set:function(a,b){return m.isArray(b)?a.checked=m.inArray(m(a).val(),b)>=0:void 0}},k.checkOn||(m.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var mc,nc,oc=m.expr.attrHandle,pc=/^(?:checked|selected)$/i,qc=k.getSetAttribute,rc=k.input;m.fn.extend({attr:function(a,b){return V(this,m.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){m.removeAttr(this,a)})}}),m.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(a&&3!==f&&8!==f&&2!==f)return typeof a.getAttribute===K?m.prop(a,b,c):(1===f&&m.isXMLDoc(a)||(b=b.toLowerCase(),d=m.attrHooks[b]||(m.expr.match.bool.test(b)?nc:mc)),void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=m.find.attr(a,b),null==e?void 0:e):null!==c?d&&"set"in d&&void 0!==(e=d.set(a,c,b))?e:(a.setAttribute(b,c+""),c):void m.removeAttr(a,b))},removeAttr:function(a,b){var c,d,e=0,f=b&&b.match(E);if(f&&1===a.nodeType)while(c=f[e++])d=m.propFix[c]||c,m.expr.match.bool.test(c)?rc&&qc||!pc.test(c)?a[d]=!1:a[m.camelCase("default-"+c)]=a[d]=!1:m.attr(a,c,""),a.removeAttribute(qc?c:d)},attrHooks:{type:{set:function(a,b){if(!k.radioValue&&"radio"===b&&m.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}}}),nc={set:function(a,b,c){return b===!1?m.removeAttr(a,c):rc&&qc||!pc.test(c)?a.setAttribute(!qc&&m.propFix[c]||c,c):a[m.camelCase("default-"+c)]=a[c]=!0,c}},m.each(m.expr.match.bool.source.match(/\w+/g),function(a,b){var c=oc[b]||m.find.attr;oc[b]=rc&&qc||!pc.test(b)?function(a,b,d){var e,f;return d||(f=oc[b],oc[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,oc[b]=f),e}:function(a,b,c){return c?void 0:a[m.camelCase("default-"+b)]?b.toLowerCase():null}}),rc&&qc||(m.attrHooks.value={set:function(a,b,c){return m.nodeName(a,"input")?void(a.defaultValue=b):mc&&mc.set(a,b,c)}}),qc||(mc={set:function(a,b,c){var d=a.getAttributeNode(c);return d||a.setAttributeNode(d=a.ownerDocument.createAttribute(c)),d.value=b+="","value"===c||b===a.getAttribute(c)?b:void 0}},oc.id=oc.name=oc.coords=function(a,b,c){var d;return c?void 0:(d=a.getAttributeNode(b))&&""!==d.value?d.value:null},m.valHooks.button={get:function(a,b){var c=a.getAttributeNode(b);return c&&c.specified?c.value:void 0},set:mc.set},m.attrHooks.contenteditable={set:function(a,b,c){mc.set(a,""===b?!1:b,c)}},m.each(["width","height"],function(a,b){m.attrHooks[b]={set:function(a,c){return""===c?(a.setAttribute(b,"auto"),c):void 0}}})),k.style||(m.attrHooks.style={get:function(a){return a.style.cssText||void 0},set:function(a,b){return a.style.cssText=b+""}});var sc=/^(?:input|select|textarea|button|object)$/i,tc=/^(?:a|area)$/i;m.fn.extend({prop:function(a,b){return V(this,m.prop,a,b,arguments.length>1)},removeProp:function(a){return a=m.propFix[a]||a,this.each(function(){try{this[a]=void 0,delete this[a]}catch(b){}})}}),m.extend({propFix:{"for":"htmlFor","class":"className"},prop:function(a,b,c){var d,e,f,g=a.nodeType;if(a&&3!==g&&8!==g&&2!==g)return f=1!==g||!m.isXMLDoc(a),f&&(b=m.propFix[b]||b,e=m.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=m.find.attr(a,"tabindex");return b?parseInt(b,10):sc.test(a.nodeName)||tc.test(a.nodeName)&&a.href?0:-1}}}}),k.hrefNormalized||m.each(["href","src"],function(a,b){m.propHooks[b]={get:function(a){return a.getAttribute(b,4)}}}),k.optSelected||(m.propHooks.selected={get:function(a){var b=a.parentNode;return b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex),null}}),m.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){m.propFix[this.toLowerCase()]=this}),k.enctype||(m.propFix.enctype="encoding");var uc=/[\t\r\n\f]/g;m.fn.extend({addClass:function(a){var b,c,d,e,f,g,h=0,i=this.length,j="string"==typeof a&&a;if(m.isFunction(a))return this.each(function(b){m(this).addClass(a.call(this,b,this.className))});if(j)for(b=(a||"").match(E)||[];i>h;h++)if(c=this[h],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(uc," "):" ")){f=0;while(e=b[f++])d.indexOf(" "+e+" ")<0&&(d+=e+" ");g=m.trim(d),c.className!==g&&(c.className=g)}return this},removeClass:function(a){var b,c,d,e,f,g,h=0,i=this.length,j=0===arguments.length||"string"==typeof a&&a;if(m.isFunction(a))return this.each(function(b){m(this).removeClass(a.call(this,b,this.className))});if(j)for(b=(a||"").match(E)||[];i>h;h++)if(c=this[h],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(uc," "):"")){f=0;while(e=b[f++])while(d.indexOf(" "+e+" ")>=0)d=d.replace(" "+e+" "," ");g=a?m.trim(d):"",c.className!==g&&(c.className=g)}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):this.each(m.isFunction(a)?function(c){m(this).toggleClass(a.call(this,c,this.className,b),b)}:function(){if("string"===c){var b,d=0,e=m(this),f=a.match(E)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else(c===K||"boolean"===c)&&(this.className&&m._data(this,"__className__",this.className),this.className=this.className||a===!1?"":m._data(this,"__className__")||"")})},hasClass:function(a){for(var b=" "+a+" ",c=0,d=this.length;d>c;c++)if(1===this[c].nodeType&&(" "+this[c].className+" ").replace(uc," ").indexOf(b)>=0)return!0;return!1}}),m.each("blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu".split(" "),function(a,b){m.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),m.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)},bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}});var vc=m.now(),wc=/\?/,xc=/(,)|(\[|{)|(}|])|"(?:[^"\\\r\n]|\\["\\\/bfnrt]|\\u[\da-fA-F]{4})*"\s*:?|true|false|null|-?(?!0\d)\d+(?:\.\d+|)(?:[eE][+-]?\d+|)/g;m.parseJSON=function(b){if(a.JSON&&a.JSON.parse)return a.JSON.parse(b+"");var c,d=null,e=m.trim(b+"");return e&&!m.trim(e.replace(xc,function(a,b,e,f){return c&&b&&(d=0),0===d?a:(c=e||b,d+=!f-!e,"")}))?Function("return "+e)():m.error("Invalid JSON: "+b)},m.parseXML=function(b){var c,d;if(!b||"string"!=typeof b)return null;try{a.DOMParser?(d=new DOMParser,c=d.parseFromString(b,"text/xml")):(c=new ActiveXObject("Microsoft.XMLDOM"),c.async="false",c.loadXML(b))}catch(e){c=void 0}return c&&c.documentElement&&!c.getElementsByTagName("parsererror").length||m.error("Invalid XML: "+b),c};var yc,zc,Ac=/#.*$/,Bc=/([?&])_=[^&]*/,Cc=/^(.*?):[ \t]*([^\r\n]*)\r?$/gm,Dc=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Ec=/^(?:GET|HEAD)$/,Fc=/^\/\//,Gc=/^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,Hc={},Ic={},Jc="*/".concat("*");try{zc=location.href}catch(Kc){zc=y.createElement("a"),zc.href="",zc=zc.href}yc=Gc.exec(zc.toLowerCase())||[];function Lc(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(E)||[];if(m.isFunction(c))while(d=f[e++])"+"===d.charAt(0)?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Mc(a,b,c,d){var e={},f=a===Ic;function g(h){var i;return e[h]=!0,m.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Nc(a,b){var c,d,e=m.ajaxSettings.flatOptions||{};for(d in b)void 0!==b[d]&&((e[d]?a:c||(c={}))[d]=b[d]);return c&&m.extend(!0,a,c),a}function Oc(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===e&&(e=a.mimeType||b.getResponseHeader("Content-Type"));if(e)for(g in h)if(h[g]&&h[g].test(e)){i.unshift(g);break}if(i[0]in c)f=i[0];else{for(g in c){if(!i[0]||a.converters[g+" "+i[0]]){f=g;break}d||(d=g)}f=f||d}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function Pc(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}m.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:zc,type:"GET",isLocal:Dc.test(yc[1]),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Jc,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/xml/,html:/html/,json:/json/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":m.parseJSON,"text xml":m.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Nc(Nc(a,m.ajaxSettings),b):Nc(m.ajaxSettings,a)},ajaxPrefilter:Lc(Hc),ajaxTransport:Lc(Ic),ajax:function(a,b){"object"==typeof a&&(b=a,a=void 0),b=b||{};var c,d,e,f,g,h,i,j,k=m.ajaxSetup({},b),l=k.context||k,n=k.context&&(l.nodeType||l.jquery)?m(l):m.event,o=m.Deferred(),p=m.Callbacks("once memory"),q=k.statusCode||{},r={},s={},t=0,u="canceled",v={readyState:0,getResponseHeader:function(a){var b;if(2===t){if(!j){j={};while(b=Cc.exec(f))j[b[1].toLowerCase()]=b[2]}b=j[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return 2===t?f:null},setRequestHeader:function(a,b){var c=a.toLowerCase();return t||(a=s[c]=s[c]||a,r[a]=b),this},overrideMimeType:function(a){return t||(k.mimeType=a),this},statusCode:function(a){var b;if(a)if(2>t)for(b in a)q[b]=[q[b],a[b]];else v.always(a[v.status]);return this},abort:function(a){var b=a||u;return i&&i.abort(b),x(0,b),this}};if(o.promise(v).complete=p.add,v.success=v.done,v.error=v.fail,k.url=((a||k.url||zc)+"").replace(Ac,"").replace(Fc,yc[1]+"//"),k.type=b.method||b.type||k.method||k.type,k.dataTypes=m.trim(k.dataType||"*").toLowerCase().match(E)||[""],null==k.crossDomain&&(c=Gc.exec(k.url.toLowerCase()),k.crossDomain=!(!c||c[1]===yc[1]&&c[2]===yc[2]&&(c[3]||("http:"===c[1]?"80":"443"))===(yc[3]||("http:"===yc[1]?"80":"443")))),k.data&&k.processData&&"string"!=typeof k.data&&(k.data=m.param(k.data,k.traditional)),Mc(Hc,k,b,v),2===t)return v;h=k.global,h&&0===m.active++&&m.event.trigger("ajaxStart"),k.type=k.type.toUpperCase(),k.hasContent=!Ec.test(k.type),e=k.url,k.hasContent||(k.data&&(e=k.url+=(wc.test(e)?"&":"?")+k.data,delete k.data),k.cache===!1&&(k.url=Bc.test(e)?e.replace(Bc,"$1_="+vc++):e+(wc.test(e)?"&":"?")+"_="+vc++)),k.ifModified&&(m.lastModified[e]&&v.setRequestHeader("If-Modified-Since",m.lastModified[e]),m.etag[e]&&v.setRequestHeader("If-None-Match",m.etag[e])),(k.data&&k.hasContent&&k.contentType!==!1||b.contentType)&&v.setRequestHeader("Content-Type",k.contentType),v.setRequestHeader("Accept",k.dataTypes[0]&&k.accepts[k.dataTypes[0]]?k.accepts[k.dataTypes[0]]+("*"!==k.dataTypes[0]?", "+Jc+"; q=0.01":""):k.accepts["*"]);for(d in k.headers)v.setRequestHeader(d,k.headers[d]);if(k.beforeSend&&(k.beforeSend.call(l,v,k)===!1||2===t))return v.abort();u="abort";for(d in{success:1,error:1,complete:1})v[d](k[d]);if(i=Mc(Ic,k,b,v)){v.readyState=1,h&&n.trigger("ajaxSend",[v,k]),k.async&&k.timeout>0&&(g=setTimeout(function(){v.abort("timeout")},k.timeout));try{t=1,i.send(r,x)}catch(w){if(!(2>t))throw w;x(-1,w)}}else x(-1,"No Transport");function x(a,b,c,d){var j,r,s,u,w,x=b;2!==t&&(t=2,g&&clearTimeout(g),i=void 0,f=d||"",v.readyState=a>0?4:0,j=a>=200&&300>a||304===a,c&&(u=Oc(k,v,c)),u=Pc(k,u,v,j),j?(k.ifModified&&(w=v.getResponseHeader("Last-Modified"),w&&(m.lastModified[e]=w),w=v.getResponseHeader("etag"),w&&(m.etag[e]=w)),204===a||"HEAD"===k.type?x="nocontent":304===a?x="notmodified":(x=u.state,r=u.data,s=u.error,j=!s)):(s=x,(a||!x)&&(x="error",0>a&&(a=0))),v.status=a,v.statusText=(b||x)+"",j?o.resolveWith(l,[r,x,v]):o.rejectWith(l,[v,x,s]),v.statusCode(q),q=void 0,h&&n.trigger(j?"ajaxSuccess":"ajaxError",[v,k,j?r:s]),p.fireWith(l,[v,x]),h&&(n.trigger("ajaxComplete",[v,k]),--m.active||m.event.trigger("ajaxStop")))}return v},getJSON:function(a,b,c){return m.get(a,b,c,"json")},getScript:function(a,b){return m.get(a,void 0,b,"script")}}),m.each(["get","post"],function(a,b){m[b]=function(a,c,d,e){return m.isFunction(c)&&(e=e||d,d=c,c=void 0),m.ajax({url:a,type:b,dataType:e,data:c,success:d})}}),m.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){m.fn[b]=function(a){return this.on(b,a)}}),m._evalUrl=function(a){return m.ajax({url:a,type:"GET",dataType:"script",async:!1,global:!1,"throws":!0})},m.fn.extend({wrapAll:function(a){if(m.isFunction(a))return this.each(function(b){m(this).wrapAll(a.call(this,b))});if(this[0]){var b=m(a,this[0].ownerDocument).eq(0).clone(!0);this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstChild&&1===a.firstChild.nodeType)a=a.firstChild;return a}).append(this)}return this},wrapInner:function(a){return this.each(m.isFunction(a)?function(b){m(this).wrapInner(a.call(this,b))}:function(){var b=m(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=m.isFunction(a);return this.each(function(c){m(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(){return this.parent().each(function(){m.nodeName(this,"body")||m(this).replaceWith(this.childNodes)}).end()}}),m.expr.filters.hidden=function(a){return a.offsetWidth<=0&&a.offsetHeight<=0||!k.reliableHiddenOffsets()&&"none"===(a.style&&a.style.display||m.css(a,"display"))},m.expr.filters.visible=function(a){return!m.expr.filters.hidden(a)};var Qc=/%20/g,Rc=/\[\]$/,Sc=/\r?\n/g,Tc=/^(?:submit|button|image|reset|file)$/i,Uc=/^(?:input|select|textarea|keygen)/i;function Vc(a,b,c,d){var e;if(m.isArray(b))m.each(b,function(b,e){c||Rc.test(a)?d(a,e):Vc(a+"["+("object"==typeof e?b:"")+"]",e,c,d)});else if(c||"object"!==m.type(b))d(a,b);else for(e in b)Vc(a+"["+e+"]",b[e],c,d)}m.param=function(a,b){var c,d=[],e=function(a,b){b=m.isFunction(b)?b():null==b?"":b,d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(b)};if(void 0===b&&(b=m.ajaxSettings&&m.ajaxSettings.traditional),m.isArray(a)||a.jquery&&!m.isPlainObject(a))m.each(a,function(){e(this.name,this.value)});else for(c in a)Vc(c,a[c],b,e);return d.join("&").replace(Qc,"+")},m.fn.extend({serialize:function(){return m.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=m.prop(this,"elements");return a?m.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!m(this).is(":disabled")&&Uc.test(this.nodeName)&&!Tc.test(a)&&(this.checked||!W.test(a))}).map(function(a,b){var c=m(this).val();return null==c?null:m.isArray(c)?m.map(c,function(a){return{name:b.name,value:a.replace(Sc,"\r\n")}}):{name:b.name,value:c.replace(Sc,"\r\n")}}).get()}}),m.ajaxSettings.xhr=void 0!==a.ActiveXObject?function(){return!this.isLocal&&/^(get|post|head|put|delete|options)$/i.test(this.type)&&Zc()||$c()}:Zc;var Wc=0,Xc={},Yc=m.ajaxSettings.xhr();a.ActiveXObject&&m(a).on("unload",function(){for(var a in Xc)Xc[a](void 0,!0)}),k.cors=!!Yc&&"withCredentials"in Yc,Yc=k.ajax=!!Yc,Yc&&m.ajaxTransport(function(a){if(!a.crossDomain||k.cors){var b;return{send:function(c,d){var e,f=a.xhr(),g=++Wc;if(f.open(a.type,a.url,a.async,a.username,a.password),a.xhrFields)for(e in a.xhrFields)f[e]=a.xhrFields[e];a.mimeType&&f.overrideMimeType&&f.overrideMimeType(a.mimeType),a.crossDomain||c["X-Requested-With"]||(c["X-Requested-With"]="XMLHttpRequest");for(e in c)void 0!==c[e]&&f.setRequestHeader(e,c[e]+"");f.send(a.hasContent&&a.data||null),b=function(c,e){var h,i,j;if(b&&(e||4===f.readyState))if(delete Xc[g],b=void 0,f.onreadystatechange=m.noop,e)4!==f.readyState&&f.abort();else{j={},h=f.status,"string"==typeof f.responseText&&(j.text=f.responseText);try{i=f.statusText}catch(k){i=""}h||!a.isLocal||a.crossDomain?1223===h&&(h=204):h=j.text?200:404}j&&d(h,i,j,f.getAllResponseHeaders())},a.async?4===f.readyState?setTimeout(b):f.onreadystatechange=Xc[g]=b:b()},abort:function(){b&&b(void 0,!0)}}}});function Zc(){try{return new a.XMLHttpRequest}catch(b){}}function $c(){try{return new a.ActiveXObject("Microsoft.XMLHTTP")}catch(b){}}m.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/(?:java|ecma)script/},converters:{"text script":function(a){return m.globalEval(a),a}}}),m.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET",a.global=!1)}),m.ajaxTransport("script",function(a){if(a.crossDomain){var b,c=y.head||m("head")[0]||y.documentElement;return{send:function(d,e){b=y.createElement("script"),b.async=!0,a.scriptCharset&&(b.charset=a.scriptCharset),b.src=a.url,b.onload=b.onreadystatechange=function(a,c){(c||!b.readyState||/loaded|complete/.test(b.readyState))&&(b.onload=b.onreadystatechange=null,b.parentNode&&b.parentNode.removeChild(b),b=null,c||e(200,"success"))},c.insertBefore(b,c.firstChild)},abort:function(){b&&b.onload(void 0,!0)}}}});var _c=[],ad=/(=)\?(?=&|$)|\?\?/;m.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=_c.pop()||m.expando+"_"+vc++;return this[a]=!0,a}}),m.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(ad.test(b.url)?"url":"string"==typeof b.data&&!(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&ad.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=m.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(ad,"$1"+e):b.jsonp!==!1&&(b.url+=(wc.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||m.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,_c.push(e)),g&&m.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),m.parseHTML=function(a,b,c){if(!a||"string"!=typeof a)return null;"boolean"==typeof b&&(c=b,b=!1),b=b||y;var d=u.exec(a),e=!c&&[];return d?[b.createElement(d[1])]:(d=m.buildFragment([a],b,e),e&&e.length&&m(e).remove(),m.merge([],d.childNodes))};var bd=m.fn.load;m.fn.load=function(a,b,c){if("string"!=typeof a&&bd)return bd.apply(this,arguments);var d,e,f,g=this,h=a.indexOf(" ");return h>=0&&(d=m.trim(a.slice(h,a.length)),a=a.slice(0,h)),m.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(f="POST"),g.length>0&&m.ajax({url:a,type:f,dataType:"html",data:b}).done(function(a){e=arguments,g.html(d?m("<div>").append(m.parseHTML(a)).find(d):a)}).complete(c&&function(a,b){g.each(c,e||[a.responseText,b,a])}),this},m.expr.filters.animated=function(a){return m.grep(m.timers,function(b){return a===b.elem}).length};var cd=a.document.documentElement;function dd(a){return m.isWindow(a)?a:9===a.nodeType?a.defaultView||a.parentWindow:!1}m.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=m.css(a,"position"),l=m(a),n={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=m.css(a,"top"),i=m.css(a,"left"),j=("absolute"===k||"fixed"===k)&&m.inArray("auto",[f,i])>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),m.isFunction(b)&&(b=b.call(a,c,h)),null!=b.top&&(n.top=b.top-h.top+g),null!=b.left&&(n.left=b.left-h.left+e),"using"in b?b.using.call(a,n):l.css(n)}},m.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){m.offset.setOffset(this,a,b)});var b,c,d={top:0,left:0},e=this[0],f=e&&e.ownerDocument;if(f)return b=f.documentElement,m.contains(b,e)?(typeof e.getBoundingClientRect!==K&&(d=e.getBoundingClientRect()),c=dd(f),{top:d.top+(c.pageYOffset||b.scrollTop)-(b.clientTop||0),left:d.left+(c.pageXOffset||b.scrollLeft)-(b.clientLeft||0)}):d},position:function(){if(this[0]){var a,b,c={top:0,left:0},d=this[0];return"fixed"===m.css(d,"position")?b=d.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),m.nodeName(a[0],"html")||(c=a.offset()),c.top+=m.css(a[0],"borderTopWidth",!0),c.left+=m.css(a[0],"borderLeftWidth",!0)),{top:b.top-c.top-m.css(d,"marginTop",!0),left:b.left-c.left-m.css(d,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent||cd;while(a&&!m.nodeName(a,"html")&&"static"===m.css(a,"position"))a=a.offsetParent;return a||cd})}}),m.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c=/Y/.test(b);m.fn[a]=function(d){return V(this,function(a,d,e){var f=dd(a);return void 0===e?f?b in f?f[b]:f.document.documentElement[d]:a[d]:void(f?f.scrollTo(c?m(f).scrollLeft():e,c?e:m(f).scrollTop()):a[d]=e)},a,d,arguments.length,null)}}),m.each(["top","left"],function(a,b){m.cssHooks[b]=Lb(k.pixelPosition,function(a,c){return c?(c=Jb(a,b),Hb.test(c)?m(a).position()[b]+"px":c):void 0})}),m.each({Height:"height",Width:"width"},function(a,b){m.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){m.fn[d]=function(d,e){var f=arguments.length&&(c||"boolean"!=typeof d),g=c||(d===!0||e===!0?"margin":"border");return V(this,function(b,c,d){var e;return m.isWindow(b)?b.document.documentElement["client"+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body["scroll"+a],e["scroll"+a],b.body["offset"+a],e["offset"+a],e["client"+a])):void 0===d?m.css(b,c,g):m.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),m.fn.size=function(){return this.length},m.fn.andSelf=m.fn.addBack,"function"==typeof define&&define.amd&&define("jquery",[],function(){return m});var ed=a.jQuery,fd=a.$;return m.noConflict=function(b){return a.$===m&&(a.$=fd),b&&a.jQuery===m&&(a.jQuery=ed),m},typeof b===K&&(a.jQuery=a.$=m),m});
 (function() {
   window.uploadcare || (window.uploadcare = {});
 
   uploadcare.namespace = function(path, fn) {
-    var part, target, _i, _len, _ref;
-    target = uploadcare;
-    if (path) {
-      _ref = path.split('.');
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        part = _ref[_i];
-        target[part] || (target[part] = {});
-        target = target[part];
-      }
+    var first, part, parts, rest, target, _i, _len;
+    parts = path.split('.');
+    first = parts[0];
+    rest = parts.slice(1);
+    if (first === 'uploadcare') {
+      target = uploadcare;
+    } else {
+      window[first] || (window[first] = {});
+      target = window[first];
+    }
+    for (_i = 0, _len = rest.length; _i < _len; _i++) {
+      part = rest[_i];
+      target[part] || (target[part] = {});
+      target = target[part];
     }
     return fn(target);
   };
@@ -41,6 +46,77 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
   };
 
 }).call(this);
+// from https://github.com/kossnocorp/role
+
+!function($){
+  function rewriteSelector(context, name, argPos){
+    var original = context[name];
+
+    if (!original) return;
+
+    context[name] = function(){
+      arguments[argPos] = arguments[argPos].replace(/@([\w\u00c0-\uFFFF\-]+)/g, '[role~="$1"]');
+      return original.apply(context, arguments);
+    };
+
+    $.extend(context[name], original);
+  }
+
+  rewriteSelector($, 'find', 0);
+  rewriteSelector($, 'multiFilter', 0);
+  rewriteSelector($.find, 'matchesSelector', 1);
+  rewriteSelector($.find, 'matches', 0);
+
+  function parse(roleString, without){
+    var role, result = [], roles = $.trim(roleString).split(/\s+/);
+
+    for(var i=0; i<roles.length; i++) {
+      role = roles[i];
+      if (!~$.inArray(role, result) && (!without || !~$.inArray(role, without)))
+        result.push(role);
+    }
+
+    return result;
+  };
+
+  $.extend($.fn, {
+    roles: function(){ return parse(this.attr('role')); },
+
+    hasRole: function(roleName){
+      var roles = parse(roleName);
+      for(var i=0;i<roles.length;i++)
+        if (!this.is('@'+roles[i])) return false;
+
+      return true;
+    },
+
+    addRole: function(roleName){
+      if (this.hasRole(roleName)) return this;
+
+      return this.each(function(_, element){
+        var $el = $(element);
+        $el.attr('role', parse($el.attr('role') + ' ' + roleName).join(' '));
+      });
+    },
+
+    removeRole: function(roleName){
+      if (!this.hasRole(roleName)) return this;
+
+      return this.each(function(_, element){
+        var $el = $(element);
+        $el.attr('role', parse($el.attr('role'), parse(roleName)).join(' '));
+      });
+    },
+
+    toggleRole: function(roleName){
+      var roles = parse(roleName);
+      for(var i=0;i<roles.length;i++)
+        this[this.hasRole(roles[i]) ? 'removeRole' : 'addRole'].call(this, roles[i]);
+      return this;
+    }
+  });
+}(jQuery)
+;
 // from https://github.com/jaubourg/ajaxHooks/blob/master/src/xdr.js
 
 if ( window.XDomainRequest ) {
@@ -145,7 +221,7 @@ if ( window.XDomainRequest ) {
   };
 
 
-  var movableName = 'uploadcareMovable';
+  var movableName = 'uploadcareMoveble';
   var sortableName = 'uploadcareSortable';
   var extend = {};
   extend[movableName] = function(o) {
@@ -283,7 +359,7 @@ if ( window.XDomainRequest ) {
 
     oMovable.start = function(info) {
       o.start(info);
-      finder = new nearestFinder(parent.find(oMovable.items).not(info.fake));
+      finder = new nearestFinder(parent.find(oMovable.items));
       initialNext = info.dragged.next();
     };
 
@@ -1633,7 +1709,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('utils.abilities', function(ns) {
+  uploadcare.namespace('uploadcare.utils.abilities', function(ns) {
     var ios, ver;
     ns.fileAPI = !!(window.File && window.FileList && window.FileReader);
     ns.sendFileAPI = !!(window.FormData && ns.fileAPI);
@@ -1665,68 +1741,87 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var $,
-    __hasProp = {}.hasOwnProperty,
-    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
-
-  $ = uploadcare.jQuery;
-
-  uploadcare.namespace('utils.pusher', function(ns) {
-    var ManagedPusher, pushers, _ref;
+  uploadcare.namespace('uploadcare.utils.pusher', function(ns) {
+    var hasOwners, pusherInstance, pusherWrapped, pushers, releasePusher, updateConnection;
     pushers = {};
-    uploadcare.Pusher.prototype.constructor = uploadcare.Pusher;
-    ManagedPusher = (function(_super) {
-      __extends(ManagedPusher, _super);
-
-      function ManagedPusher() {
-        _ref = ManagedPusher.__super__.constructor.apply(this, arguments);
-        return _ref;
+    ns.getPusher = function(key, owner) {
+      if (!(key in pushers)) {
+        pushers[key] = {
+          instance: null,
+          owners: {}
+        };
       }
-
-      ManagedPusher.prototype.subscribe = function(name) {
-        if (this.disconnectTimeout) {
-          clearTimeout(this.disconnectTimeout);
-          this.disconnectTimeout = null;
-        }
-        this.connect();
-        return ManagedPusher.__super__.subscribe.apply(this, arguments);
-      };
-
-      ManagedPusher.prototype.unsubscribe = function(name) {
-        var _this = this;
-        ManagedPusher.__super__.unsubscribe.apply(this, arguments);
-        if ($.isEmptyObject(this.channels.channels)) {
-          return this.disconnectTimeout = setTimeout(function() {
-            _this.disconnectTimeout = null;
-            return _this.disconnect();
-          }, 5000);
-        }
-      };
-
-      return ManagedPusher;
-
-    })(uploadcare.Pusher);
-    return ns.getPusher = function(key) {
-      if (pushers[key] == null) {
-        pushers[key] = new ManagedPusher(key);
+      if (!pushers[key].owners[owner]) {
+        pushers[key].owners[owner] = true;
       }
-      pushers[key].connect();
-      return pushers[key];
+      updateConnection(key);
+      return pusherWrapped(key, owner);
+    };
+    releasePusher = function(key, owner) {
+      if (!pushers[key].owners[owner]) {
+        return;
+      }
+      pushers[key].owners[owner] = false;
+      return updateConnection(key);
+    };
+    hasOwners = function(key) {
+      var owner;
+      return ((function() {
+        var _results;
+        _results = [];
+        for (owner in pushers[key].owners) {
+          if (pushers[key].owners[owner]) {
+            _results.push(owner);
+          }
+        }
+        return _results;
+      })()).length > 0;
+    };
+    updateConnection = function(key) {
+      var instance;
+      instance = pusherInstance(key);
+      if (hasOwners(key)) {
+        return instance.connect();
+      } else {
+        return setTimeout(function() {
+          if (!hasOwners(key)) {
+            return instance.disconnect();
+          }
+        }, 5000);
+      }
+    };
+    pusherInstance = function(key) {
+      var _ref;
+      if (((_ref = pushers[key]) != null ? _ref.instance : void 0) != null) {
+        return pushers[key].instance;
+      }
+      return pushers[key].instance = new uploadcare.Pusher(key);
+    };
+    return pusherWrapped = function(key, owner) {
+      var Wrapped;
+      Wrapped = function() {
+        this.owner = owner;
+        this.release = function() {
+          return releasePusher(key, owner);
+        };
+        return this;
+      };
+      Wrapped.prototype = pusherInstance(key);
+      return new Wrapped();
     };
   });
 
 }).call(this);
 (function() {
-  var $,
+  var $, namespace,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; },
-    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __slice = [].slice;
 
-  $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('utils', function(utils) {
+  namespace('uploadcare.utils', function(utils) {
     var _ref;
     utils.Collection = (function() {
       function Collection(items) {
@@ -1736,8 +1831,8 @@ this.Pusher = Pusher;
         }
         this.onAdd = $.Callbacks();
         this.onRemove = $.Callbacks();
-        this.onSort = $.Callbacks();
-        this.onReplace = $.Callbacks();
+        this.onReplaced = $.Callbacks();
+        this.onSorted = $.Callbacks();
         this.__items = [];
         for (_i = 0, _len = items.length; _i < _len; _i++) {
           item = items[_i];
@@ -1746,57 +1841,52 @@ this.Pusher = Pusher;
       }
 
       Collection.prototype.add = function(item) {
-        return this.__add(item, this.__items.length);
-      };
-
-      Collection.prototype.__add = function(item, i) {
-        this.__items.splice(i, 0, item);
-        return this.onAdd.fire(item, i);
+        this.__items.push(item);
+        return this.onAdd.fire(item);
       };
 
       Collection.prototype.remove = function(item) {
-        var i;
-        i = $.inArray(item, this.__items);
-        if (i !== -1) {
-          return this.__remove(item, i);
+        if (utils.remove(this.__items, item)) {
+          return this.onRemove.fire(item);
         }
       };
 
-      Collection.prototype.__remove = function(item, i) {
-        this.__items.splice(i, 1);
-        return this.onRemove.fire(item, i);
-      };
-
       Collection.prototype.clear = function() {
-        var i, item, items, _i, _len, _results;
-        items = this.get();
-        this.__items.length = 0;
+        var item, _i, _len, _ref, _results;
+        _ref = this.get();
         _results = [];
-        for (i = _i = 0, _len = items.length; _i < _len; i = ++_i) {
-          item = items[i];
-          _results.push(this.onRemove.fire(item, i));
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          item = _ref[_i];
+          _results.push(this.remove(item));
         }
         return _results;
       };
 
       Collection.prototype.replace = function(oldItem, newItem) {
-        var i;
-        if (oldItem !== newItem) {
-          i = $.inArray(oldItem, this.__items);
-          if (i !== -1) {
-            return this.__replace(oldItem, newItem, i);
+        var i, item, _i, _len, _ref, _results;
+        if (!(oldItem === newItem)) {
+          _ref = this.__items;
+          _results = [];
+          for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+            item = _ref[i];
+            if (item === oldItem) {
+              _results.push(this.__replace(oldItem, newItem, i));
+            } else {
+              _results.push(void 0);
+            }
           }
+          return _results;
         }
       };
 
       Collection.prototype.__replace = function(oldItem, newItem, i) {
         this.__items[i] = newItem;
-        return this.onReplace.fire(oldItem, newItem, i);
+        return this.onReplaced.fire(oldItem, newItem, i);
       };
 
       Collection.prototype.sort = function(comparator) {
         this.__items.sort(comparator);
-        return this.onSort.fire();
+        return this.onSorted.fire();
       };
 
       Collection.prototype.get = function(index) {
@@ -1844,65 +1934,14 @@ this.Pusher = Pusher;
       __extends(CollectionOfPromises, _super);
 
       function CollectionOfPromises() {
-        this.onAnyProgress = __bind(this.onAnyProgress, this);
-        this.onAnyFail = __bind(this.onAnyFail, this);
-        this.onAnyDone = __bind(this.onAnyDone, this);
-        this.anyDoneList = $.Callbacks();
-        this.anyFailList = $.Callbacks();
-        this.anyProgressList = $.Callbacks();
-        this.anyProgressList.add(function(item, firstArgument) {
+        this.onAnyDone = $.Callbacks();
+        this.onAnyFail = $.Callbacks();
+        this.onAnyProgress = $.Callbacks();
+        this.onAnyProgress.add(function(item, firstArgument) {
           return $(item).data('lastProgress', firstArgument);
         });
         CollectionOfPromises.__super__.constructor.apply(this, arguments);
       }
-
-      CollectionOfPromises.prototype.onAnyDone = function(cb) {
-        var file, _i, _len, _ref1, _results;
-        this.anyDoneList.add(cb);
-        _ref1 = this.__items;
-        _results = [];
-        for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-          file = _ref1[_i];
-          if (file.state() === 'resolved') {
-            _results.push(file.done(function() {
-              return cb.apply(null, [file].concat(__slice.call(arguments)));
-            }));
-          } else {
-            _results.push(void 0);
-          }
-        }
-        return _results;
-      };
-
-      CollectionOfPromises.prototype.onAnyFail = function(cb) {
-        var file, _i, _len, _ref1, _results;
-        this.anyFailList.add(cb);
-        _ref1 = this.__items;
-        _results = [];
-        for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-          file = _ref1[_i];
-          if (file.state() === 'rejected') {
-            _results.push(file.fail(function() {
-              return cb.apply(null, [file].concat(__slice.call(arguments)));
-            }));
-          } else {
-            _results.push(void 0);
-          }
-        }
-        return _results;
-      };
-
-      CollectionOfPromises.prototype.onAnyProgress = function(cb) {
-        var file, _i, _len, _ref1, _results;
-        this.anyProgressList.add(cb);
-        _ref1 = this.__items;
-        _results = [];
-        for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-          file = _ref1[_i];
-          _results.push(cb(file, $(file).data('lastProgress')));
-        }
-        return _results;
-      };
 
       CollectionOfPromises.prototype.lastProgresses = function() {
         var item, _i, _len, _ref1, _results;
@@ -1916,20 +1955,11 @@ this.Pusher = Pusher;
       };
 
       CollectionOfPromises.prototype.add = function(item) {
-        if (!(item && item.then)) {
+        if (!(item && item.done && item.fail && item.then)) {
           return;
         }
         CollectionOfPromises.__super__.add.apply(this, arguments);
         return this.__watchItem(item);
-      };
-
-      CollectionOfPromises.prototype.__replace = function(oldItem, newItem, i) {
-        if (!(newItem && newItem.then)) {
-          return this.remove(oldItem);
-        } else {
-          CollectionOfPromises.__super__.__replace.apply(this, arguments);
-          return this.__watchItem(newItem);
-        }
       };
 
       CollectionOfPromises.prototype.__watchItem = function(item) {
@@ -1937,12 +1967,24 @@ this.Pusher = Pusher;
           _this = this;
         handler = function(callbacks) {
           return function() {
+            var args;
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             if (__indexOf.call(_this.__items, item) >= 0) {
-              return callbacks.fire.apply(callbacks, [item].concat(__slice.call(arguments)));
+              args.unshift(item);
+              return callbacks.fire.apply(callbacks, args);
             }
           };
         };
-        return item.then(handler(this.anyDoneList), handler(this.anyFailList), handler(this.anyProgressList));
+        return item.then(handler(this.onAnyDone), handler(this.onAnyFail), handler(this.onAnyProgress));
+      };
+
+      CollectionOfPromises.prototype.__replace = function(oldItem, newItem, i) {
+        if (!(newItem && newItem.done && newItem.fail && newItem.then)) {
+          return this.remove(oldItem);
+        } else {
+          CollectionOfPromises.__super__.__replace.apply(this, arguments);
+          return this.__watchItem(newItem);
+        }
       };
 
       return CollectionOfPromises;
@@ -1952,28 +1994,24 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var __slice = [].slice;
+  var namespace;
 
-  uploadcare.namespace('utils', function(ns) {
+  namespace = uploadcare.namespace;
+
+  namespace('uploadcare.utils', function(ns) {
     var common, messages;
-    ns.log = function() {
-      var _ref;
-      return (_ref = window.console) != null ? typeof _ref.log === "function" ? _ref.log.apply(_ref, arguments) : void 0 : void 0;
-    };
-    ns.debug = function() {
-      var _ref, _ref1;
-      if ((_ref = window.console) != null ? _ref.debug : void 0) {
-        return (_ref1 = window.console).debug.apply(_ref1, arguments);
+    ns.log = function(msg) {
+      if (window.console && console.log) {
+        return console.log(msg);
       } else {
-        return ns.log.apply(ns, ["Debug:"].concat(__slice.call(arguments)));
+
       }
     };
-    ns.warn = function() {
-      var _ref, _ref1;
-      if ((_ref = window.console) != null ? _ref.warn : void 0) {
-        return (_ref1 = window.console).warn.apply(_ref1, arguments);
+    ns.warn = function(msg) {
+      if (window.console && console.warn) {
+        return console.warn(msg);
       } else {
-        return ns.log.apply(ns, ["Warning:"].concat(__slice.call(arguments)));
+        return ns.log("Warning: " + msg);
       }
     };
     messages = {};
@@ -1995,61 +2033,12 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var $;
+  var $, namespace,
+    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('utils', function(ns) {
-    var callbacks,
-      _this = this;
-    callbacks = {};
-    $(window).on("message", function(_arg) {
-      var e, item, message, _i, _len, _ref, _results;
-      e = _arg.originalEvent;
-      try {
-        message = JSON.parse(e.data);
-      } catch (_error) {
-        return;
-      }
-      if (message.type in callbacks) {
-        _ref = callbacks[message.type];
-        _results = [];
-        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          item = _ref[_i];
-          if (e.source === item[0]) {
-            _results.push(item[1](message));
-          } else {
-            _results.push(void 0);
-          }
-        }
-        return _results;
-      }
-    });
-    ns.registerMessage = function(type, sender, callback) {
-      if (!(type in callbacks)) {
-        callbacks[type] = [];
-      }
-      return callbacks[type].push([sender, callback]);
-    };
-    return ns.unregisterMessage = function(type, sender) {
-      if (type in callbacks) {
-        return callbacks[type] = $.grep(callbacks[type], function(item) {
-          return item[0] !== sender;
-        });
-      }
-    };
-  });
-
-}).call(this);
-(function() {
-  var $,
-    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; },
-    __slice = [].slice;
-
-  $ = uploadcare.jQuery;
-
-  uploadcare.namespace('utils', function(ns) {
-    var pipeTuples;
+  namespace('uploadcare.utils', function(ns) {
     ns.unique = function(arr) {
       var item, result, _i, _len;
       result = [];
@@ -2094,6 +2083,16 @@ this.Pusher = Pusher;
     ns.wrapToPromise = function(value) {
       return $.Deferred().resolve(value).promise();
     };
+    ns.remove = function(array, item) {
+      var index;
+      index = $.inArray(item, array);
+      if (index !== -1) {
+        array.splice(index, 1);
+        return true;
+      } else {
+        return false;
+      }
+    };
     ns.then = function(pr, doneFilter, failFilter, progressFilter) {
       var compose, df;
       df = $.Deferred();
@@ -2132,7 +2131,7 @@ this.Pusher = Pusher;
       return target;
     };
     ns.upperCase = function(s) {
-      return s.replace(/([A-Z])/g, '_$1').toUpperCase();
+      return s.replace(/-/g, '_').toUpperCase();
     };
     ns.publicCallbacks = function(callbacks) {
       var result;
@@ -2168,12 +2167,20 @@ this.Pusher = Pusher;
       return new RegExp("^" + parts.join('.+') + "$", flags);
     };
     ns.normalizeUrl = function(url) {
-      var scheme;
+      var parts, scheme;
       scheme = document.location.protocol;
       if (scheme !== 'http:') {
         scheme = 'https:';
       }
-      return url.replace(/^\/\//, scheme + '//').replace(/\/+$/, '');
+      parts = url.match(/^([^:/?#]+:)?\/?(\/)?/);
+      if (!parts[1]) {
+        if (parts[2]) {
+          url = "" + scheme + url;
+        } else if (!parts[0]) {
+          url = "" + scheme + "//" + url;
+        }
+      }
+      return url.replace(/\/+$/, '');
     };
     ns.fitText = function(text, max) {
       var head, tail;
@@ -2201,31 +2208,6 @@ this.Pusher = Pusher;
       } else {
         return objSize.slice();
       }
-    };
-    ns.applyCropSelectionToFile = function(file, crop, size, coords) {
-      var downscale, h, modifiers, prefered, upscale, w, wholeImage,
-        _this = this;
-      w = coords.width, h = coords.height;
-      prefered = crop.preferedSize;
-      modifiers = '';
-      wholeImage = w === size[0] && h === size[1];
-      if (!wholeImage) {
-        modifiers += "-/crop/" + w + "x" + h + "/" + coords.left + "," + coords.top + "/";
-      }
-      downscale = crop.downscale && (w > prefered[0] || h > prefered[1]);
-      upscale = crop.upscale && (w < prefered[0] || h < prefered[1]);
-      if (downscale || upscale) {
-        coords.sw = prefered[0], coords.sh = prefered[1];
-        modifiers += "-/resize/" + (prefered.join('x')) + "/";
-      } else if (!wholeImage) {
-        modifiers += "-/preview/";
-      }
-      return file.then(function(info) {
-        info.cdnUrlModifiers = modifiers;
-        info.cdnUrl = "" + info.originalUrl + (modifiers || '');
-        info.crop = coords;
-        return info;
-      });
     };
     ns.fileInput = function(container, settings, fn) {
       var accept, input, run;
@@ -2325,6 +2307,7 @@ this.Pusher = Pusher;
         var text;
         if (data.error) {
           text = data.error.content || data.error;
+          ns.warn("JSONP error: " + text + " while loading " + url);
           return $.Deferred().reject(text);
         } else {
           return data;
@@ -2355,7 +2338,7 @@ this.Pusher = Pusher;
         type: /:(.+\/.+);/.exec(dataURL[0])[1]
       }));
     };
-    ns.taskRunner = function(capacity) {
+    return ns.taskRunner = function(capacity) {
       var queue, release, run, running;
       running = 0;
       queue = [];
@@ -2371,45 +2354,23 @@ this.Pusher = Pusher;
         }
       };
       return run = function(task) {
-        if (!capacity || running < capacity) {
+        if (running < capacity) {
           running += 1;
-          return ns.defer(function() {
-            return task(release);
-          });
+          return task(release);
         } else {
           return queue.push(task);
         }
       };
     };
-    pipeTuples = [["notify", "progress", 2], ["resolve", "done", 0], ["reject", "fail", 1]];
-    return ns.fixedPipe = function() {
-      var fns, promise;
-      promise = arguments[0], fns = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
-      return $.Deferred(function(newDefer) {
-        return $.each(pipeTuples, function(i, tuple) {
-          var fn;
-          fn = $.isFunction(fns[tuple[2]]) && fns[tuple[2]];
-          return promise[tuple[1]](function() {
-            var returned;
-            returned = fn && fn.apply(this, arguments);
-            if (returned && $.isFunction(returned.promise)) {
-              return returned.promise().progress(newDefer.notify).done(newDefer.resolve).fail(newDefer.reject);
-            } else {
-              return newDefer[tuple[0] + "With"](this === promise ? newDefer.promise() : this, fn ? [returned] : arguments);
-            }
-          });
-        });
-      }).promise();
-    };
   });
 
 }).call(this);
 (function() {
-  var $, utils;
+  var $, namespace, utils;
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
-  uploadcare.namespace('utils.imageProcessor', function(ns) {
+  namespace('uploadcare.utils.imageProcessor', function(ns) {
     var Blob, DataView, FileReader, URL, taskRunner, _ref;
     DataView = window.DataView;
     FileReader = ((_ref = window.FileReader) != null ? _ref.prototype.readAsArrayBuffer : void 0) && window.FileReader;
@@ -2538,7 +2499,7 @@ this.Pusher = Pusher;
       return df.promise();
     };
     ns.readJpegChunks = function(file) {
-      var df, pos, readNext, readNextChunk, readToView;
+      var df, pos, readNext, readToView;
       readToView = function(file, cb) {
         var reader;
         reader = new FileReader();
@@ -2551,18 +2512,6 @@ this.Pusher = Pusher;
         return reader.readAsArrayBuffer(file);
       };
       readNext = function() {
-        return readToView(file.slice(pos, pos + 128), function(view) {
-          var i, _i, _ref1;
-          for (i = _i = 0, _ref1 = view.byteLength; 0 <= _ref1 ? _i < _ref1 : _i > _ref1; i = 0 <= _ref1 ? ++_i : --_i) {
-            if (view.getUint8(i) === 0xff) {
-              pos += i;
-              break;
-            }
-          }
-          return readNextChunk();
-        });
-      };
-      readNextChunk = function() {
         var startPos;
         startPos = pos;
         return readToView(file.slice(pos, pos += 4), function(view) {
@@ -2655,51 +2604,43 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var $, expose, utils,
+  var $, expose, namespace, utils,
+    __hasProp = {}.hasOwnProperty,
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  expose = uploadcare.expose, utils = uploadcare.utils, $ = uploadcare.jQuery;
+  expose = uploadcare.expose, namespace = uploadcare.namespace, utils = uploadcare.utils, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('settings', function(ns) {
-    var arrayOptions, defaults, flagOptions, intOptions, normalize, parseCrop, parseShrink, presets, str2arr, urlOptions;
+  namespace('uploadcare.settings', function(ns) {
+    var arrayOptions, defaults, flagOptions, intOptions, key, normalize, parseCrop, parseShrink, presets, publicDefaults, str2arr, urlOptions, value;
     defaults = {
-      live: true,
-      manualStart: false,
-      locale: null,
-      localePluralize: null,
-      localeTranslations: null,
-      systemDialog: false,
-      crop: false,
-      previewStep: false,
-      imagesOnly: false,
-      clearable: false,
-      multiple: false,
-      multipleMax: 0,
-      multipleMin: 1,
-      multipleMaxStrict: false,
-      imageShrink: false,
-      pathValue: true,
-      tabs: 'file camera url facebook gdrive dropbox instagram evernote flickr skydrive',
-      preferredTypes: '',
-      inputAcceptTypes: '',
-      doNotStore: false,
-      publicKey: null,
-      pusherKey: '79ae88bd931ea68464d9',
-      cdnBase: 'https://ucarecdn.com',
-      urlBase: 'https://upload.uploadcare.com',
-      socialBase: 'https://social.uploadcare.com',
-      multipartMinSize: 25 * 1024 * 1024,
-      multipartPartSize: 5 * 1024 * 1024,
-      multipartMinLastPartSize: 1024 * 1024,
-      multipartConcurrency: 4,
-      multipartMaxAttempts: 3,
-      parallelDirectUploads: 10,
-      passWindowOpen: false,
-      scriptBase: typeof SCRIPT_BASE !== "undefined" && SCRIPT_BASE !== null ? SCRIPT_BASE : '',
-      debugUploads: false
+      'live': true,
+      'manual-start': false,
+      'locale': null,
+      'locale-pluralize': null,
+      'locale-translations': null,
+      'system-dialog': false,
+      'crop': false,
+      'preview-step': false,
+      'images-only': false,
+      'clearable': false,
+      'multiple': false,
+      'multiple-max': 0,
+      'multiple-min': 1,
+      'image-shrink': false,
+      'path-value': true,
+      'tabs': 'file camera url facebook gdrive dropbox instagram evernote flickr skydrive',
+      'preferred-types': '',
+      'input-accept-types': '',
+      'do-not-store': false,
+      'public-key': null,
+      'pusher-key': '79ae88bd931ea68464d9',
+      'cdn-base': 'http://www.ucarecdn.com',
+      'url-base': 'https://upload.uploadcare.com',
+      'social-base': 'https://social.uploadcare.com',
+      'script-base': typeof SCRIPT_BASE !== "undefined" && SCRIPT_BASE !== null ? SCRIPT_BASE : ''
     };
     presets = {
-      tabs: {
+      'tabs': {
         all: 'file camera url facebook gdrive dropbox instagram evernote flickr skydrive box vk huddle',
         "default": defaults.tabs
       }
@@ -2799,15 +2740,15 @@ this.Pusher = Pusher;
     normalize = function(settings) {
       arrayOptions(settings, ['tabs', 'preferredTypes']);
       urlOptions(settings, ['cdnBase', 'socialBase', 'urlBase', 'scriptBase']);
-      flagOptions(settings, ['doNotStore', 'imagesOnly', 'multiple', 'clearable', 'pathValue', 'previewStep', 'systemDialog', 'debugUploads', 'multipleMaxStrict']);
-      intOptions(settings, ['multipleMax', 'multipleMin', 'multipartMinSize', 'multipartPartSize', 'multipartMinLastPartSize', 'multipartConcurrency', 'multipartMaxAttempts', 'parallelDirectUploads']);
+      flagOptions(settings, ['doNotStore', 'imagesOnly', 'multiple', 'clearable', 'pathValue', 'previewStep', 'systemDialog']);
+      intOptions(settings, ['multipleMax', 'multipleMin']);
       if (settings.crop !== false && !$.isArray(settings.crop)) {
-        if (/^(disabled?|false|null)$/i.test(settings.crop)) {
+        if (/^(disabled?|false|null)$/i.test(settings.crop) || settings.multiple) {
           settings.crop = false;
         } else if ($.isPlainObject(settings.crop)) {
           settings.crop = [settings.crop];
         } else {
-          settings.crop = $.map(('' + settings.crop).split(','), parseCrop);
+          settings.crop = $.map(settings.crop.split(','), parseCrop);
         }
       }
       if (settings.imageShrink && !$.isPlainObject(settings.imageShrink)) {
@@ -2824,26 +2765,29 @@ this.Pusher = Pusher;
       }
       return settings;
     };
-    expose('defaults', $.extend({
+    publicDefaults = {
       allTabs: presets.tabs.all
-    }, defaults));
-    ns.globals = function() {
-      var key, value, values;
+    };
+    for (key in defaults) {
+      if (!__hasProp.call(defaults, key)) continue;
+      value = defaults[key];
+      publicDefaults[$.camelCase(key)] = value;
+    }
+    expose('defaults', publicDefaults);
+    ns.globals = utils.once(function() {
+      var fallback, values;
       values = {};
       for (key in defaults) {
+        if (!__hasProp.call(defaults, key)) continue;
+        fallback = defaults[key];
         value = window["UPLOADCARE_" + (utils.upperCase(key))];
-        if (value !== void 0) {
-          values[key] = value;
-        }
+        values[$.camelCase(key)] = value !== void 0 ? value : fallback;
       }
-      return values;
-    };
-    ns.common = utils.once(function(settings, ignoreGlobals) {
+      return normalize(values);
+    });
+    ns.common = utils.once(function(settings) {
       var result;
-      if (!ignoreGlobals) {
-        defaults = $.extend(defaults, ns.globals());
-      }
-      result = normalize($.extend(defaults, settings || {}));
+      result = normalize($.extend({}, ns.globals(), settings || {}));
       if (!result.publicKey) {
         utils.commonWarning('publicKey');
       }
@@ -2882,12 +2826,12 @@ this.Pusher = Pusher;
 
     })();
     uploadcare.tabsCss = new ns.CssCollector;
-    return defaults['_emptyKeyText'] = "<div class=\"uploadcare-dialog-message-center\">\n<div class=\"uploadcare-dialog-big-title\">Hello!</div>\n<div class=\"uploadcare-dialog-large-text\">\n  <div>Your <a class=\"uploadcare-link\" href=\"https://uploadcare.com/dashboard/\">public key</a> is not set.</div>\n  <div>Add this to the &lt;head&gt; tag to start uploading files:</div>\n  <div class=\"uploadcare-pre\">&lt;script&gt;\nUPLOADCARE_PUBLIC_KEY = 'your_public_key';\n&lt;/script&gt;</div>\n</div>\n</div>";
+    return defaults['_empty-key-text'] = "<div class=\"uploadcare-dialog-message-center\">\n<div class=\"uploadcare-dialog-big-title\">Hello!</div>\n<div class=\"uploadcare-dialog-large-text\">\n  <div>Your <a class=\"uploadcare-link\" href=\"https://uploadcare.com/dashboard/\">public key</a> is not set.</div>\n  <div>Add this to the &lt;head&gt; tag to start uploading files:</div>\n  <div class=\"uploadcare-pre\">&lt;script&gt;\nUPLOADCARE_PUBLIC_KEY = 'your_public_key';\n&lt;/script&gt;</div>\n</div>\n</div>";
   });
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.ar = {
       uploading: 'الرجاء الإنتظار.... يتم الرفع',
       loadingInfo: '...تحميل المعلومات',
@@ -3023,7 +2967,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.ar = function(n) {
       var mod;
       if (n === 0) {
@@ -3048,452 +2992,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
-    return ns.az = {
-      uploading: 'Yüklənilir... Lütfən, gözləyin.',
-      loadingInfo: 'İnfo yüklənilir...',
-      errors: {
-        "default": 'Xəta',
-        baddata: 'Yanlış dəyər',
-        size: 'Fayl çox böyükdür',
-        upload: 'Yüklənilə bilmədi',
-        user: 'Yükləmə ləğv edildi',
-        info: 'İnfo yüklənə bilmədi',
-        image: 'Yalnız təsvirlərə icazə verilir',
-        createGroup: 'Fayl qrupu yaradıla bilmir',
-        deleted: 'Fayl silindi'
-      },
-      draghere: 'Faylı bura atın',
-      file: {
-        one: '%1 fayl',
-        other: '%1 fayl'
-      },
-      buttons: {
-        cancel: 'Ləğv edin',
-        remove: 'Silin',
-        choose: {
-          files: {
-            one: 'Fayl seçin',
-            other: 'Fayllar seçin'
-          },
-          images: {
-            one: 'Təsvir seçin',
-            other: 'Təsvirlər seçin'
-          }
-        }
-      },
-      dialog: {
-        done: 'Hazırdır',
-        showFiles: 'Faylları göstərin',
-        tabs: {
-          names: {
-            'empty-pubkey': 'Xoş gəlmisiniz',
-            preview: 'Önbaxış',
-            file: 'Lokal Fayllar',
-            url: 'İxtiyari linklər',
-            camera: 'Kamera',
-            gdrive: 'Google Disk'
-          },
-          file: {
-            drag: 'Faylı bura atın',
-            nodrop: 'Kompüterinizdən faylları yükləyin',
-            cloudsTip: 'Bulud yaddaşlar <br>və sosial xidmətlər',
-            or: 'or',
-            button: 'Lokal fayl seçin',
-            also: 'Həmçinin, buradan seçə bilərsiniz'
-          },
-          url: {
-            title: 'Vebdən fayllar',
-            line1: 'Vebdən istənilən faylı götürün.',
-            line2: 'Sadəcə, link verin.',
-            input: 'Linkinizi bura yerləşdirin...',
-            button: 'Yükləyin'
-          },
-          camera: {
-            capture: 'Şəkil çəkin',
-            mirror: 'Güzgü',
-            retry: 'Yenidən icazə sorğusu göndərin.',
-            pleaseAllow: {
-              title: 'Lütfən, kameranıza giriş hüququ verin',
-              text: 'Bu saytdan kameranıza daxil olmaq icazəsi verildi. ' + 'Kameranız ilə şəkil çəkmək üçün bu sorğunu təsdiq etməlisiniz.'
-            },
-            notFound: {
-              title: 'Kamera aşkar edilmədi',
-              text: 'Görünür, bu cihaza kamera qoşulmayıb.'
-            }
-          },
-          preview: {
-            unknownName: 'naməlum',
-            change: 'Ləğv edin',
-            back: 'Geri',
-            done: 'Əlavə edin',
-            unknown: {
-              title: 'Yüklənilir... Lütfən, önbaxış üçün gözləyin.',
-              done: 'Önbaxışı ötürün və qəbul edin'
-            },
-            regular: {
-              title: 'Bu fayl əlavə edilsin?',
-              line1: 'Yuxarıdakı faylı əlavə etmək üzrəsiniz.',
-              line2: 'Lütfən, təsdiq edin.'
-            },
-            image: {
-              title: 'Bu təsvir əlavə edilsin?',
-              change: 'Ləğv edin'
-            },
-            crop: {
-              title: 'Bu təsviri kəsin və əlavə edin',
-              done: 'Hazırdır',
-              free: 'pulsuz'
-            },
-            error: {
-              "default": {
-                title: 'Ups!',
-                text: 'Yükləmə zamanı nəsə xəta baş verdi.',
-                back: 'Lütfən, y enidən cəhd edin.'
-              },
-              image: {
-                title: 'Yaınız təsvir faylları qəbul olunur.',
-                text: 'Lütfən, başqa fayl ilə cəhd edin.',
-                back: 'Təsvir seçin'
-              },
-              size: {
-                title: 'Seçdiyiniz fayl limiti keçir.',
-                text: 'Lütfən, başqa fayl ilə cəhd edin.'
-              },
-              loadImage: {
-                title: 'Xəta',
-                text: 'Təsvir yüklənilə bilmir'
-              }
-            },
-            multiple: {
-              title: '%files% fayl seçdiniz.',
-              question: 'Bütün bu faylları əlavə etmək istəyirsiniz?',
-              tooManyFiles: 'Həddindən çox fayl seçdiniz. %max% maksimumdur.',
-              tooFewFiles: '%files% fayl seçdiniz. Ən azı %min% tələb olunur.',
-              clear: 'Hamısını silin',
-              done: 'Hazırdır'
-            }
-          }
-        },
-        footer: {
-          text: 'Faylları yükləyən, yadda saxlayan və icra edən'
-        }
-      }
-    };
-  });
-
-  uploadcare.namespace('locale.pluralize', function(ns) {
-    return ns.az = function(n) {
-      return 'other';
-    };
-  });
-
-}).call(this);
-(function() {
-  uploadcare.namespace('locale.translations', function(ns) {
-    return ns.ca = {
-      uploading: 'Carregant... Si us plau esperi.',
-      loadingInfo: 'Carregant informació...',
-      errors: {
-        "default": 'Error',
-        baddata: 'Valor incorrecte',
-        size: 'Massa gran',
-        upload: 'No s\'ha pogut carregar',
-        user: 'Carrega cancel·lada',
-        info: 'No s\'ha pogut carregar la informació',
-        image: 'Només es permeten imatges',
-        createGroup: 'No es pot crear el grup d\'arxius',
-        deleted: 'Fitxer eliminat'
-      },
-      draghere: 'Arrossega els fitxers fins aquí',
-      file: {
-        one: '%1 fitxer',
-        other: '%1 fitxers'
-      },
-      buttons: {
-        cancel: 'Cancel·lar',
-        remove: 'Eliminar',
-        choose: {
-          files: {
-            one: 'Escull un fitxer',
-            other: 'Escull fitxers'
-          },
-          images: {
-            one: 'Escull una imatge',
-            other: 'Escull imatges'
-          }
-        }
-      },
-      dialog: {
-        done: 'Fet',
-        showFiles: 'Mostra fitxers',
-        tabs: {
-          names: {
-            'empty-pubkey': 'Benvingut',
-            preview: 'Avanci',
-            file: 'Ordinador',
-            url: 'Enllaços arbitraris',
-            camera: 'Càmera'
-          },
-          file: {
-            drag: 'Arrossega un fitxer aquí',
-            nodrop: 'Carrega fitxers des del teu ordinador',
-            cloudsTip: 'Emmagatzematge al núvol<br>i xarxes socials',
-            or: 'o',
-            button: 'Escull un fitxer des del teu ordinador',
-            also: 'També pots seleccionar-lo de'
-          },
-          url: {
-            title: 'Fitxers de la web',
-            line1: 'Selecciona qualsevol fitxer de la web.',
-            line2: 'Només proporcioni el link.',
-            input: 'Copiï el link aquí...',
-            button: 'Pujar'
-          },
-          camera: {
-            capture: 'Realitza una foto',
-            mirror: 'Mirall',
-            retry: 'Demanar permisos una altra vegada',
-            pleaseAllow: {
-              title: 'Si us plau, permet accés a la teva càmera',
-              text: 'Aquest lloc t\'ha demanat de permetre accés a la càmera. ' + 'Per tal de realitzar imatges amb la teva càmera has d\'acceptar aquesta petició.'
-            },
-            notFound: {
-              title: 'No s\'ha detectat cap càmera',
-              text: 'Sembla que no tens cap càmera connectada a aquest dispositiu.'
-            }
-          },
-          preview: {
-            unknownName: 'desconegut',
-            change: 'Cancel·lar',
-            back: 'Endarrere',
-            done: 'Pujar',
-            unknown: {
-              title: 'Carregant. Si us plau esperi per la visualització prèvia.',
-              done: 'Saltar visualització prèvia i acceptar'
-            },
-            regular: {
-              title: 'Vols pujar aquest fitxer?',
-              line1: 'Estàs a punt de pujar el fitxer superior.',
-              line2: 'Confirmi, si us plau.'
-            },
-            image: {
-              title: 'Vols pujar aquesta imatge?',
-              change: 'Cancel·lar'
-            },
-            crop: {
-              title: 'Tallar i pujar aquesta imatge',
-              done: 'Fet',
-              free: 'lliure'
-            },
-            error: {
-              "default": {
-                title: 'La pujada ha fallat!',
-                text: 'S\'ha produït un error durant la pujada.',
-                back: 'Si us plau, provi-ho de nou.'
-              },
-              image: {
-                title: 'Només s\'accepten fitxers d\'imatges.',
-                text: 'Si us plau, provi-ho de nou amb un altre fitxer.',
-                back: 'Escull imatge'
-              },
-              size: {
-                title: 'La mida del fitxer que has seleccionat sobrepassa el límit.',
-                text: 'Si us plau, provi-ho de nou amb un altre fitxer.'
-              },
-              loadImage: {
-                title: 'Error',
-                text: 'No s\'ha pogut carregar la imatge'
-              }
-            },
-            multiple: {
-              title: 'N\'has escollit %files%',
-              question: 'Vols afegir tots aquests fitxers?',
-              tooManyFiles: 'Has escollit massa fitxers. %max% és el màxim.',
-              tooFewFiles: 'Has escollit %files%. Com a mínim en calen %min%.',
-              clear: 'Eliminar-los tots',
-              done: 'Fet'
-            }
-          }
-        },
-        footer: {
-          text: 'Els fitxers han estat carregats, gestionats i processats per'
-        }
-      }
-    };
-  });
-
-  uploadcare.namespace('locale.pluralize', function(ns) {
-    return ns.ca = function(n) {
-      if (n === 1) {
-        return 'one';
-      }
-      return 'other';
-    };
-  });
-
-}).call(this);
-(function() {
-  uploadcare.namespace('locale.translations', function(ns) {
-    return ns.cs = {
-      uploading: 'Nahrávám... Malý moment.',
-      loadingInfo: 'Nahrávám informace...',
-      errors: {
-        "default": 'Chyba',
-        baddata: 'Neplatná hodnota',
-        size: 'Soubor je příliš velký',
-        upload: 'Nelze nahrát',
-        user: 'Nahrávání zrušeno',
-        info: 'Nelze nahrát informace',
-        image: 'Lze nahrát pouze obrázky',
-        createGroup: 'Nelze vytvořit adresář',
-        deleted: 'Soubor byl smazán'
-      },
-      draghere: 'Přetáhněte soubor sem',
-      file: {
-        one: '%1 soubor',
-        few: '%1 soubory',
-        many: '%1 souborů'
-      },
-      buttons: {
-        cancel: 'Zrušit',
-        remove: 'Odstranit',
-        choose: {
-          files: {
-            one: 'Vyberte soubor',
-            other: 'Vyberte soubory'
-          },
-          images: {
-            one: 'Vyberte obrázek',
-            other: 'Vyberte obrázky'
-          }
-        }
-      },
-      dialog: {
-        done: 'Hotovo',
-        showFiles: 'Zobrazit soubory',
-        tabs: {
-          names: {
-            'empty-pubkey': 'Vítejte',
-            preview: 'Náhled',
-            file: 'Soubor z počítače',
-            url: 'Soubor z internetu',
-            camera: 'Webkamera',
-            facebook: 'Facebook',
-            dropbox: 'Dropbox',
-            gdrive: 'Google Drive',
-            instagram: 'Instagram',
-            vk: 'VK',
-            evernote: 'Evernote',
-            box: 'Box',
-            skydrive: 'OneDrive',
-            flickr: 'Flickr',
-            huddle: 'Huddle'
-          },
-          file: {
-            drag: 'Přetáhněte soubor sem',
-            nodrop: 'Nahrajte soubory z vašeho počítače',
-            cloudsTip: 'Cloudové úložiště<br>a sociální sítě',
-            or: 'nebo',
-            button: 'Vyberte soubor z počítače',
-            also: 'Můžete také nahrát soubor z'
-          },
-          url: {
-            title: 'Soubory z internetu',
-            line1: 'Nahrajte jakýkoliv soubor z internetu.',
-            line2: 'Stačí vložit odkaz.',
-            input: 'Odkaz vložte zde...',
-            button: 'Nahrát'
-          },
-          camera: {
-            capture: 'Pořídit fotografii',
-            mirror: 'Zrcadlo',
-            retry: 'Znovu požádat o povolení',
-            pleaseAllow: {
-              title: 'Prosím povolte přístup k webkameře',
-              text: 'Byl(a) jste požádán(a) o přístup k webkameře. ' + 'Abyste mohl(a) pořídit fotografii, musíte přístup povolit.'
-            },
-            notFound: {
-              title: 'Nebyla nalezena webkamera',
-              text: 'Zdá se, že k tomuto zařízení není připojena žádná webkamera.'
-            }
-          },
-          preview: {
-            unknownName: 'neznámý',
-            change: 'Zrušit',
-            back: 'Zpět',
-            done: 'Přidat',
-            unknown: {
-              title: 'Nahrávám... Prosím vyčkejte na náhled.',
-              done: 'Přeskočit náhled a odeslat'
-            },
-            regular: {
-              title: 'Přidat tento soubor?',
-              line1: 'Tímto přidáte výše vybraný soubor.',
-              line2: 'Prosím potvrďte.'
-            },
-            image: {
-              title: 'Přidat tento obrázek?',
-              change: 'Zrušit'
-            },
-            crop: {
-              title: 'Oříznout a přidat tento obrázek',
-              done: 'Hotovo',
-              free: 'zdarma'
-            },
-            error: {
-              "default": {
-                title: 'Jejda!',
-                text: 'Něco se v průběhu nahrávání nepodařilo.',
-                back: 'Zkuste to prosím znovu.'
-              },
-              image: {
-                title: 'Lze nahrávat pouze obrázky.',
-                text: 'Zkuste to prosím s jiným souborem.',
-                back: 'Vyberte obrázek'
-              },
-              size: {
-                title: 'Soubor přesahuje povolenou velikost.',
-                text: 'Prosím zkuste to s jiným souborem.'
-              },
-              loadImage: {
-                title: 'Chyba',
-                text: 'Nelze nahrát obrázek'
-              }
-            },
-            multiple: {
-              title: 'Bylo vybráno %files% souborů',
-              question: 'Chcete přidat všechny tyto soubory?',
-              tooManyFiles: 'Bylo vybráno moc souborů. Maximum je %max%',
-              tooFewFiles: 'Bylo vybráno %files% souborů. Musíte vybrat minimálně %min%',
-              clear: 'Odstranit vše',
-              done: 'Hotovo'
-            }
-          }
-        },
-        footer: {
-          text: 'Provozováno pomocí',
-          link: 'Uploadcare.com'
-        }
-      }
-    };
-  });
-
-  uploadcare.namespace('locale.pluralize', function(ns) {
-    return ns.cs = function(n) {
-      if (n === 1) {
-        return 'one';
-      } else if ((2 <= n && n <= 4)) {
-        return 'few';
-      } else {
-        return 'many';
-      }
-    };
-  });
-
-}).call(this);
-(function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.da = {
       uploading: 'Uploader... Vent venligst.',
       loadingInfo: 'Henter information...',
@@ -3610,7 +3109,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.da = function(n) {
       if (n === 1) {
         return 'one';
@@ -3621,7 +3120,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.de = {
       uploading: 'Hochladen... Bitte warten.',
       loadingInfo: 'Laden der Informationen...',
@@ -3660,11 +3159,9 @@ this.Pusher = Pusher;
         showFiles: 'Dateien anzeigen',
         tabs: {
           names: {
-            'empty-pubkey': 'Willkommen',
             preview: 'Vorschau',
             file: 'Lokale Dateien',
-            url: 'Web-Links',
-            camera: 'Kamera'
+            url: 'Web-Links'
           },
           file: {
             drag: 'Ziehen Sie eine Datei hier hinein',
@@ -3672,7 +3169,7 @@ this.Pusher = Pusher;
             cloudsTip: 'Cloud Speicher<br>und soziale Dienste',
             or: 'oder',
             button: 'Wählen Sie eine lokale Datei',
-            also: 'Sie können sie auch wählen von'
+            also: 'Sie köhnen es auch wählen von'
           },
           url: {
             title: 'Dateien vom Web',
@@ -3680,19 +3177,6 @@ this.Pusher = Pusher;
             line2: 'Geben Sie einfach den Link an.',
             input: 'Bitte geben Sie den Link hier an...',
             button: 'Hochladen'
-          },
-          camera: {
-            capture: 'Machen Sie ein Foto',
-            mirror: 'Spiegel',
-            retry: 'Berechtigungen erneut anfordern',
-            pleaseAllow: {
-              title: 'Bitte erlauben Sie den Zugriff auf Ihre Kamera',
-              text: 'Sie wurden gebeten, dieser Website den Zugriff auf Ihre Kamera zu erlauben. Um mit Ihrer Kamera Fotos machen zu können, müssen Sie diese Erlaubnis erteilen.'
-            },
-            notFound: {
-              title: 'Keine Kamera festgestellt',
-              text: 'Es sieht so aus, als hätten Sie keine Kamera an dieses Gerät angeschlossen.'
-            }
           },
           preview: {
             unknownName: 'nicht bekannt',
@@ -3748,13 +3232,13 @@ this.Pusher = Pusher;
           }
         },
         footer: {
-          text: 'Hochladen, Speichern und Verarbeiten von Dateien durch'
+          text: 'Hochladen, Speichern und Verarbeitung der Dateien durch'
         }
       }
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.de = function(n) {
       if (n === 1) {
         return 'one';
@@ -3765,7 +3249,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.en = {
       uploading: 'Uploading... Please wait.',
       loadingInfo: 'Loading info...',
@@ -3823,7 +3307,7 @@ this.Pusher = Pusher;
           file: {
             drag: 'Drop a file here',
             nodrop: 'Upload files from your computer',
-            cloudsTip: 'Cloud storages<br>and social networks',
+            cloudsTip: 'Cloud storages<br>and social services',
             or: 'or',
             button: 'Choose a local file',
             also: 'You can also choose it from'
@@ -3909,7 +3393,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.en = function(n) {
       if (n === 1) {
         return 'one';
@@ -3920,7 +3404,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('locale.translations', function (ns) {
     return ns.es = {
       uploading: 'Subiendo... Por favor espere.',
       loadingInfo: 'Cargando información...',
@@ -4044,7 +3528,7 @@ this.Pusher = Pusher;
               clear: 'Eliminar todo',
               done: 'Hecho'
             }
-          },
+          }
         },
         footer: {
           text: 'Subido, almacenado y procesado por'
@@ -4053,7 +3537,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.es = function(n) {
       if (n === 1) {
         return 'one';
@@ -4064,7 +3548,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.fr = {
       uploading: 'Envoi en cours... Merci de patientier.',
       loadingInfo: 'Chargement des informations...',
@@ -4105,9 +3589,7 @@ this.Pusher = Pusher;
           names: {
             preview: 'Avant-première',
             file: 'Fichier en local',
-            url: 'Une adresse web',
-            'empty-pubkey': 'Bienvenue',
-            camera: 'Appareil photo'
+            url: 'Une adresse web'
           },
           file: {
             drag: 'Glissez-déposez un fichier ici',
@@ -4123,19 +3605,6 @@ this.Pusher = Pusher;
             line2: 'Saisissez simplement son adresse.',
             input: 'Collez le lien ici...',
             button: 'Envoi'
-          },
-          camera: {
-            capture: 'Prendre une photo',
-            mirror: 'Miroir',
-            retry: 'Envoyer une nouvelle demande de permission',
-            pleaseAllow: {
-              title: 'Autorisez l\'accès à votre appareil photo',
-              text: 'Vous avez été invité à autoriser l\'accès à votre appareil photo. Pour prendre des photos avec votre appareil photo vous devez approuver cette demande.'
-            },
-            notFound: {
-              title: 'Aucun appareil photo détecté',
-              text: 'Il semblerait que vous n\'ayez pas d\'appareil photo connecté à cet appareil.'
-            }
           },
           preview: {
             unknownName: 'inconnu',
@@ -4184,9 +3653,7 @@ this.Pusher = Pusher;
               title: 'Vous avez choisi %files%',
               question: 'Voulez vous ajouter tous ces fichiers ?',
               clear: 'Tout retirer',
-              done: 'Terminer',
-              tooManyFiles: 'Vous avez choisi trop de fichiers. %max% est le maximum.',
-              tooFewFiles: 'Vous avez choisi %fichiers%. %min% est le minimum.'
+              done: 'Terminer'
             }
           }
         },
@@ -4197,7 +3664,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.fr = function(n) {
       if (n === 1) {
         return 'one';
@@ -4208,7 +3675,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.he = {
       uploading: 'טוען... אנא המתן.',
       loadingInfo: 'טוען מידע...',
@@ -4326,7 +3793,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.he = function(n) {
       if (n === 1) {
         return 'one';
@@ -4337,151 +3804,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
-    return ns.it = {
-      uploading: 'Caricamento in corso... Si prega di attendere.',
-      loadingInfo: 'Caricamento informazioni in corso...',
-      errors: {
-        "default": 'Errore',
-        baddata: 'Valore errato',
-        size: 'Il file è troppo grande',
-        upload: 'Impossibile fare l’upload',
-        user: 'Upload cancellato',
-        info: 'Impossibile caricare le informazioni',
-        image: 'Sono ammesse solo immagini',
-        createGroup: 'Impossibile creare gruppo di file',
-        deleted: 'Il file è stato eliminato'
-      },
-      draghere: 'Trascina un file qui',
-      file: {
-        one: 'file %1',
-        other: 'file %1'
-      },
-      buttons: {
-        cancel: 'Cancella',
-        remove: 'Rimuovi',
-        choose: {
-          files: {
-            one: 'Seleziona un file',
-            other: 'Seleziona file'
-          },
-          images: {
-            one: 'Seleziona un’immagine',
-            other: 'Seleziona immagini'
-          }
-        }
-      },
-      dialog: {
-        done: 'Fatto',
-        showFiles: 'Mostra file',
-        tabs: {
-          names: {
-            'empty-pubkey': 'Benvenuto',
-            preview: 'Anteprima',
-            file: 'File locali',
-            url: 'Link arbitrari',
-            camera: 'Fotocamera'
-          },
-          file: {
-            drag: 'Trascina un file qui',
-            nodrop: 'Carica file dal tuo computer',
-            cloudsTip: 'Salvataggi nel cloud<br>e servizi sociali',
-            or: 'o',
-            button: 'Seleziona un file locale',
-            also: 'Puoi anche scegliere da'
-          },
-          url: {
-            title: 'File dal web',
-            line1: 'Preleva un file dal web.',
-            line2: 'È sufficiente fornire il link.',
-            input: 'Incolla il tuo link qui...',
-            button: 'Carica'
-          },
-          camera: {
-            capture: 'Scatta una foto',
-            mirror: 'Specchio',
-            retry: 'Richiedi di nuovo le autorizzazioni',
-            pleaseAllow: {
-              title: 'Consenti l’accesso alla tua fotocamera',
-              text: 'Ti è stato richiesto di consentire l’accesso alla fotocamera da questo sito. Per scattare le foto con la tua fotocamera devi accettare questa richiesta.'
-            },
-            notFound: {
-              title: 'Nessuna fotocamera rilevata',
-              text: 'Non risulta che tu non abbia una fotocamera collegata a questo dispositivo.'
-            }
-          },
-          preview: {
-            unknownName: 'sconosciuto',
-            change: 'Cancella',
-            back: 'Indietro',
-            done: 'Aggiungi',
-            unknown: {
-              title: 'Caricamento in corso... Attendi l’anteprima.',
-              done: 'Salta l’anteprima e accetta'
-            },
-            regular: {
-              title: 'Vuoi aggiungere questo file?',
-              line1: 'Stai per aggiungere il file sopra.',
-              line2: 'Conferma.'
-            },
-            image: {
-              title: 'Vuoi aggiungere questa immagine?',
-              change: 'Cancella'
-            },
-            crop: {
-              title: 'Ritaglia e aggiungi questa immagine',
-              done: 'Fatto',
-              free: 'gratis'
-            },
-            error: {
-              "default": {
-                title: 'Ops!',
-                text: 'Si è verificato un problema durante l’upload.',
-                back: 'Si prega di riprovare'
-              },
-              image: {
-                title: 'Sono accettati solo file immagine.',
-                text: 'Riprova con un altro file.',
-                back: 'Scegli immagine'
-              },
-              size: {
-                title: 'Il file selezionato supera il limite.',
-                text: 'Riprova con un altro file.'
-              },
-              loadImage: {
-                title: 'Errore',
-                text: 'Impossibile caricare l’immagine'
-              }
-            },
-            multiple: {
-              title: 'Hai selezionato %files%',
-              question: 'Vuoi aggiungere tutti questi file?',
-              tooManyFiles: 'Hai selezionato troppi file. %max% è il massimo.',
-              tooFewFiles: 'Hai selezionato %files%. È richiesto almeno %min%.',
-              clear: 'Rimuovi tutto',
-              done: 'Fatto'
-            }
-          }
-        },
-        footer: {
-          text: 'Caricamento, memorizzazione ed elaborazione file eseguiti da'
-        }
-      }
-    };
-  });
-
-  uploadcare.namespace('locale.pluralize', function(ns) {
-    return ns.it = function(n) {
-      if (n === 1) {
-        return 'one';
-      }
-      return 'other';
-    };
-  });
-
-}).call(this);
-(function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.ja = {
       uploading: 'アップロードしています… 完了までお待ち下さい。',
       loadingInfo: '読み込み中…',
@@ -4598,7 +3921,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.ja = function(n) {
       return 'other';
     };
@@ -4606,7 +3929,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.lv = {
       uploading: 'Augšupielādē... Lūdzu, gaidiet.',
       errors: {
@@ -4651,7 +3974,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.lv = function(n) {
       if (n === 0) {
         return 'zero';
@@ -4665,7 +3988,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.nb = {
       uploading: 'Laster opp... Vennligst vent.',
       loadingInfo: 'Laster inn info...',
@@ -4783,7 +4106,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.nb = function(n) {
       if (n === 1) {
         return 'one';
@@ -4794,7 +4117,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.nl = {
       uploading: 'Uploaden... Even geduld.',
       loadingInfo: 'Laden informatie...',
@@ -4910,7 +4233,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.nl = function(n) {
       if (n === 1) {
         return 'one';
@@ -4921,157 +4244,51 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  var __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.pl = {
       uploading: 'Przesyłanie... Proszę czekać.',
-      loadingInfo: 'Loading info...',
       errors: {
-        "default": 'Błąd',
-        baddata: 'Niepoprawna wartość',
-        size: 'Plik zbyt duży',
-        upload: 'Nie udało się przesłać',
-        user: 'Przesyłanie anulowane',
-        info: 'Nie udało się załadować informacji',
-        image: 'Dozwolone są tylko obrazy',
-        createGroup: 'Nie udało się utworzyć grupy plików',
-        deleted: 'Plik został usunięty'
+        "default": 'Błąd'
       },
       draghere: 'Upuść plik tutaj',
-      file: {
-        one: '%1 plik',
-        few: '%1 pliki',
-        many: '%1 plików'
-      },
       buttons: {
         cancel: 'Anuluj',
-        remove: 'Usuń',
-        choose: {
-          files: {
-            one: 'Wybierz plik',
-            other: 'Wybierz pliki'
-          },
-          images: {
-            one: 'Wybierz obraz',
-            other: 'Wybierz obrazy'
-          }
-        }
+        remove: 'Usuń'
       },
       dialog: {
-        done: 'Wykonano',
-        showFiles: 'Pokaż pliki',
         tabs: {
-          names: {
-            'empty-pubkey': 'Witaj',
-            preview: 'Podgląd',
-            file: 'Pliki lokalne',
-            url: 'Plik z Sieci',
-            camera: 'Aparat'
-          },
           file: {
-            drag: 'Upuść plik tutaj',
-            nodrop: 'Prześlij pliki z Twojego komputera',
-            cloudsTip: 'Dane w chmurze<br>i sieci społecznościowe',
-            or: 'lub',
-            button: 'Wybierz plik lokalny',
-            also: 'Możesz również wybrać z'
+            title: 'Mój komputer'
           },
           url: {
-            title: 'Pliki z Sieci',
-            line1: 'Złap jakikolwiej plik z sieci.',
-            line2: 'Podaj adres.',
-            input: 'Wklej link...',
-            button: 'Prześlij'
-          },
-          camera: {
-            capture: 'Zrób zdjęcie',
-            mirror: 'Lustro',
-            retry: 'Poproś ponownie o dostęp',
-            pleaseAllow: {
-              title: 'Prośba o udostępnienie aparatu',
-              text: 'Zostałeś poproszony przez tę stronę o dostęp do aparatu. ' + 'Aby robić zdjecia, musisz zaakceptować tę prośbę.'
-            },
-            notFound: {
-              title: 'Nie wykryto aparatu.',
-              text: 'Wygląda na to, że nie masz podłączonego aparatu do tego urządzenia.'
-            }
-          },
-          preview: {
-            unknownName: 'nieznany',
-            change: 'Anuluj',
-            back: 'Wstecz',
-            done: 'Dodaj',
-            unknown: {
-              title: 'Przesyłanie... Proszę czekać na podgląd.',
-              done: 'Omiń podgląd i zaakceptuj.'
-            },
-            regular: {
-              title: 'Dodać ten plik?',
-              line1: 'Zamierzasz dodać nowy plik.',
-              line2: 'Potwierdź, proszę.'
-            },
-            image: {
-              title: 'Dodać ten obraz?',
-              change: 'Anuluj'
-            },
-            crop: {
-              title: 'Przytnij i dodaj ten obraz',
-              done: 'Wykonano',
-              free: 'wolny'
-            },
-            error: {
-              "default": {
-                title: 'Oops!',
-                text: 'Coś poszło nie tak podczas przesyłania.',
-                back: 'Spróbuj ponownie'
-              },
-              image: {
-                title: 'Akceptowane są tylko obrazy.',
-                text: 'Spróbuj ponownie z innym plikiem.',
-                back: 'Wybierz obraz'
-              },
-              size: {
-                title: 'Plik, który wybrałeś, przekracza dopuszczalny rozmiar',
-                text: 'Spróbuj ponownie z innym plikiem.'
-              },
-              loadImage: {
-                title: 'Błąd',
-                text: 'Nie udało się załadować obrazu'
-              }
-            },
-            multiple: {
-              title: 'Wybrałeś %files%',
-              question: 'Czy chcesz dodać wszystkie te pliki?',
-              tooManyFiles: 'Wybrałeś zbyt wiele plików. Maksimum to %max%.',
-              tooFewFiles: 'Wybrałeś %files%. Wymagane jest co najmniej %min%.',
-              clear: 'Usuń wszystkie',
-              done: 'Wykonano'
-            }
+            title: 'Pliki z sieci'
           }
-        },
-        footer: {
-          text: 'Pliki przesyła, przechowuje i przetwarza',
-          link: 'Uploadcare.com'
         }
       }
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.pl = function(n) {
-      var _ref;
+      var _ref, _ref1, _ref2, _ref3;
       if (n === 1) {
         return 'one';
-      } else if (((2 <= (_ref = n % 10) && _ref <= 4)) && ((n / 10 % 10 | 0) !== 1)) {
+      }
+      if ((_ref = n % 10, __indexOf.call([2, 3, 4], _ref) >= 0) && (_ref1 = n % 100, __indexOf.call([12, 13, 14], _ref1) < 0)) {
         return 'few';
-      } else {
+      }
+      if ((n !== 1) && ((_ref2 = n % 10, __indexOf.call([2, 3, 4], _ref2) < 0) || (_ref3 = n % 100, __indexOf.call([12, 13, 14], _ref3) >= 0))) {
         return 'many';
       }
+      return 'other';
     };
   });
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.pt = {
       uploading: 'Fazendo upload... Aguarde.',
       loadingInfo: 'Carregando informações...',
@@ -5186,7 +4403,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.pt = function(n) {
       if (n === 1) {
         return 'one';
@@ -5197,7 +4414,9 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  var __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.ru = {
       uploading: 'Идет загрузка',
       loadingInfo: 'Загрузка информации...',
@@ -5216,7 +4435,8 @@ this.Pusher = Pusher;
       file: {
         one: '%1 файл',
         few: '%1 файла',
-        many: '%1 файлов'
+        many: '%1 файлов',
+        other: '%1 файла'
       },
       buttons: {
         cancel: 'Отмена',
@@ -5238,7 +4458,6 @@ this.Pusher = Pusher;
         tabs: {
           names: {
             preview: 'Предпросмотр',
-            'empty-pubkey': 'Приветствие',
             file: 'Локальные файлы',
             vk: 'ВКонтакте',
             url: 'Произвольная ссылка',
@@ -5247,7 +4466,7 @@ this.Pusher = Pusher;
           file: {
             drag: 'Перетащите файл сюда',
             nodrop: 'Загрузка файлов с вашего компьютера',
-            cloudsTip: 'Облачные хранилища<br>и социальные сети',
+            cloudsTip: 'Облачные хранилища<br>и социальные сервисы',
             or: 'или',
             button: 'Выберите локальный файл',
             also: 'Вы также можете загрузить файлы, используя:'
@@ -5332,157 +4551,17 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.ru = function(n) {
-      if (((n / 10 % 10 | 0) === 1) || (n % 10 === 0) || (n % 10 > 4)) {
-        return 'many';
-      } else if (n % 10 === 1) {
+      var _ref, _ref1, _ref2, _ref3;
+      if ((n % 10 === 1) && (n % 100 !== 11)) {
         return 'one';
-      } else {
+      }
+      if ((_ref = n % 10, __indexOf.call([2, 3, 4], _ref) >= 0) && (_ref1 = n % 100, __indexOf.call([12, 13, 14], _ref1) < 0)) {
         return 'few';
       }
-    };
-  });
-
-}).call(this);
-(function() {
-  uploadcare.namespace('locale.translations', function(ns) {
-    return ns.sv = {
-      uploading: 'Laddar... Var god vänta.',
-      loadingInfo: 'Laddar info...',
-      errors: {
-        "default": 'Error',
-        baddata: 'Felaktigt värde',
-        size: 'Filen är för stor',
-        upload: 'Kan inte ladda upp',
-        user: 'Uppladdning avbruten',
-        info: 'Kan inte ladda informationen',
-        image: 'Endast bilder tillåtna',
-        createGroup: 'Kan inte skapa filgrupp',
-        deleted: 'Fil raderad'
-      },
-      draghere: 'Dra filen hit',
-      file: {
-        one: '%1 fil',
-        other: '%1 filer'
-      },
-      buttons: {
-        cancel: 'Avbryt',
-        remove: 'Ta bort',
-        choose: {
-          files: {
-            one: 'Välj fil',
-            other: 'Välj filer'
-          },
-          images: {
-            one: 'Välj en fil',
-            other: 'Välj filer'
-          }
-        }
-      },
-      dialog: {
-        done: 'Klar',
-        showFiles: 'Visa filer',
-        tabs: {
-          names: {
-            'empty-pubkey': 'Välkommen',
-            preview: 'Förhandsgranskning',
-            file: 'Lokala filer',
-            url: 'Direkta länkar',
-            camera: 'Kamera'
-          },
-          file: {
-            drag: 'Släpp en fil hit',
-            nodrop: 'Ladda upp filer från din dator',
-            cloudsTip: 'Cloud storages<br>och sociala nätverk',
-            or: 'eller',
-            button: 'Välj en lokal fil',
-            also: 'Du kan också välja den från'
-          },
-          url: {
-            title: 'Filer från webben',
-            line1: 'Välj en fil från en web adress.',
-            line2: 'Agge bara länken til filen.',
-            input: 'Klistra in din länk här...',
-            button: 'Ladda upp'
-          },
-          camera: {
-            capture: 'Ta ett foto',
-            mirror: 'Spegel',
-            retry: 'Begär tillstånd igen',
-            pleaseAllow: {
-              title: 'Vänligen ge tillgång till din kamera',
-              text: 'Du har uppmanats att tillåta att denna webbplats får tillgång till din kamera.' + 'För att ta bilder med din kamera måste du godkänna denna begäran.'
-            },
-            notFound: {
-              title: 'Ingen kamera funnen',
-              text: 'Det varkar som att du inte har något kamera ansluten till denna enheten.'
-            }
-          },
-          preview: {
-            unknownName: 'okänd',
-            change: 'Avbryt',
-            back: 'Tillbaka',
-            done: 'Lägg till',
-            unknown: {
-              title: 'Laddar... Vänligen vänta på förhandsgranskning.',
-              done: 'Skippa förhandsgranskning och acceptera'
-            },
-            regular: {
-              title: 'Lägg till denna filen?',
-              line1: 'Du håller på att lägga till filen ovan.',
-              line2: 'Vänligen bekräfta.'
-            },
-            image: {
-              title: 'Lägg till denna bilden?',
-              change: 'Avbryt'
-            },
-            crop: {
-              title: 'Beskär och lägg till denna bild',
-              done: 'Klar',
-              free: 'free'
-            },
-            error: {
-              "default": {
-                title: 'Oops!',
-                text: 'Någonting gick fel under uppladdningen.',
-                back: 'Vänligen försök igen'
-              },
-              image: {
-                title: 'Endast bildfiler accepteras.',
-                text: 'Vänligen försök igen med en annan fil.',
-                back: 'Välj bild'
-              },
-              size: {
-                title: 'Filen du har valt är för stor.',
-                text: 'Vänligen försök igen med en annan fil.'
-              },
-              loadImage: {
-                title: 'Error',
-                text: 'Kan inte ladda bild'
-              }
-            },
-            multiple: {
-              title: 'Du har valt %files%',
-              question: 'Vill du lägga till alla dessa filer?',
-              tooManyFiles: 'Du har valt för många filer. %max% är max.',
-              tooFewFiles: 'Du har valt %files%. Minst %min% krävs.',
-              clear: 'Ta bort alla',
-              done: 'Klar'
-            }
-          }
-        },
-        footer: {
-          text: 'Laddar upp, lagrar och bearbetar filer genom'
-        }
-      }
-    };
-  });
-
-  uploadcare.namespace('locale.pluralize', function(ns) {
-    return ns.sv = function(n) {
-      if (n === 1) {
-        return 'one';
+      if ((n % 10 === 0) || (_ref2 = n % 10, __indexOf.call([5, 6, 7, 8, 9], _ref2) >= 0) || (_ref3 = n % 100, __indexOf.call([11, 12, 13, 14], _ref3) >= 0)) {
+        return 'many';
       }
       return 'other';
     };
@@ -5490,7 +4569,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.tr = {
       uploading: 'Yükleniyor... Lütfen bekleyin.',
       loadingInfo: 'Bilgiler yükleniyor...',
@@ -5528,19 +4607,16 @@ this.Pusher = Pusher;
         showFiles: 'Dosyaları Göster',
         tabs: {
           names: {
-            'empty-pubkey': 'Hoş geldiniz',
             preview: 'Önizleme',
             file: 'Bilgisayar',
-            url: 'Dış Bağlantılar',
-            camera: 'Kamera'
+            url: 'Dış Bağlantılar'
           },
           file: {
-            drag: 'Buraya bir dosya bırakın',
+            drag: 'Braya bir dosya bakın',
             nodrop: 'Bilgisayarınızdan dosya yükleyin',
-            or: 'ya da',
+            or: 'or',
             button: 'Bilgisayardan bir dosya seç',
-            also: 'Diğer yükleme seçenekleri',
-            cloudsTip: 'Bulut depolamalar<br>ve sosyal hizmetler'
+            also: 'Diğer yükleme seçenekleri'
           },
           url: {
             title: 'Webden dosyalar',
@@ -5548,19 +4624,6 @@ this.Pusher = Pusher;
             line2: 'Dosya bağlantısını sağlayın.',
             input: 'Bağlantınızı buraya yapıştırın...',
             button: 'Yükle'
-          },
-          camera: {
-            capture: 'Fotoğraf çek',
-            mirror: 'Ayna',
-            retry: 'Tekrar izin iste',
-            pleaseAllow: {
-              title: 'Lütfen kameranıza erişilmesine izin verin',
-              text: 'Bu siteden kamera erişimine izin vermeniz talep ediliyor. Kameranızla fotoğraf çekmek için bu isteği onaylamanız gerekmektedir.'
-            },
-            notFound: {
-              title: 'Kamera algılanamadı',
-              text: 'Bu cihaza kamera bağlantısının olmadığı görünüyor.'
-            }
           },
           preview: {
             unknownName: 'bilinmeyen',
@@ -5621,7 +4684,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.tr = function(n) {
       return 'other';
     };
@@ -5629,7 +4692,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.zhTW = {
       uploading: '上傳中...請等待',
       loadingInfo: '正在讀取資訊...',
@@ -5669,16 +4732,16 @@ this.Pusher = Pusher;
           names: {
             'empty-pubkey': '歡迎',
             preview: '預覽',
-            file: '從本機上傳',
+            file: '從電腦中選取檔案',
             url: '任意圖片連結',
             camera: '相機'
           },
           file: {
             drag: '拖放檔案到這裡',
-            nodrop: '從你的本機中上傳',
+            nodrop: '從你的電腦中上傳',
             cloudsTip: '雲端硬碟<br>與社群網站',
             or: '或者',
-            button: '從本機中選取檔案',
+            button: '從電腦中選取檔案',
             also: '你也可以選自'
           },
           url: {
@@ -5722,7 +4785,7 @@ this.Pusher = Pusher;
             crop: {
               title: '裁切並加入這個圖片',
               done: '完成',
-              free: '自由裁切'
+              free: '剩餘'
             },
             error: {
               "default": {
@@ -5761,7 +4824,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.zhTW = function(n) {
       return 'other';
     };
@@ -5769,7 +4832,7 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  uploadcare.namespace('locale.translations', function(ns) {
+  uploadcare.namespace('uploadcare.locale.translations', function(ns) {
     return ns.zh = {
       uploading: '上传中...请等待',
       loadingInfo: '正在读取信息...',
@@ -5871,7 +4934,7 @@ this.Pusher = Pusher;
     };
   });
 
-  uploadcare.namespace('locale.pluralize', function(ns) {
+  uploadcare.namespace('uploadcare.locale.pluralize', function(ns) {
     return ns.zh = function() {
       return 'other';
     };
@@ -5879,11 +4942,11 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var $, s, utils;
+  var $, namespace, s, utils;
 
-  utils = uploadcare.utils, s = uploadcare.settings, $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, utils = uploadcare.utils, s = uploadcare.settings, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('locale', function(ns) {
+  namespace('uploadcare.locale', function(ns) {
     var build, defaultLang, defaults, translate, _build;
     defaultLang = 'en';
     defaults = {
@@ -5945,18 +5008,87 @@ this.Pusher = Pusher;
 
 }).call(this);
 (function() {
-  var $, locale, utils;
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/circle-text"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget-circle-back">\n  <div class="uploadcare-widget-circle-text"></div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/dialog"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog uploadcare-responsive-panel"><!--\n--><div class="uploadcare-dialog-inner-wrap">\n    <div class="uploadcare-dialog-close">×</div>\n    <div class="uploadcare-dialog-placeholder"></div>\n  </div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/panel"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-panel">\n  <div class="uploadcare-dialog-tabs"></div>\n\n  <div class="uploadcare-panel-footer uploadcare-panel-footer__summary">\n    <div class="uploadcare-dialog-button uploadcare-dialog-source-base-show-files"\n         tabindex="0" role="button">\n      ',(''+ t('dialog.showFiles') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n      <div class="uploadcare-panel-footer-counter"></div>\n    </div>\n    <div class="uploadcare-dialog-button-success uploadcare-dialog-source-base-done"\n         tabindex="0" role="button">',(''+ t('dialog.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n    <div class="uploadcare-panel-footer-text"></div>\n  </div>\n</div>\n<div class="uploadcare-dialog-footer">\n  ',(''+ t('dialog.footer.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  <a href="https://uploadcare.com/" target="_blank">',(''+ t('dialog.footer.link') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</a>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/styles"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('\n\n\n\n\n\n\n.uploadcare-dialog-tab:before,.uploadcare-dialog-tab:hover:before,.uploadcare-dialog-disabled-tab:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons.png");background-size:50px}.uploadcare-dialog-tab_current:before,.uploadcare-dialog-tab_current:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons-active.png");background-size:50px}.uploadcare-crop-widget .jcrop-vline,.uploadcare-crop-widget .jcrop-hline{background-image:url(data:image/gif;base64,R0lGODlhCAAIAPABAAAAAKqqqiH/C05FVFNDQVBFMi4wAwEAAAAh+QQJCgABACwAAAAACAAIAAACDYQRGadrzVRMB9FZ5SwAIfkECQoAAQAsAAAAAAgACAAAAg8MDqGYaudeW9ChyOyltQAAIfkECQoAAQAsAAAAAAgACAAAAg9MgGCXm+rQYtC0WGl9oQAAIfkECQoAAQAsAAAAAAgACAAAAg+MgWCRernaYmjCWLF7qAAAIfkECQoAAQAsAAAAAAgACAAAAg2MAwmna81UTAfRWeUsACH5BAkKAAEALAAAAAAIAAgAAAIPRB6gmGrnXlvQocjspbUAACH5BAkKAAEALAAAAAAIAAgAAAIPBIJhl5vq0GLQtFhpfaAAACH5BAUKAAEALAAAAAAIAAgAAAIPhINhkHq52mJowlixe6gAADs=)}.uploadcare-dialog-file-sources:before{background-image:url("',  settings.scriptBase ,'/images/arrow.png")}.uploadcare-dpm-file-remove{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABM0lEQVQoz5VTvW7CMBC2kHivQsjrZGRjaB6lXWCJbWScIT8PYN0GQ7s6FUUKL8CA2suR2C4FlfqkyL77cuf7/B1jbp3GdmIW1VIVKq9ezMI+ncbs92omNeeQgYQ1msQdh5o30x+g82ibCAysr4yDgG1yHjngLhkyXVuXeZcMRSNJMI4mAwinGl2siaiFWncOAW/QgO4vwCGHD/QI2tca27LxEDrAF7QE5fg94ungfrMxM89ZXyqnYAsbtG53RM/lKhmYlJUr6XrUPbQlmHY8SChXTBUhHRsCXfKGdKmCKe2PApQDKmokAJavD5b2zei+hTvNDPQI+HR5PD3C0+MJf4c95vCE79ETEI5POPvzCWf/EwXJbH5XZvNAZqSh6U3hRjc0jqMQmxRHoVRltTSpjcNR+AZwwvykEau0BgAAAABJRU5ErkJggg==)}.uploadcare-dpm-file-error:before{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABIklEQVR42q3Vv2rCUBTHcaEQH825TdLl9hl0FsFdV7s5uXSpb+DoEziV6JCgATdR02D9E09/R64KF3NPbQx84BJOvgRyuSktK5VbHHiFDwhhCwl86Xu+nimZbsWeYQIkmMCLLfgELaA7tfSzRlCISVEz6AEV5J2DDszyBtNGg7L5/CSt123BGBwOKqA8WRzT+cqmU+kt3zj4aQ0myTW4WEjBPgcj29B+NLoE98OhFIw4+GMb2vR6l+Cm25WCWw6ubUPftRrR8XiSVKt/CgZADxKJH2XlurQbDBivxY8ibpu02SR98VrcNuLGXitFh/GYDkHAa2ljlznIfKCCfPNwaBeItfOOr84/Yu/m8WVy7zhgPfHE1hxQ0IcQdlqo76m8X8Avwkyxg4iIuCEAAAAASUVORK5CYII=)}.uploadcare-dpm-file-preview{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABD0lEQVQoFQXBPa5OARQF0LXPvfKS9wo/hegMQUzEJESiUIpOoxOlRKJDIgqVUZiNqPGdba0AAPLj48Mn/8ApgEcPOAGArx/uPVvrEFVRA04A+PTu+vk1BlSwLuAE4Pubvy+vHGAFxABOgC+v/ryO24oYUVUDGODzi+PtjfuuXBBUxG8XASd8e3rz/o5rY60YwVjXKAj8/HXrblDFIAKCehxOOHcxCggWUTHghJYqIqIigoqCEyCKEcXFgAjghCAWi1EDIlgwABWxoIhYaxUMsIo4BEHBRR1ggMMogoqq4jCAgVo1VhGMgFjACQUjCKIqIigYqKiLILiogFULBkbUWhSDqKpYMFAFwaJGUVUH+A8ToG9OM8KqQQAAAABJRU5ErkJggg==)}.uploadcare-dialog-error-tab-illustration{background-image:url("',  settings.scriptBase ,'/images/error-default.png")}.uploadcare-dialog-camera-holder .uploadcare-dialog-error-tab-illustration,.uploadcare-dialog-error-tab-image .uploadcare-dialog-error-tab-illustration{background-image:url("',  settings.scriptBase ,'/images/error-image.png")}.uploadcare-dialog{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQIHWMw/AQAAVcBJCiBozgAAAAASUVORK5CYII=);background:rgba(48,48,48,0.7)}@media(-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.uploadcare-dialog-tab:before,.uploadcare-dialog-tab:hover:before,.uploadcare-dialog-disabled-tab:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons@2x.png")}.uploadcare-dialog-tab_current:before,.uploadcare-dialog-tab_current:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons-active@2x.png")}}html.uploadcare-dialog-opened{overflow:hidden}.uploadcare-dialog{font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;overflow:auto;white-space:nowrap;text-align:center}.uploadcare-dialog:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog *{margin:0;padding:0}.uploadcare-dialog .uploadcare-dialog-panel{border-radius:8px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.35);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.35);box-shadow:0 1px 2px rgba(0,0,0,0.35)}.uploadcare-dialog{-webkit-transition:opacity .25s cubic-bezier(0.05,0.7,0.25,1);-moz-transition:opacity .25s cubic-bezier(0.05,0.7,0.25,1);transition:opacity .25s cubic-bezier(0.05,0.7,0.25,1);opacity:0}.uploadcare-dialog .uploadcare-dialog-inner-wrap{-webkit-transition:-webkit-transform .25s cubic-bezier(0.05,0.7,0.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0.05,0.7,0.25,1);transition:transform .25s cubic-bezier(0.05,0.7,0.25,1);-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);-webkit-transform-origin:50% 100%;-moz-transform-origin:50% 100%;transform-origin:50% 100%}.uploadcare-dialog.uploadcare-active{opacity:1}.uploadcare-dialog.uploadcare-active .uploadcare-dialog-inner-wrap{-webkit-transform:none;-moz-transform:none;transform:none}.uploadcare-dialog-inner-wrap{display:inline-block;vertical-align:middle;white-space:normal;text-align:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative;width:100%;min-width:760px;max-width:944px;padding:0 33px 0 11px}.uploadcare-dialog-close{width:33px;height:33px;line-height:33px;font-size:29.7px;font-weight:bold;color:#fff;cursor:pointer;position:absolute;text-align:center;right:0}.uploadcare-dialog-panel{overflow:hidden;position:relative;background:#efefef;font-weight:normal;padding-left:75px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.uploadcare-dialog-panel :focus{outline:2px dotted #0094c0}.uploadcare-dialog-panel :active,.uploadcare-dialog-panel .uploadcare-mouse-focused:focus{outline:none}.uploadcare-dialog-tabs{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:75px;height:616px;margin-left:-75px;float:left;background:#dee0e1;border-right:1px solid #c5cace}.uploadcare-dialog-tab{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:56px;position:relative;border-bottom:1px solid #c5cace;cursor:pointer}.uploadcare-dialog-tab .uploadcare-dialog-icon,.uploadcare-dialog-tab:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;top:50%;left:50%;display:inline-block;width:50px;height:50px;margin:-25px;opacity:.66}.uploadcare-dialog-tab:before{content:\'\'}.uploadcare-dialog-tab:hover{background-color:#e5e7e8}.uploadcare-dialog-tab:hover .uploadcare-dialog-icon{opacity:1}.uploadcare-dialog-tab:hover:before{opacity:1}.uploadcare-dialog-tab_current{margin-right:-1px;border-right:1px solid #efefef}.uploadcare-dialog-tab_current,.uploadcare-dialog-tab_current:hover{background-color:#efefef}.uploadcare-dialog-tab_current .uploadcare-dialog-icon{opacity:1}.uploadcare-dialog-tab_current:before{opacity:1}.uploadcare-dialog-tab_hidden{display:none!important}.uploadcare-dialog-disabled-tab{cursor:default}.uploadcare-dialog-disabled-tab:hover{background-color:#dee0e1}.uploadcare-dialog-tab-preview .uploadcare-widget-circle{padding:10px}.uploadcare-dialog-tab-preview .uploadcare-widget-circle--canvas{color:#828689;border-color:#bfbfbf}.uploadcare-dialog-tab-preview.uploadcare-dialog-tab_current .uploadcare-widget-circle--canvas{color:#d0bf26;border-color:#e1e5e7}.uploadcare-dialog-tab-preview:before{display:none}.uploadcare-dialog-tab-file:before{background-position:0 -50px}.uploadcare-dialog-tab-url:before{background-position:0 -100px}.uploadcare-dialog-tab-facebook:before{background-position:0 -150px}.uploadcare-dialog-tab-dropbox:before{background-position:0 -200px}.uploadcare-dialog-tab-gdrive:before{background-position:0 -250px}.uploadcare-dialog-tab-instagram:before{background-position:0 -300px}.uploadcare-dialog-tab-vk:before{background-position:0 -350px}.uploadcare-dialog-tab-evernote:before{background-position:0 -400px}.uploadcare-dialog-tab-box:before{background-position:0 -450px}.uploadcare-dialog-tab-skydrive:before{background-position:0 -500px}.uploadcare-dialog-tab-flickr:before{background-position:0 -550px}.uploadcare-dialog-tab-camera:before{background-position:0 -600px}.uploadcare-dialog-tab-huddle:before{background-position:0 -650px}.uploadcare-dialog-tabs-panel{position:relative;display:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:616px;line-height:22px;font-size:16px;color:#000}.uploadcare-dialog-multiple .uploadcare-dialog-tabs-panel{height:550px}.uploadcare-dialog-tabs-panel .uploadcare-dialog-input{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;height:44px;margin-bottom:22px;padding:11px 12.5px;font-family:inherit;font-size:16px;border:1px solid #c5cace;background:#fff;color:#000}.uploadcare-dialog-tabs-panel_current{display:block}.uploadcare-pre{white-space:pre;font-family:monospace;margin:22px auto;padding:22px 25px;background-color:#fff;border:1px solid #c5cace;border-radius:3px;text-align:left;font-size:15px;line-height:22px}.uploadcare-dialog-footer{font-size:13px;line-height:1.4em;text-align:center;color:#ddd;margin:15px}.uploadcare-dialog .uploadcare-dialog-footer a{color:#c2c2c2;text-decoration:none}.uploadcare-dialog .uploadcare-dialog-footer a:hover{text-decoration:underline}.uploadcare-dialog-title{font-size:22px;line-height:1;margin-bottom:22px}.uploadcare-dialog-title.uploadcare-error{color:red}.uploadcare-dialog-title2{font-size:20px;line-height:1;padding-bottom:11px}.uploadcare-dialog-big-title{font-size:40px;font-weight:bold;line-height:1em;margin-bottom:50px}.uploadcare-dialog-label{font-size:15px;line-height:25px;margin-bottom:12.5px;word-wrap:break-word}.uploadcare-dialog-large-text{font-size:20px;font-weight:normal;line-height:1.5em}.uploadcare-dialog-large-text .uploadcare-pre{display:inline-block;font-size:18px}.uploadcare-dialog-section{margin-bottom:22px}.uploadcare-dialog-normal-text{font-size:13px;color:#545454}.uploadcare-dialog-button{display:inline-block;font-size:13px;line-height:30px;padding:0 12.5px;margin-right:.5em;border:solid 1px;border-radius:3px;cursor:pointer;color:#444}.uploadcare-dialog-button,.uploadcare-dialog-button[disabled]:active,.uploadcare-dialog-button.uploadcare-disabled-el:active,.uploadcare-dialog-button[disabled]:hover,.uploadcare-dialog-button.uploadcare-disabled-el:hover{background:#f3f3f3;background:-webkit-linear-gradient(#f5f5f5,#f1f1f1);background:-moz-linear-gradient(#f5f5f5,#f1f1f1);background:linear-gradient(#f5f5f5,#f1f1f1);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-color:#dcdcdc}.uploadcare-dialog-button:hover{background:#f8f8f8;background:-webkit-linear-gradient(#fbfbfb,#f6f6f6);background:-moz-linear-gradient(#fbfbfb,#f6f6f6);background:linear-gradient(#fbfbfb,#f6f6f6);-webkit-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05)}.uploadcare-dialog-button:active{background:#f3f3f3;background:-webkit-linear-gradient(#f5f5f5,#f1f1f1);background:-moz-linear-gradient(#f5f5f5,#f1f1f1);background:linear-gradient(#f5f5f5,#f1f1f1);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);box-shadow:inset 0 2px 2px rgba(0,0,0,0.05)}.uploadcare-dialog-button[disabled],.uploadcare-dialog-button.uploadcare-disabled-el{cursor:default;opacity:.6}.uploadcare-dialog-button:active,.uploadcare-dialog-button:hover{border-color:#cbcbcb}.uploadcare-dialog-button-success{display:inline-block;font-size:13px;line-height:30px;padding:0 12.5px;margin-right:.5em;border:solid 1px;border-radius:3px;cursor:pointer;color:#fff}.uploadcare-dialog-button-success,.uploadcare-dialog-button-success[disabled]:active,.uploadcare-dialog-button-success.uploadcare-disabled-el:active,.uploadcare-dialog-button-success[disabled]:hover,.uploadcare-dialog-button-success.uploadcare-disabled-el:hover{background:#3786eb;background:-webkit-linear-gradient(#3b8df7,#347fdf);background:-moz-linear-gradient(#3b8df7,#347fdf);background:linear-gradient(#3b8df7,#347fdf);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-color:#266fcb}.uploadcare-dialog-button-success:hover{background:#3279d6;background:-webkit-linear-gradient(#3986ea,#2c6dc2);background:-moz-linear-gradient(#3986ea,#2c6dc2);background:linear-gradient(#3986ea,#2c6dc2);-webkit-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05)}.uploadcare-dialog-button-success:active{background:#3177d3;background:-webkit-linear-gradient(#3680e1,#2c6fc5);background:-moz-linear-gradient(#3680e1,#2c6fc5);background:linear-gradient(#3680e1,#2c6fc5);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);box-shadow:inset 0 2px 2px rgba(0,0,0,0.05)}.uploadcare-dialog-button-success[disabled],.uploadcare-dialog-button-success.uploadcare-disabled-el{cursor:default;opacity:.6}.uploadcare-dialog-button-success:active,.uploadcare-dialog-button-success:hover{border-color:#266eca #1f62b7 #1753a1}.uploadcare-dialog-button-success:hover{-webkit-box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5);-moz-box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5);box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5)}.uploadcare-dialog-button-success:active{-webkit-box-shadow:inset 0 1px 3px rgba(22,82,160,0.4);-moz-box-shadow:inset 0 1px 3px rgba(22,82,160,0.4);box-shadow:inset 0 1px 3px rgba(22,82,160,0.4)}.uploadcare-dialog-big-button{border-radius:100px;font-size:20px;font-weight:normal;letter-spacing:1px;color:white;line-height:33px;border:solid 1px #276fcb;text-shadow:0 -1px #2a7ce5;display:inline-block;padding:16.5px 2em;cursor:pointer;-webkit-box-shadow:inset 0 -2px #1f66c1;-moz-box-shadow:inset 0 -2px #1f66c1;box-shadow:inset 0 -2px #1f66c1;background:#458dee;background:-webkit-linear-gradient(#4892f6,#4289e6);background:-moz-linear-gradient(#4892f6,#4289e6);background:linear-gradient(#4892f6,#4289e6)}.uploadcare-dialog-big-button:hover{-webkit-box-shadow:inset 0 -2px #1652a0;-moz-box-shadow:inset 0 -2px #1652a0;box-shadow:inset 0 -2px #1652a0;background:#3279d6;background:-webkit-linear-gradient(#3986eb,#2c6dc2);background:-moz-linear-gradient(#3986eb,#2c6dc2);background:linear-gradient(#3986eb,#2c6dc2)}.uploadcare-dialog-big-button:active{-webkit-box-shadow:inset 0 2px #2561b9;-moz-box-shadow:inset 0 2px #2561b9;box-shadow:inset 0 2px #2561b9;background:#2c6ec3;background:-webkit-linear-gradient(#2c6ec3,#2c6ec3);background:-moz-linear-gradient(#2c6ec3,#2c6ec3);background:linear-gradient(#2c6ec3,#2c6ec3)}.uploadcare-dialog-preview-image-wrap{white-space:nowrap;text-align:center;width:100%;height:462px}.uploadcare-dialog-preview-image-wrap:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-preview-image{display:inline-block;vertical-align:middle;white-space:normal;max-width:100%;max-height:100%}.uploadcare-dialog-preview--with-sizes .uploadcare-dialog-preview-image-wrap{height:422px}.uploadcare-dialog-tabs-panel-preview.uploadcare-dialog-tabs-panel_current ~ .uploadcare-panel-footer{display:none}.uploadcare-panel-footer{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#fff3be;border-top:1px solid #efe2a9;height:66px;padding:17px 25px 0}.uploadcare-panel-footer .uploadcare-dialog-button-success{float:right}.uploadcare-panel-footer .uploadcare-dialog-button{float:left}.uploadcare-panel-footer .uploadcare-dialog-button-success,.uploadcare-panel-footer .uploadcare-dialog-button{min-width:100px;text-align:center;margin-right:0}.uploadcare-panel-footer .uploadcare-error{color:red}.uploadcare-panel-footer-text{text-align:center;color:#85732c;font-size:15px;line-height:32px}.uploadcare-dialog-message-center{text-align:center;padding-top:110px}.uploadcare-dialog-preview-center{text-align:center;padding-top:176px}.uploadcare-dialog-preview-circle{width:66px;height:66px;display:inline-block;margin-bottom:22px}.uploadcare-dialog-error-tab-wrap{height:100%;text-align:center;white-space:nowrap}.uploadcare-dialog-error-tab-wrap:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-title{margin-bottom:12px}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-normal-text{margin-bottom:38px}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-button-success{margin:0}.uploadcare-dialog-error-tab-wrap2{display:inline-block;vertical-align:middle;white-space:normal;margin-top:-22px}.uploadcare-dialog-error-tab-illustration{display:inline-block;width:170px;height:120px;background-position:center;background-repeat:no-repeat;margin-bottom:38px}.uploadcare-if-draganddrop{display:none}.uploadcare-draganddrop .uploadcare-if-no-draganddrop{display:none}.uploadcare-draganddrop .uploadcare-if-draganddrop{display:block}.uploadcare-draganddrop .uploadcare-dialog-file-drop-area{border:dashed 3px #c5cacd;background:rgba(255,255,255,0.64)}.uploadcare-draganddrop .uploadcare-dialog-file-title{color:#dee0e1;text-shadow:0 1px white;margin-top:0}.uploadcare-dialog-file-drop-area{width:100%;height:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:none;text-align:center;border-radius:3px;padding-top:70px}.uploadcare-dialog-file-drop-area .uploadcare-dialog-big-button{margin-top:11px;margin-bottom:55px}.uploadcare-dialog-file-title{font-size:40px;line-height:1;color:black;font-weight:bold;margin:66px 0}.uploadcare-dialog-file-or{font-size:13px;color:#8f9498;margin-bottom:33px}.uploadcare-dialog-file-sources{position:relative;display:inline-block;padding:0 80px 0 100px;line-height:2em}.uploadcare-dialog-file-sources:before{background-repeat:no-repeat;content:\'\';display:block;position:absolute;width:67px;height:44px;padding:0;top:-30px;left:10px}.uploadcare-dialog-file-source{display:inline;font-size:15px;margin-right:.2em;cursor:pointer;font-weight:300;white-space:nowrap}.uploadcare-dialog-file-source:after{content:\'\\00B7\';color:#b7babc;margin-left:.5em}.uploadcare-dialog-file-source:last-child:after{display:none}.uploadcare-dragging .uploadcare-dialog-file-or,.uploadcare-dragging .uploadcare-dialog-file-sources,.uploadcare-dragging .uploadcare-dialog-file-drop-area .uploadcare-dialog-big-button{display:none}.uploadcare-dragging .uploadcare-dialog-file-drop-area{background-color:#f0f0f0;border-color:#b3b5b6;padding-top:264px}.uploadcare-dragging .uploadcare-dialog-file-title{color:#707478}.uploadcare-dragging.uploadcare-dialog-file-drop-area{background-color:#f2f7fe;border-color:#438ae7}.uploadcare-dragging.uploadcare-dialog-file-drop-area .uploadcare-dialog-file-title{color:#438ae7}.uploadcare-dialog-camera-holder{white-space:nowrap;text-align:center;height:528px}.uploadcare-dialog-camera-holder:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-camera-holder .uploadcare-dialog-normal-text{margin-bottom:38px}.uploadcare-dialog-multiple .uploadcare-dialog-camera-holder{height:462px}.uploadcare-dialog-camera-video{display:inline-block;vertical-align:middle;white-space:normal;display:none;max-width:100%;max-height:528px;transition:transform .8s cubic-bezier(0.23,1,0.32,1);-webkit-transition:-webkit-transform .8s cubic-bezier(0.23,1,0.32,1)}.uploadcare-dialog-multiple .uploadcare-dialog-camera-video{max-height:462px}.uploadcare-dialog-camera--mirrored{transform:scale(-1,1);-webkit-transform:scale(-1,1)}.uploadcare-dialog-camera-message{display:inline-block;vertical-align:middle;white-space:normal;display:none;max-width:450px}.uploadcare-dialog-camera-controls{margin-top:17px;text-align:center}.uploadcare-dialog-camera-mirror{position:absolute;margin-right:0;right:25px}.uploadcare-dialog-camera-capture,.uploadcare-dialog-camera-retry,.uploadcare-dialog-camera-mirror{display:none}.uploadcare-dialog-camera-requested .uploadcare-dialog-camera-message{display:inline-block}.uploadcare-dialog-camera-not-found{display:none}.uploadcare-dialog-camera-not-founded .uploadcare-dialog-camera-please-allow{display:none}.uploadcare-dialog-camera-not-founded .uploadcare-dialog-camera-not-found{display:block}.uploadcare-dialog-camera-denied .uploadcare-dialog-camera-retry{display:inline-block}.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-video,.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-capture,.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-mirror{display:inline-block}.uploadcare-dpm-file-list{height:484px;overflow:auto;margin:0 -25px -22px 0}.uploadcare-dpm-file-item{border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;margin-bottom:-1px;display:table;table-layout:fixed;width:100%;padding:10px 0;min-height:20px;font-size:13px;line-height:1.2}.uploadcare-dpm-file-item>*{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:table-cell;vertical-align:middle;padding-right:20px}.uploadcare-dpm-file-item:last-child{margin-bottom:0}.uploadcare-dpm-file-item:hover{background:#ececec}.uploadcare-dpm-file-item:hover .uploadcare-dpm-file-remove{display:inline-block}.uploadcare-dpm-uploaded .uploadcare-dpm-file-progressbar-wrap{display:none}.uploadcare-dpm-error .uploadcare-dpm-file-error{display:table-cell}.uploadcare-dpm-error .uploadcare-dpm-file-size,.uploadcare-dpm-error .uploadcare-dpm-file-progressbar-wrap{display:none}.uploadcare-dpm-file-preview,.uploadcare-dpm-file-error:before{content:\'\';display:inline-block;width:20px;height:20px;margin:-3.5px .7em -3.5px 0}.uploadcare-dpm-file-preview-wrap{width:45px;display:table-cell;text-align:center;line-height:0;padding-right:10px}.uploadcare-dpm-file-preview{margin:0}.uploadcare-dpm-file-name{width:100%;word-wrap:break-word}.uploadcare-dpm-file-size{width:3.5em;text-align:left}.uploadcare-dpm-file-progressbar-wrap{width:80px}.uploadcare-dpm-file-progressbar{width:100%;height:8px;background:#e0e0e0;border-radius:100px}.uploadcare-dpm-file-progressbar-value{height:100%;background:#d6b849;border-radius:100px}.uploadcare-dpm-file-error{width:200px;display:none;color:#f5444b}.uploadcare-dpm-file-remove-wrap{width:20px;text-align:right;line-height:0}.uploadcare-dpm-file-remove{display:none;width:20px;height:20px;cursor:pointer}.uploadcare-dialog-padding{padding:22px 25px}.uploadcare-dialog-remote-iframe-wrap{overflow:auto;-webkit-overflow-scrolling:touch}.uploadcare-dialog-remote-iframe{display:block;width:100%;height:100%;border:0;opacity:0}.uploadcare-panel-footer__summary{display:none}.uploadcare-dialog-multiple .uploadcare-panel-footer__summary{display:block}.uploadcare-panel-footer-counter{display:none}.uploadcare-hidden{display:none}.uploadcare-if-mobile{display:none}@media screen and (max-width:760px){.uploadcare-dialog-opened{overflow:visible!important;position:static!important;width:auto!important;height:auto!important;min-width:0!important;background:#efefef!important}body.uploadcare-dialog-opened>:not(.uploadcare-dialog){display:none!important}.uploadcare-if-mobile{display:block}.uploadcare-if-no-mobile{display:none}.uploadcare-dialog{position:absolute;overflow:visible;-webkit-text-size-adjust:100%}.uploadcare-dialog:before{display:none}.uploadcare-dialog-inner-wrap{padding:0;min-width:310px;height:100%}.uploadcare-dialog-close{position:fixed;z-index:2;color:#000;width:50px;height:50px;line-height:45px}.uploadcare-dialog-footer{display:none}.uploadcare-responsive-panel .uploadcare-dialog-panel{overflow:visible;height:100%;padding:50px 0 0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.uploadcare-responsive-panel .uploadcare-dialog-tabs-panel{height:auto}.uploadcare-responsive-panel .uploadcare-dialog-remote-iframe-wrap{overflow:visible;height:100%}.uploadcare-responsive-panel .uploadcare-dialog-padding{padding:22px 15px}.uploadcare-responsive-panel .uploadcare-dialog-preview-image-wrap{height:auto;padding-bottom:50px}.uploadcare-responsive-panel .uploadcare-dialog-preview-image{max-height:450px}.uploadcare-responsive-panel .uploadcare-dpm-file-list{height:auto;margin:0 -15px 0 0}.uploadcare-responsive-panel .uploadcare-dpm-file-item>*{padding-right:10px}.uploadcare-responsive-panel .uploadcare-dpm-file-progressbar-wrap{width:40px}.uploadcare-responsive-panel .uploadcare-dpm-file-remove{display:inline-block}.uploadcare-responsive-panel .uploadcare-dialog-file-sources,.uploadcare-responsive-panel .uploadcare-dialog-file-or{display:none}.uploadcare-responsive-panel .uploadcare-dialog-file-title{display:none}.uploadcare-responsive-panel .uploadcare-dialog-file-drop-area{padding-top:0;border:0;background:transparent}.uploadcare-responsive-panel .uploadcare-dialog-big-button{margin:110px 0 0}.uploadcare-responsive-panel .uploadcare-clouds-tip{color:#909498;font-size:.75em;line-height:1.4;text-align:left;padding:10px 0 0 50px}.uploadcare-responsive-panel .uploadcare-clouds-tip:before{background-image:url("',  settings.scriptBase ,'/images/arrow.png");background-repeat:no-repeat;background-size:51px 33px;content:\'\';position:absolute;margin:-20px -36px;display:block;width:28px;height:30px}.uploadcare-responsive-panel .uploadcare-dialog-camera-holder{height:auto}.uploadcare-responsive-panel .uploadcare-dialog-camera-mirror{right:15px}.uploadcare-responsive-panel .uploadcare-panel-footer{position:fixed;left:0;bottom:0;width:100%;min-width:310px;height:50px;padding:9px 15px 0;background:rgba(255,243,190,0.95)}.uploadcare-responsive-panel .uploadcare-panel-footer-text{display:none}.uploadcare-responsive-panel .uploadcare-panel-footer-counter{display:inline}.uploadcare-responsive-panel .uploadcare-dialog-multiple.uploadcare-dialog-panel{padding-bottom:50px}.uploadcare-responsive-panel .uploadcare-dialog-multiple .uploadcare-dialog-remote-iframe-wrap:after{content:\'\';display:block;height:50px}.uploadcare-responsive-panel .uploadcare-dialog-multiple .uploadcare-dialog-padding{padding-bottom:72px}.uploadcare-responsive-panel .uploadcare-dialog-tabs{position:fixed;top:0;left:0;width:100%;min-width:310px;height:auto;float:none;margin:0;z-index:1;background:transparent}.uploadcare-responsive-panel .uploadcare-dialog-tab{display:none;height:50px;white-space:nowrap;background:#dee0e1}.uploadcare-responsive-panel .uploadcare-dialog-tab .uploadcare-dialog-icon,.uploadcare-responsive-panel .uploadcare-dialog-tab:before{position:static;margin:0 6px;vertical-align:middle;opacity:1}.uploadcare-responsive-panel .uploadcare-dialog-tab_current{display:block;background:rgba(239,239,239,0.95)}.uploadcare-responsive-panel .uploadcare-dialog-tab:after{content:attr(title);font-size:20px;vertical-align:middle}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tabs-panel_current,.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-panel-footer{display:none}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tabs{position:absolute;z-index:3}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tab{display:block}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tab_current{background:#efefef}.uploadcare-responsive-panel .uploadcare-dialog-panel:not(.uploadcare-dialog-opened-tabs) .uploadcare-dialog-tab_current{text-align:center}.uploadcare-responsive-panel .uploadcare-dialog-panel:not(.uploadcare-dialog-opened-tabs) .uploadcare-dialog-tab_current:after{content:\'\';position:absolute;top:16px;left:14px;display:block;width:22px;height:18px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAOCAQAAAD+6Ta3AAAARklEQVR4Ae3SsRFEIQhAwW1IR2s3s6zTGUN+AxdK5tucAIBmOuKSY2pQbHHZVhgiweAnEixW1uC0VdSU41Xo19+te73+9AGOg1FzTMH13gAAAABJRU5ErkJggg==);background-size:22px}.uploadcare-responsive-panel .uploadcare-crop-sizes{top:-50px;margin-top:15px}.uploadcare-responsive-panel .uploadcare-crop-size{margin:0 10px}}.uploadcare-crop-widget.jcrop-holder{direction:ltr;text-align:left;z-index:0}.uploadcare-crop-widget .jcrop-vline,.uploadcare-crop-widget .jcrop-hline{background-color:white;background-position:top left;background-repeat:repeat;font-size:0;position:absolute}.uploadcare-crop-widget .jcrop-vline{height:100%;width:1px!important}.uploadcare-crop-widget .jcrop-hline{height:1px!important;width:100%}.uploadcare-crop-widget .jcrop-vline.right{right:0}.uploadcare-crop-widget .jcrop-hline.bottom{bottom:0}.uploadcare-crop-widget .jcrop-handle{background-color:#333;border:1px #eee solid;font-size:1px}.uploadcare-crop-widget .jcrop-tracker{height:100%;width:100%;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none}.uploadcare-crop-widget .jcrop-handle.ord-n{left:50%;margin-left:-4px;margin-top:-4px;top:0}.uploadcare-crop-widget .jcrop-handle.ord-s{bottom:0;left:50%;margin-bottom:-4px;margin-left:-4px}.uploadcare-crop-widget .jcrop-handle.ord-e{margin-right:-4px;margin-top:-4px;right:0;top:50%}.uploadcare-crop-widget .jcrop-handle.ord-w{left:0;margin-left:-4px;margin-top:-4px;top:50%}.uploadcare-crop-widget .jcrop-handle.ord-nw{left:0;margin-left:-4px;margin-top:-4px;top:0}.uploadcare-crop-widget .jcrop-handle.ord-ne{margin-right:-4px;margin-top:-4px;right:0;top:0}.uploadcare-crop-widget .jcrop-handle.ord-se{bottom:0;margin-bottom:-4px;margin-right:-4px;right:0}.uploadcare-crop-widget .jcrop-handle.ord-sw{bottom:0;left:0;margin-bottom:-4px;margin-left:-4px}.uploadcare-crop-widget .jcrop-dragbar.ord-n,.uploadcare-crop-widget .jcrop-dragbar.ord-s{height:7px;width:100%}.uploadcare-crop-widget .jcrop-dragbar.ord-e,.uploadcare-crop-widget .jcrop-dragbar.ord-w{height:100%;width:7px}.uploadcare-crop-widget .jcrop-dragbar.ord-n{margin-top:-4px}.uploadcare-crop-widget .jcrop-dragbar.ord-s{bottom:0;margin-bottom:-4px}.uploadcare-crop-widget .jcrop-dragbar.ord-e{margin-right:-4px;right:0}.uploadcare-crop-widget .jcrop-dragbar.ord-w{margin-left:-4px}.uploadcare-crop-widget .jcrop-light .jcrop-vline,.uploadcare-crop-widget .jcrop-light .jcrop-hline{background:#FFF;filter:Alpha(opacity=70)!important;opacity:.7!important}.uploadcare-crop-widget .jcrop-light .jcrop-handle{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#000;border-color:#FFF;border-radius:3px}.uploadcare-crop-widget .jcrop-dark .jcrop-vline,.uploadcare-crop-widget .jcrop-dark .jcrop-hline{background:#000;filter:Alpha(opacity=70)!important;opacity:.7!important}.uploadcare-crop-widget .jcrop-dark .jcrop-handle{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#FFF;border-color:#000;border-radius:3px}.uploadcare-crop-widget.jcrop-holder img,.uploadcare-crop-widget img.jcrop-preview{max-width:none}.uploadcare-crop-widget{display:inline-block;vertical-align:middle;white-space:normal}.uploadcare-crop-widget .jcrop-handle:before{content:\'\';display:block;width:26px;height:26px;margin:-9px}.uploadcare-crop-widget>div:first-child{-webkit-transform:translateZ(0)}.uploadcare-crop-widget>img{filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'.5\'/></filter></svg>#grayscale");-webkit-filter:grayscale(50%)}.uploadcare-crop-sizes{display:none;visibility:hidden;position:relative;top:11px;text-align:center}.uploadcare-dialog-preview--with-sizes .uploadcare-crop-sizes{display:block}.uploadcare-dialog-preview--loaded .uploadcare-crop-sizes{visibility:visible}.uploadcare-crop-size{position:relative;display:inline-block;width:40px;height:40px;line-height:40px;margin:0 20px;font-size:.55em;cursor:pointer;color:#444}.uploadcare-crop-size div{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:40px;height:30px;display:inline-block;vertical-align:middle;border:1px solid #ccc}.uploadcare-crop-size:after{content:attr(data-caption);position:absolute;top:1px;left:0;width:100%;text-align:center;margin:0}.uploadcare-crop-size--current div{background:white}.uploadcare-widget{position:relative;display:inline-block;vertical-align:baseline;line-height:2}.uploadcare-widget :focus{outline:2px dotted #0094c0}.uploadcare-widget :active,.uploadcare-widget .uploadcare-mouse-focused:focus{outline:none}.uploadcare-widget-status-ready .uploadcare-widget-button-open,.uploadcare-widget-status-started .uploadcare-widget-status,.uploadcare-widget-status-started .uploadcare-widget-text,.uploadcare-widget-status-started .uploadcare-widget-button-cancel,.uploadcare-widget-status-loaded .uploadcare-widget-text,.uploadcare-widget-status-loaded .uploadcare-widget-button-remove,.uploadcare-widget-status-error .uploadcare-widget-text,.uploadcare-widget-status-error .uploadcare-widget-button-open{display:inline-block!important}.uploadcare-widget-status{display:none!important;width:1.8em;height:1.8em;margin:-1em 0;margin-right:1ex;line-height:0;vertical-align:middle}.uploadcare-widget-circle--text .uploadcare-widget-circle-back{width:100%;height:100%;display:table;white-space:normal}.uploadcare-widget-circle--text .uploadcare-widget-circle-text{display:table-cell;vertical-align:middle;text-align:center;font-size:60%;line-height:1}.uploadcare-widget-circle--canvas{color:#d0bf26;border-color:#e1e5e7}.uploadcare-widget-circle--canvas canvas{width:100%;height:100%}.uploadcare-widget-text{display:none!important;margin-right:1ex;white-space:nowrap}.uploadcare-widget-file-name{display:inline}.uploadcare-link,.uploadcare-link:link,.uploadcare-link:visited{cursor:pointer;color:#1a85ad;text-decoration:none;border-bottom:1px dotted #1a85ad;border-color:-moz-initial;border-color:initial}.uploadcare-link:hover{color:#176e8f}.uploadcare-widget-button{display:none!important;color:white;padding:.4em .6em;line-height:1;margin:-1em 0;margin-right:.5ex;border-radius:.25em;background:#c3c3c3;cursor:default;white-space:nowrap}.uploadcare-widget-button:hover{background:#b3b3b3}.uploadcare-widget-button-open{padding:.5em .8em;background:#18a5d0}.uploadcare-widget-button-open:hover{background:#0094c0}.uploadcare-widget-dragndrop-area{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:none;position:absolute;white-space:nowrap;top:50%;margin-top:-1.3em;left:-1em;padding:0 1em;line-height:2.6;min-width:100%;text-align:center;background-color:#f0f0f0;color:#707478;border:1px dashed #b3b5b6;border-radius:100px}.uploadcare-widget.uploadcare-dragging .uploadcare-widget-dragndrop-area{background-color:#f2f7fe;border-color:#438ae7;color:#438ae7}.uploadcare-dragging .uploadcare-widget-dragndrop-area{display:block}.uploadcare-dialog-opened .uploadcare-widget-dragndrop-area{display:none}\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-camera"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-camera-holder"><!--\n  --><video class="uploadcare-dialog-camera-video uploadcare-dialog-camera--mirrored"></video><!--\n  --><div class="uploadcare-dialog-camera-message">\n    <div class="uploadcare-dialog-error-tab-illustration"></div>\n\n    <div class="uploadcare-dialog-title uploadcare-dialog-camera-please-allow">\n      ',(''+ t('dialog.tabs.camera.pleaseAllow.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n    <div class="uploadcare-dialog-normal-text uploadcare-dialog-camera-please-allow">\n      ',(''+ t('dialog.tabs.camera.pleaseAllow.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n\n    <div class="uploadcare-dialog-title uploadcare-dialog-camera-not-found">\n      ',(''+ t('dialog.tabs.camera.notFound.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n    <div class="uploadcare-dialog-normal-text uploadcare-dialog-camera-not-found">\n      ',(''+ t('dialog.tabs.camera.notFound.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n\n    <div class="uploadcare-dialog-camera-retry uploadcare-dialog-button"\n         tabindex="0" role="button">\n      ',(''+ t('dialog.tabs.camera.retry') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n  </div><!--\n--></div>\n<div class="uploadcare-dialog-camera-controls">\n  <div class="uploadcare-dialog-camera-mirror uploadcare-dialog-button"\n       tabindex="0" role="button">\n    ',(''+ t('dialog.tabs.camera.mirror') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-camera-capture uploadcare-dialog-button-success"\n       tabindex="0" role="button">\n    ',(''+ t('dialog.tabs.camera.capture') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-file"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-file-drop-area">\n  <div class="uploadcare-dialog-file-title uploadcare-if-draganddrop">\n    ',(''+ t('dialog.tabs.file.drag') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-title uploadcare-if-no-draganddrop">\n    ',(''+ t('dialog.tabs.file.nodrop') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-or uploadcare-if-draganddrop">\n    ',(''+ t('dialog.tabs.file.or') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-clouds-tip uploadcare-if-mobile">\n    ',  t('dialog.tabs.file.cloudsTip') ,'\n  </div>\n  <div class="uploadcare-dialog-big-button needsclick">\n    ',(''+ t('dialog.tabs.file.button') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-or uploadcare-dialog-file-source-or">\n    ',(''+ t('dialog.tabs.file.also') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-sources">\n  </div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-error"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-error-tab-wrap uloadcare-dialog-error-tab-',(''+ error ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"><!--\n  --><div class="uploadcare-dialog-error-tab-wrap2">\n\n    <div class="uploadcare-dialog-error-tab-illustration"></div>\n\n    <div class="uploadcare-dialog-title">',(''+
+        t('dialog.tabs.preview.error.'+error+'.title') || t('dialog.tabs.preview.error.default.title')
+      ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n    <div class="uploadcare-dialog-normal-text">',(''+ 
+        t('dialog.tabs.preview.error.'+error+'.text') || t('dialog.tabs.preview.error.default.text') 
+      ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n    <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-back"\n         tabindex="0" role="button"\n            >',(''+ t('dialog.tabs.preview.error.'+error+'.back') || t('dialog.tabs.preview.error.default.back') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  </div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-image"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding uploadcare-dialog-preview-root">\n  <div class="uploadcare-dialog-title uploadcare-dialog-preview-title">\n    ',(''+ t('dialog.tabs.preview.image.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-preview-image-wrap"><!--\n      1162x684 is 1.5 size of conteiner\n    --><img\n      src="',(''+ file.originalUrl ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'-/preview/1162x684/-/setfill/efefef/-/format/jpeg/-/progressive/yes/"\n      title="',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"\n      alt="',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"\n      class="uploadcare-dialog-preview-image"\n    />\n  </div>\n\n  <div class="uploadcare-crop-sizes uploadcare-dialog-preview-crop-sizes">\n    <div class="uploadcare-crop-size" data-caption="free"><div></div></div>\n  </div>\n</div>\n\n<div class="uploadcare-panel-footer">\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.image.change') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-multiple-file"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dpm-file-item">\n  <div class="uploadcare-dpm-file-preview-wrap">\n    <div class="uploadcare-dpm-file-preview"></div>\n  </div>\n  <div class="uploadcare-dpm-file-name">\n    ',(''+ t('dialog.tabs.preview.unknownName') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dpm-file-progressbar-wrap">\n    <div class="uploadcare-dpm-file-progressbar">\n      <div class="uploadcare-dpm-file-progressbar-value"></div>\n    </div>\n  </div>\n  <div class="uploadcare-dpm-file-size"></div>\n  <div class="uploadcare-dpm-file-error"></div>\n  <div class="uploadcare-dpm-file-remove-wrap">\n    <div class="uploadcare-dpm-file-remove"></div>\n  </div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-multiple"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n  <div class="uploadcare-dialog-title uploadcare-if-no-mobile uploadcare-dpm-title"></div>\n  <div class="uploadcare-dialog-title uploadcare-if-mobile uploadcare-dpm-mobile-title"></div>\n\n  <div class="uploadcare-dpm-file-list"></div>\n</div>\n\n<div class="uploadcare-panel-footer">\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.multiple.clear') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.multiple.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-panel-footer-text uploadcare-dpm-footer-text"></div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-regular"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n  <div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.preview.regular.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n  <div class="uploadcare-dialog-label">\n    ',(''+ (file.name || t('dialog.tabs.preview.unknownName')) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'',(''+
+        utils.readableFileSize(file.size, '', ', ') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-section uploadcare-dialog-normal-text">\n    ',(''+ t('dialog.tabs.preview.regular.line1') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'<br/>\n    ',(''+ t('dialog.tabs.preview.regular.line2') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.change') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-preview-unknown"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n\n  <div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.preview.unknown.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n  <div class="uploadcare-dialog-label">\n    ',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'',(''+
+        utils.readableFileSize(file.size, '', ', ') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.unknown.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/tab-url"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.url.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n<div class="uploadcare-dialog-section uploadcare-dialog-normal-text">\n  <div>',(''+ t('dialog.tabs.url.line1') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div>',(''+ t('dialog.tabs.url.line2') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n<form class="uploadcare-dialog-url-form">\n  <input type="text" class="uploadcare-dialog-input" placeholder="',(''+ t('dialog.tabs.url.input') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'">\n  <button class="uploadcare-dialog-button uploadcare-dialog-url-submit" type="submit">',(''+ t('dialog.tabs.url.button') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</button>\n</form>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/widget-button"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div tabindex="0" role="button"\n     class="uploadcare-widget-button uploadcare-widget-button-',  name ,'"\n>',(''+ caption ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/widget-file-name"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget-file-name uploadcare-link"\n     tabindex="0" role="link">',(''+ utils.fitText(name, 20) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>,\n',(''+ utils.readableFileSize(size) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n');}return __p.join('');};
+}).call(this);
+(function() {
+  this.JST || (this.JST = {});
+  this.JST["uploadcare/templates/widget"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget">\n  <div class="uploadcare-widget-dragndrop-area">\n    ',(''+ t('draghere') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div><div class="uploadcare-widget-status">\n  </div><div class="uploadcare-widget-text">\n</div></div>\n');}return __p.join('');};
+}).call(this);
+(function() {
+  var $, locale, namespace, utils;
 
-  locale = uploadcare.locale, utils = uploadcare.utils, $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, locale = uploadcare.locale, utils = uploadcare.utils, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('templates', function(ns) {
-    ns.JST = {};
+  namespace('uploadcare.templates', function(ns) {
     return ns.tpl = function(key, ctx) {
       var fn;
       if (ctx == null) {
         ctx = {};
       }
-      fn = ns.JST[key];
+      fn = JST["uploadcare/templates/" + key];
       if (fn != null) {
         return fn($.extend({
           t: locale.t,
@@ -5969,13 +5101,7 @@ this.Pusher = Pusher;
   });
 
 }).call(this);
-uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget-circle-back">\n  <div class="uploadcare-widget-circle-text"></div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["dialog"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog uploadcare-responsive-panel"><!--\n--><div class="uploadcare-dialog-inner-wrap">\n    <div class="uploadcare-dialog-close">×</div>\n    <div class="uploadcare-dialog-placeholder"></div>\n  </div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["panel"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-panel">\n  <div class="uploadcare-dialog-tabs"></div>\n\n  <div class="uploadcare-panel-footer uploadcare-panel-footer__summary">\n    <div class="uploadcare-dialog-button uploadcare-dialog-source-base-show-files"\n         tabindex="0" role="button">\n      ',(''+ t('dialog.showFiles') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n      <div class="uploadcare-panel-footer-counter"></div>\n    </div>\n    <div class="uploadcare-dialog-button-success uploadcare-dialog-source-base-done"\n         tabindex="0" role="button">',(''+ t('dialog.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n    <div class="uploadcare-panel-footer-text"></div>\n  </div>\n</div>\n<div class="uploadcare-dialog-footer">\n  ',(''+ t('dialog.footer.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  <a href="https://uploadcare.com/" target="_blank">',(''+ t('dialog.footer.link') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</a>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["styles"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('\n\n\n\n\n\n\n.uploadcare-dialog-tab:before,.uploadcare-dialog-tab:hover:before,.uploadcare-dialog-disabled-tab:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons.png");background-size:50px}.uploadcare-dialog-tab_current:before,.uploadcare-dialog-tab_current:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons-active.png");background-size:50px}.uploadcare-dialog-file-sources:before{background-image:url("',  settings.scriptBase ,'/images/arrow.png")}.uploadcare-remove{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABM0lEQVQoz5VTvW7CMBC2kHivQsjrZGRjaB6lXWCJbWScIT8PYN0GQ7s6FUUKL8CA2suR2C4FlfqkyL77cuf7/B1jbp3GdmIW1VIVKq9ezMI+ncbs92omNeeQgYQ1msQdh5o30x+g82ibCAysr4yDgG1yHjngLhkyXVuXeZcMRSNJMI4mAwinGl2siaiFWncOAW/QgO4vwCGHD/QI2tca27LxEDrAF7QE5fg94ungfrMxM89ZXyqnYAsbtG53RM/lKhmYlJUr6XrUPbQlmHY8SChXTBUhHRsCXfKGdKmCKe2PApQDKmokAJavD5b2zei+hTvNDPQI+HR5PD3C0+MJf4c95vCE79ETEI5POPvzCWf/EwXJbH5XZvNAZqSh6U3hRjc0jqMQmxRHoVRltTSpjcNR+AZwwvykEau0BgAAAABJRU5ErkJggg==)}.uploadcare-file-item__error:before{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABIklEQVR42q3Vv2rCUBTHcaEQH825TdLl9hl0FsFdV7s5uXSpb+DoEziV6JCgATdR02D9E09/R64KF3NPbQx84BJOvgRyuSktK5VbHHiFDwhhCwl86Xu+nimZbsWeYQIkmMCLLfgELaA7tfSzRlCISVEz6AEV5J2DDszyBtNGg7L5/CSt123BGBwOKqA8WRzT+cqmU+kt3zj4aQ0myTW4WEjBPgcj29B+NLoE98OhFIw4+GMb2vR6l+Cm25WCWw6ubUPftRrR8XiSVKt/CgZADxKJH2XlurQbDBivxY8ibpu02SR98VrcNuLGXitFh/GYDkHAa2ljlznIfKCCfPNwaBeItfOOr84/Yu/m8WVy7zhgPfHE1hxQ0IcQdlqo76m8X8Avwkyxg4iIuCEAAAAASUVORK5CYII=)}.uploadcare-file-icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABD0lEQVQoFQXBPa5OARQF0LXPvfKS9wo/hegMQUzEJESiUIpOoxOlRKJDIgqVUZiNqPGdba0AAPLj48Mn/8ApgEcPOAGArx/uPVvrEFVRA04A+PTu+vk1BlSwLuAE4Pubvy+vHGAFxABOgC+v/ryO24oYUVUDGODzi+PtjfuuXBBUxG8XASd8e3rz/o5rY60YwVjXKAj8/HXrblDFIAKCehxOOHcxCggWUTHghJYqIqIigoqCEyCKEcXFgAjghCAWi1EDIlgwABWxoIhYaxUMsIo4BEHBRR1ggMMogoqq4jCAgVo1VhGMgFjACQUjCKIqIigYqKiLILiogFULBkbUWhSDqKpYMFAFwaJGUVUH+A8ToG9OM8KqQQAAAABJRU5ErkJggg==)}.uploadcare-zoomable-icon:after{background-image:url("',  settings.scriptBase ,'/images/zoom@2x.png")}.uploadcare-dialog-error-tab-illustration{background-image:url("',  settings.scriptBase ,'/images/error-default.png")}.uploadcare-dialog-camera-holder .uploadcare-dialog-error-tab-illustration,.uploadcare-dialog-error-tab-image .uploadcare-dialog-error-tab-illustration{background-image:url("',  settings.scriptBase ,'/images/error-image.png")}.uploadcare-dialog{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQIHWMw/AQAAVcBJCiBozgAAAAASUVORK5CYII=);background:rgba(48,48,48,0.7)}@media(-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.uploadcare-dialog-tab:before,.uploadcare-dialog-tab:hover:before,.uploadcare-dialog-disabled-tab:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons@2x.png")}.uploadcare-dialog-tab_current:before,.uploadcare-dialog-tab_current:hover:before{background-image:url("',  settings.scriptBase ,'/images/tab-icons-active@2x.png")}}html.uploadcare-dialog-opened{overflow:hidden}.uploadcare-dialog{font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;overflow:auto;white-space:nowrap;text-align:center}.uploadcare-dialog:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog *{margin:0;padding:0}.uploadcare-dialog .uploadcare-dialog-panel{border-radius:8px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.35);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.35);box-shadow:0 1px 2px rgba(0,0,0,0.35)}.uploadcare-dialog{-webkit-transition:opacity .33s cubic-bezier(0.05,0.7,0.25,1);-moz-transition:opacity .33s cubic-bezier(0.05,0.7,0.25,1);transition:opacity .33s cubic-bezier(0.05,0.7,0.25,1);opacity:0}.uploadcare-dialog .uploadcare-dialog-inner-wrap{-webkit-transition:-webkit-transform .33s cubic-bezier(0.05,0.7,0.25,1);-moz-transition:-moz-transform .33s cubic-bezier(0.05,0.7,0.25,1);transition:transform .33s cubic-bezier(0.05,0.7,0.25,1);-webkit-transform:scale(0.8);-moz-transform:scale(0.8);transform:scale(0.8);-webkit-transform-origin:50% 100%;-moz-transform-origin:50% 100%;transform-origin:50% 100%}.uploadcare-dialog.uploadcare-active{opacity:1}.uploadcare-dialog.uploadcare-active .uploadcare-dialog-inner-wrap{-webkit-transform:none;-moz-transform:none;transform:none}.uploadcare-dialog-inner-wrap{display:inline-block;vertical-align:middle;white-space:normal;text-align:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative;width:100%;min-width:760px;max-width:944px;padding:0 33px 0 11px}.uploadcare-dialog-close{width:33px;height:33px;line-height:33px;font-size:29.7px;font-weight:bold;color:#fff;cursor:pointer;position:absolute;text-align:center;right:0}.uploadcare-dialog-panel{overflow:hidden;position:relative;background:#efefef;font-weight:normal;padding-left:75px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.uploadcare-dialog-panel :focus{outline:2px dotted #0094c0}.uploadcare-dialog-panel :active,.uploadcare-dialog-panel .uploadcare-mouse-focused:focus{outline:none}.uploadcare-dialog-panel.uploadcare-panel-hide-tabs{padding-left:0}.uploadcare-dialog-tabs{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:75px;height:616px;margin-left:-75px;float:left;background:#dee0e1;border-right:1px solid #c5cace}.uploadcare-panel-hide-tabs .uploadcare-dialog-tabs{display:none}.uploadcare-dialog-tab{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:56px;position:relative;border-bottom:1px solid #c5cace;cursor:pointer}.uploadcare-dialog-tab .uploadcare-dialog-icon,.uploadcare-dialog-tab:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;top:50%;left:50%;display:inline-block;width:50px;height:50px;margin:-25px;opacity:.66}.uploadcare-dialog-tab:before{content:\'\'}.uploadcare-dialog-tab:hover{background-color:#e5e7e8}.uploadcare-dialog-tab:hover .uploadcare-dialog-icon{opacity:1}.uploadcare-dialog-tab:hover:before{opacity:1}.uploadcare-dialog-tab_current{margin-right:-1px;border-right:1px solid #efefef}.uploadcare-dialog-tab_current,.uploadcare-dialog-tab_current:hover{background-color:#efefef}.uploadcare-dialog-tab_current .uploadcare-dialog-icon{opacity:1}.uploadcare-dialog-tab_current:before{opacity:1}.uploadcare-dialog-tab_hidden{display:none!important}.uploadcare-dialog-disabled-tab{cursor:default}.uploadcare-dialog-disabled-tab:hover{background-color:#dee0e1}.uploadcare-dialog-tab-preview .uploadcare-widget-circle{padding:10px}.uploadcare-dialog-tab-preview .uploadcare-widget-circle--canvas{color:#828689;border-color:#bfbfbf}.uploadcare-dialog-tab-preview.uploadcare-dialog-tab_current .uploadcare-widget-circle--canvas{color:#d0bf26;border-color:#e1e5e7}.uploadcare-dialog-tab-preview:before{display:none}.uploadcare-dialog-tab-file:before{background-position:0 -50px}.uploadcare-dialog-tab-url:before{background-position:0 -100px}.uploadcare-dialog-tab-facebook:before{background-position:0 -150px}.uploadcare-dialog-tab-dropbox:before{background-position:0 -200px}.uploadcare-dialog-tab-gdrive:before{background-position:0 -250px}.uploadcare-dialog-tab-instagram:before{background-position:0 -300px}.uploadcare-dialog-tab-vk:before{background-position:0 -350px}.uploadcare-dialog-tab-evernote:before{background-position:0 -400px}.uploadcare-dialog-tab-box:before{background-position:0 -450px}.uploadcare-dialog-tab-skydrive:before{background-position:0 -500px}.uploadcare-dialog-tab-flickr:before{background-position:0 -550px}.uploadcare-dialog-tab-camera:before{background-position:0 -600px}.uploadcare-dialog-tab-huddle:before{background-position:0 -650px}.uploadcare-dialog-tabs-panel{position:relative;display:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:616px;line-height:22px;font-size:16px;color:#000}.uploadcare-dialog-multiple .uploadcare-dialog-tabs-panel{height:550px}.uploadcare-dialog-tabs-panel .uploadcare-dialog-input{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;height:44px;margin-bottom:22px;padding:11px 12.5px;font-family:inherit;font-size:16px;border:1px solid #c5cace;background:#fff;color:#000}.uploadcare-dialog-tabs-panel_current{display:block}.uploadcare-pre{white-space:pre;font-family:monospace;margin:22px auto;padding:22px 25px;background-color:#fff;border:1px solid #c5cace;border-radius:3px;text-align:left;font-size:15px;line-height:22px}.uploadcare-dialog-footer{font-size:13px;line-height:1.4em;text-align:center;color:#ddd;margin:15px}.uploadcare-dialog .uploadcare-dialog-footer a{color:#c2c2c2;text-decoration:none}.uploadcare-dialog .uploadcare-dialog-footer a:hover{text-decoration:underline}.uploadcare-dialog-title{font-size:22px;line-height:1;margin-bottom:22px}.uploadcare-dialog-title.uploadcare-error{color:red}.uploadcare-dialog-title2{font-size:20px;line-height:1;padding-bottom:11px}.uploadcare-dialog-big-title{font-size:40px;font-weight:bold;line-height:1em;margin-bottom:50px}.uploadcare-dialog-label{font-size:15px;line-height:25px;margin-bottom:12.5px;word-wrap:break-word}.uploadcare-dialog-large-text{font-size:20px;font-weight:normal;line-height:1.5em}.uploadcare-dialog-large-text .uploadcare-pre{display:inline-block;font-size:18px}.uploadcare-dialog-section{margin-bottom:22px}.uploadcare-dialog-normal-text{font-size:13px;color:#545454}.uploadcare-dialog-button{display:inline-block;font-size:13px;line-height:30px;padding:0 12.5px;margin-right:.5em;border:solid 1px;border-radius:3px;cursor:pointer;color:#444}.uploadcare-dialog-button,.uploadcare-dialog-button[disabled]:active,.uploadcare-dialog-button.uploadcare-disabled-el:active,.uploadcare-dialog-button[disabled]:hover,.uploadcare-dialog-button.uploadcare-disabled-el:hover{background:#f3f3f3;background:-webkit-linear-gradient(#f5f5f5,#f1f1f1);background:-moz-linear-gradient(#f5f5f5,#f1f1f1);background:linear-gradient(#f5f5f5,#f1f1f1);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-color:#dcdcdc}.uploadcare-dialog-button:hover{background:#f8f8f8;background:-webkit-linear-gradient(#fbfbfb,#f6f6f6);background:-moz-linear-gradient(#fbfbfb,#f6f6f6);background:linear-gradient(#fbfbfb,#f6f6f6);-webkit-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05)}.uploadcare-dialog-button:active{background:#f3f3f3;background:-webkit-linear-gradient(#f5f5f5,#f1f1f1);background:-moz-linear-gradient(#f5f5f5,#f1f1f1);background:linear-gradient(#f5f5f5,#f1f1f1);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);box-shadow:inset 0 2px 2px rgba(0,0,0,0.05)}.uploadcare-dialog-button[disabled],.uploadcare-dialog-button.uploadcare-disabled-el{cursor:default;opacity:.6}.uploadcare-dialog-button:active,.uploadcare-dialog-button:hover{border-color:#cbcbcb}.uploadcare-dialog-button-success{display:inline-block;font-size:13px;line-height:30px;padding:0 12.5px;margin-right:.5em;border:solid 1px;border-radius:3px;cursor:pointer;color:#fff}.uploadcare-dialog-button-success,.uploadcare-dialog-button-success[disabled]:active,.uploadcare-dialog-button-success.uploadcare-disabled-el:active,.uploadcare-dialog-button-success[disabled]:hover,.uploadcare-dialog-button-success.uploadcare-disabled-el:hover{background:#3786eb;background:-webkit-linear-gradient(#3b8df7,#347fdf);background:-moz-linear-gradient(#3b8df7,#347fdf);background:linear-gradient(#3b8df7,#347fdf);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-color:#266fcb}.uploadcare-dialog-button-success:hover{background:#3279d6;background:-webkit-linear-gradient(#3986ea,#2c6dc2);background:-moz-linear-gradient(#3986ea,#2c6dc2);background:linear-gradient(#3986ea,#2c6dc2);-webkit-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05);box-shadow:inset 0 -1px 3px rgba(0,0,0,0.05)}.uploadcare-dialog-button-success:active{background:#3177d3;background:-webkit-linear-gradient(#3680e1,#2c6fc5);background:-moz-linear-gradient(#3680e1,#2c6fc5);background:linear-gradient(#3680e1,#2c6fc5);-webkit-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 2px 2px rgba(0,0,0,0.05);box-shadow:inset 0 2px 2px rgba(0,0,0,0.05)}.uploadcare-dialog-button-success[disabled],.uploadcare-dialog-button-success.uploadcare-disabled-el{cursor:default;opacity:.6}.uploadcare-dialog-button-success:active,.uploadcare-dialog-button-success:hover{border-color:#266eca #1f62b7 #1753a1}.uploadcare-dialog-button-success:hover{-webkit-box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5);-moz-box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5);box-shadow:inset 0 -1px 3px rgba(22,82,160,0.5)}.uploadcare-dialog-button-success:active{-webkit-box-shadow:inset 0 1px 3px rgba(22,82,160,0.4);-moz-box-shadow:inset 0 1px 3px rgba(22,82,160,0.4);box-shadow:inset 0 1px 3px rgba(22,82,160,0.4)}.uploadcare-dialog-big-button{border-radius:100px;font-size:20px;font-weight:normal;letter-spacing:1px;color:white;line-height:33px;border:solid 1px #276fcb;text-shadow:0 -1px #2a7ce5;display:inline-block;padding:16.5px 2em;cursor:pointer;-webkit-box-shadow:inset 0 -2px #1f66c1;-moz-box-shadow:inset 0 -2px #1f66c1;box-shadow:inset 0 -2px #1f66c1;background:#458dee;background:-webkit-linear-gradient(#4892f6,#4289e6);background:-moz-linear-gradient(#4892f6,#4289e6);background:linear-gradient(#4892f6,#4289e6)}.uploadcare-dialog-big-button:hover{-webkit-box-shadow:inset 0 -2px #1652a0;-moz-box-shadow:inset 0 -2px #1652a0;box-shadow:inset 0 -2px #1652a0;background:#3279d6;background:-webkit-linear-gradient(#3986eb,#2c6dc2);background:-moz-linear-gradient(#3986eb,#2c6dc2);background:linear-gradient(#3986eb,#2c6dc2)}.uploadcare-dialog-big-button:active{-webkit-box-shadow:inset 0 2px #2561b9;-moz-box-shadow:inset 0 2px #2561b9;box-shadow:inset 0 2px #2561b9;background:#2c6ec3;background:-webkit-linear-gradient(#2c6ec3,#2c6ec3);background:-moz-linear-gradient(#2c6ec3,#2c6ec3);background:linear-gradient(#2c6ec3,#2c6ec3)}.uploadcare-dialog-preview-image-wrap{white-space:nowrap;text-align:center;width:100%;height:462px}.uploadcare-dialog-preview-image-wrap:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-preview--with-sizes .uploadcare-dialog-preview-image-wrap{position:relative;top:-40px;height:422px}.uploadcare-dialog-preview-image{display:inline-block;vertical-align:middle;white-space:normal;max-width:100%;max-height:100%}.uploadcare-dialog-tabs-panel-preview.uploadcare-dialog-tabs-panel_current ~ .uploadcare-panel-footer{display:none}.uploadcare-panel-footer{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#fff3be;border-top:1px solid #efe2a9;height:66px;padding:17px 25px 0}.uploadcare-panel-footer .uploadcare-dialog-button-success{float:right}.uploadcare-panel-footer .uploadcare-dialog-button{float:left}.uploadcare-panel-footer .uploadcare-dialog-button-success,.uploadcare-panel-footer .uploadcare-dialog-button{min-width:100px;text-align:center;margin-right:0}.uploadcare-panel-footer .uploadcare-error{color:red}.uploadcare-panel-footer-text{text-align:center;color:#85732c;font-size:15px;line-height:32px}.uploadcare-dialog-message-center{text-align:center;padding-top:110px}.uploadcare-dialog-preview-center{text-align:center;padding-top:176px}.uploadcare-dialog-preview-circle{width:66px;height:66px;display:inline-block;margin-bottom:22px}.uploadcare-dialog-error-tab-wrap{height:100%;text-align:center;white-space:nowrap}.uploadcare-dialog-error-tab-wrap:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-title{margin-bottom:12px}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-normal-text{margin-bottom:38px}.uploadcare-dialog-error-tab-wrap .uploadcare-dialog-button-success{margin:0}.uploadcare-dialog-error-tab-wrap2{display:inline-block;vertical-align:middle;white-space:normal;margin-top:-22px}.uploadcare-dialog-error-tab-illustration{display:inline-block;width:170px;height:120px;background-position:center;background-repeat:no-repeat;margin-bottom:38px}.uploadcare-if-draganddrop{display:none}.uploadcare-draganddrop .uploadcare-if-no-draganddrop{display:none}.uploadcare-draganddrop .uploadcare-if-draganddrop{display:block}.uploadcare-draganddrop .uploadcare-dialog-file-drop-area{border:dashed 3px #c5cacd;background:rgba(255,255,255,0.64)}.uploadcare-draganddrop .uploadcare-dialog-file-title{color:#dee0e1;text-shadow:0 1px white;margin-top:0}.uploadcare-dialog-file-drop-area{width:100%;height:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:none;text-align:center;border-radius:3px;padding-top:70px}.uploadcare-dialog-file-drop-area .uploadcare-dialog-big-button{margin-top:11px;margin-bottom:55px}.uploadcare-dialog-file-title{font-size:40px;line-height:1;color:black;font-weight:bold;margin:66px 0}.uploadcare-dialog-file-or{font-size:13px;color:#8f9498;margin-bottom:33px}.uploadcare-dialog-file-sources{position:relative;display:inline-block;padding:0 80px 0 100px;line-height:2em}.uploadcare-dialog-file-sources:before{background-repeat:no-repeat;content:\'\';display:block;position:absolute;width:67px;height:44px;padding:0;top:-30px;left:10px}.uploadcare-dialog-file-source{display:inline;font-size:15px;margin-right:.2em;cursor:pointer;font-weight:300;white-space:nowrap}.uploadcare-dialog-file-source:after{content:\'\\00B7\';color:#b7babc;margin-left:.5em}.uploadcare-dialog-file-source:last-child:after{display:none}.uploadcare-dragging .uploadcare-dialog-file-or,.uploadcare-dragging .uploadcare-dialog-file-sources,.uploadcare-dragging .uploadcare-dialog-file-drop-area .uploadcare-dialog-big-button{display:none}.uploadcare-dragging .uploadcare-dialog-file-drop-area{background-color:#f0f0f0;border-color:#b3b5b6;padding-top:264px}.uploadcare-dragging .uploadcare-dialog-file-title{color:#707478}.uploadcare-dragging.uploadcare-dialog-file-drop-area{background-color:#f2f7fe;border-color:#438ae7}.uploadcare-dragging.uploadcare-dialog-file-drop-area .uploadcare-dialog-file-title{color:#438ae7}.uploadcare-dialog-camera-holder{white-space:nowrap;text-align:center;height:528px}.uploadcare-dialog-camera-holder:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-dialog-camera-holder .uploadcare-dialog-normal-text{margin-bottom:38px}.uploadcare-dialog-multiple .uploadcare-dialog-camera-holder{height:462px}.uploadcare-dialog-camera-video{display:inline-block;vertical-align:middle;white-space:normal;display:none;max-width:100%;max-height:528px;transition:transform .8s cubic-bezier(0.23,1,0.32,1);-webkit-transition:-webkit-transform .8s cubic-bezier(0.23,1,0.32,1)}.uploadcare-dialog-multiple .uploadcare-dialog-camera-video{max-height:462px}.uploadcare-dialog-camera--mirrored{transform:scale(-1,1);-webkit-transform:scale(-1,1)}.uploadcare-dialog-camera-message{display:inline-block;vertical-align:middle;white-space:normal;display:none;max-width:450px}.uploadcare-dialog-camera-controls{margin-top:17px;text-align:center}.uploadcare-dialog-camera-mirror{position:absolute;margin-right:0;right:25px}.uploadcare-dialog-camera-capture,.uploadcare-dialog-camera-retry,.uploadcare-dialog-camera-mirror{display:none}.uploadcare-dialog-camera-requested .uploadcare-dialog-camera-message{display:inline-block}.uploadcare-dialog-camera-not-found{display:none}.uploadcare-dialog-camera-not-founded .uploadcare-dialog-camera-please-allow{display:none}.uploadcare-dialog-camera-not-founded .uploadcare-dialog-camera-not-found{display:block}.uploadcare-dialog-camera-denied .uploadcare-dialog-camera-retry{display:inline-block}.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-video,.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-capture,.uploadcare-dialog-camera-ready .uploadcare-dialog-camera-mirror{display:inline-block}.uploadcare-file-list{height:550px;overflow:auto;position:relative;margin:0 -25px -22px 0}.uploadcare-dialog-multiple .uploadcare-file-list{height:484px}.uploadcare-file-list_table .uploadcare-file-item{border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;margin-bottom:-1px;display:table;table-layout:fixed;width:100%;padding:10px 0;min-height:20px}.uploadcare-file-list_table .uploadcare-file-item>*{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:table-cell;vertical-align:middle;padding-right:20px}.uploadcare-file-list_table .uploadcare-file-item:last-child{margin-bottom:0}.uploadcare-file-list_table .uploadcare-file-item:hover{background:#ececec}.uploadcare-file-list_table .uploadcare-file-item__preview{width:55px;padding-right:10px}.uploadcare-file-list_table .uploadcare-file-item__preview>img{height:55px}.uploadcare-file-list_table .uploadcare-file-item__size{width:3.5em}.uploadcare-file-list_table .uploadcare-file-item__progressbar{width:80px}.uploadcare-file-list_table .uploadcare-zoomable-icon:after{width:55px}.uploadcare-file-list_tiles .uploadcare-file-item{text-align:left;position:relative;display:inline-block;vertical-align:top;width:170px;min-height:170px;padding:0 20px 10px 0}.uploadcare-file-list_tiles .uploadcare-file-item>*{padding-bottom:10px}.uploadcare-file-list_tiles .uploadcare-file-item__name{padding-top:10px}.uploadcare-file-list_tiles .uploadcare-file-item__remove{position:absolute;top:0;right:10px}.uploadcare-file-list_tiles .uploadcare-file-item__preview{white-space:nowrap;width:170px;height:170px;padding-bottom:0}.uploadcare-file-list_tiles .uploadcare-file-item__preview:before{display:inline-block;vertical-align:middle;content:\'\';height:100%;position:static;width:0}.uploadcare-file-list_tiles .uploadcare-file-item__preview img{display:inline-block;vertical-align:middle;white-space:normal}.uploadcare-file-list_tiles .uploadcare-file-item_uploading .uploadcare-file-item__preview,.uploadcare-file-list_tiles .uploadcare-file-item_error .uploadcare-file-item__preview{display:none}.uploadcare-file-list_tiles .uploadcare-file-item_uploaded .uploadcare-file-item__size,.uploadcare-file-list_tiles .uploadcare-file-item_uploaded .uploadcare-file-item__name{display:none}.uploadcare-file-item__error:before,.uploadcare-file-icon{content:\'\';display:inline-block;width:20px;height:20px;margin:-3.5px .7em -3.5px 0}.uploadcare-file-item{font-size:13px;line-height:1.2}.uploadcare-file-item:hover .uploadcare-file-item__remove{visibility:visible}.uploadcare-file-item:hover .uploadcare-zoomable-icon:after{display:block}.uploadcare-file-item_uploading .uploadcare-file-item__error{display:none}.uploadcare-file-item_uploaded .uploadcare-file-item__progressbar,.uploadcare-file-item_uploaded .uploadcare-file-item__error{display:none}.uploadcare-file-item_error .uploadcare-file-item__size,.uploadcare-file-item_error .uploadcare-file-item__progressbar{display:none}.uploadcare-file-item__preview{text-align:center;line-height:0}.uploadcare-file-item__preview>img{display:inline-block;width:auto;height:auto;max-width:100%;max-height:100%}.uploadcare-file-item__name{width:100%;word-wrap:break-word}.uploadcare-file-item__error{width:200px;color:#f5444b}.uploadcare-file-item__remove{visibility:hidden;width:20px;text-align:right;line-height:0}.uploadcare-remove{width:20px;height:20px;cursor:pointer}.uploadcare-zoomable-icon{position:relative;cursor:pointer}.uploadcare-zoomable-icon:after{content:\'\';position:absolute;top:0;left:0;display:none;width:100%;height:100%;background-size:45px 45px;background-repeat:no-repeat;background-position:center}.uploadcare-progressbar{width:100%;height:8px;background:#e0e0e0;border-radius:100px}.uploadcare-progressbar__value{height:100%;background:#d6b849;border-radius:100px}.uploadcare-file-icon{margin:0}.uploadcare-dialog-padding{padding:22px 25px}.uploadcare-dialog-remote-iframe-wrap{overflow:auto;-webkit-overflow-scrolling:touch}.uploadcare-dialog-remote-iframe{display:block;width:100%;height:100%;border:0;opacity:0}.uploadcare-panel-footer__summary{display:none}.uploadcare-dialog-multiple .uploadcare-panel-footer__summary{display:block}.uploadcare-panel-footer-counter{display:none}.uploadcare-hidden{display:none}.uploadcare-if-mobile{display:none}@media screen and (max-width:760px){.uploadcare-dialog-opened{overflow:visible!important;position:static!important;width:auto!important;height:auto!important;min-width:0!important;background:#efefef!important}body.uploadcare-dialog-opened>.uploadcare-inactive,body.uploadcare-dialog-opened>:not(.uploadcare-dialog){display:none!important}.uploadcare-if-mobile{display:block}.uploadcare-if-no-mobile{display:none}.uploadcare-dialog{position:absolute;overflow:visible;-webkit-text-size-adjust:100%}.uploadcare-dialog:before{display:none}.uploadcare-dialog-inner-wrap{padding:0;min-width:310px;height:100%}.uploadcare-dialog-close{position:fixed;z-index:2;color:#000;width:50px;height:50px;line-height:45px}.uploadcare-dialog-footer{display:none}.uploadcare-responsive-panel .uploadcare-dialog-panel{overflow:visible;height:100%;padding:50px 0 0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.uploadcare-responsive-panel .uploadcare-dialog-panel.uploadcare-panel-hide-tabs{padding-top:0}.uploadcare-responsive-panel .uploadcare-dialog-tabs-panel{height:auto}.uploadcare-responsive-panel .uploadcare-dialog-remote-iframe-wrap{overflow:visible;height:100%}.uploadcare-responsive-panel .uploadcare-dialog-padding{padding:22px 15px}.uploadcare-responsive-panel .uploadcare-dialog-preview-image-wrap{top:auto;height:auto;padding-bottom:50px}.uploadcare-responsive-panel .uploadcare-dialog-preview-image{max-height:450px}.uploadcare-responsive-panel .uploadcare-file-list{height:auto;margin:0 -15px 0 0}.uploadcare-responsive-panel .uploadcare-file-list_table .uploadcare-file-item>*{padding-right:10px}.uploadcare-responsive-panel .uploadcare-file-list_table .uploadcare-file-item__progressbar{width:40px}.uploadcare-responsive-panel .uploadcare-file-list_tiles .uploadcare-file-item{width:140px;min-height:140px;padding-right:10px}.uploadcare-responsive-panel .uploadcare-file-list_tiles .uploadcare-file-item__preview{width:140px;height:140px}.uploadcare-responsive-panel .uploadcare-file-list_tiles .uploadcare-file-item__remove{right:10px}.uploadcare-responsive-panel .uploadcare-file-item__remove{visibility:visible}.uploadcare-responsive-panel .uploadcare-dialog-file-sources,.uploadcare-responsive-panel .uploadcare-dialog-file-or{display:none}.uploadcare-responsive-panel .uploadcare-dialog-file-title{display:none}.uploadcare-responsive-panel .uploadcare-dialog-file-drop-area{padding-top:0;border:0;background:transparent}.uploadcare-responsive-panel .uploadcare-dialog-big-button{margin:110px 0 0}.uploadcare-responsive-panel .uploadcare-clouds-tip{color:#909498;font-size:.75em;line-height:1.4;text-align:left;padding:10px 0 0 50px}.uploadcare-responsive-panel .uploadcare-clouds-tip:before{background-image:url("',  settings.scriptBase ,'/images/arrow.png");background-repeat:no-repeat;background-size:51px 33px;content:\'\';position:absolute;margin:-20px -36px;display:block;width:28px;height:30px}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tab.uploadcare-dialog-tab-camera{display:none}.uploadcare-responsive-panel .uploadcare-dialog-camera-holder{height:auto}.uploadcare-responsive-panel .uploadcare-dialog-camera-mirror{right:15px}.uploadcare-responsive-panel .uploadcare-panel-footer{position:fixed;left:0;bottom:0;width:100%;min-width:310px;height:50px;padding:9px 15px 0;background:rgba(255,243,190,0.95)}.uploadcare-responsive-panel .uploadcare-panel-footer-text{display:none}.uploadcare-responsive-panel .uploadcare-panel-footer-counter{display:inline}.uploadcare-responsive-panel .uploadcare-dialog-multiple.uploadcare-dialog-panel{padding-bottom:50px}.uploadcare-responsive-panel .uploadcare-dialog-multiple .uploadcare-dialog-remote-iframe-wrap:after{content:\'\';display:block;height:50px}.uploadcare-responsive-panel .uploadcare-dialog-multiple .uploadcare-dialog-padding{padding-bottom:72px}.uploadcare-responsive-panel .uploadcare-dialog-tabs{position:fixed;top:0;left:0;width:100%;min-width:310px;height:auto;float:none;margin:0;z-index:1;background:transparent}.uploadcare-responsive-panel .uploadcare-dialog-tab{display:none;height:50px;white-space:nowrap;background:#dee0e1}.uploadcare-responsive-panel .uploadcare-dialog-tab .uploadcare-dialog-icon,.uploadcare-responsive-panel .uploadcare-dialog-tab:before{position:static;margin:0 6px;vertical-align:middle;opacity:1}.uploadcare-responsive-panel .uploadcare-dialog-tab_current{display:block;background:rgba(239,239,239,0.95)}.uploadcare-responsive-panel .uploadcare-dialog-tab:after{content:attr(title);font-size:20px;vertical-align:middle}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tabs-panel_current,.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-panel-footer{display:none}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tabs{position:absolute;z-index:3}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tab{display:block}.uploadcare-responsive-panel .uploadcare-dialog-opened-tabs .uploadcare-dialog-tab_current{background:#efefef}.uploadcare-responsive-panel .uploadcare-dialog-panel:not(.uploadcare-dialog-opened-tabs) .uploadcare-dialog-tab_current{text-align:center}.uploadcare-responsive-panel .uploadcare-dialog-panel:not(.uploadcare-dialog-opened-tabs) .uploadcare-dialog-tab_current:after{content:\'\';position:absolute;top:16px;left:14px;display:block;width:22px;height:18px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAOCAQAAAD+6Ta3AAAARklEQVR4Ae3SsRFEIQhAwW1IR2s3s6zTGUN+AxdK5tucAIBmOuKSY2pQbHHZVhgiweAnEixW1uC0VdSU41Xo19+te73+9AGOg1FzTMH13gAAAABJRU5ErkJggg==);background-size:22px}.uploadcare-responsive-panel .uploadcare-crop-sizes{top:auto;margin-bottom:15px}.uploadcare-responsive-panel .uploadcare-crop-size{margin:0 10px}}.uploadcare-crop-widget.jcrop-holder{direction:ltr;text-align:left;z-index:0}.uploadcare-crop-widget .jcrop-vline,.uploadcare-crop-widget .jcrop-hline,.uploadcare-crop-widget .jcrop-handle{position:absolute;font-size:0;background-color:white;box-shadow:0 0 0 1px rgba(0,0,0,0.2);z-index:320}.uploadcare-crop-widget .jcrop-vline{height:100%;width:1px!important}.uploadcare-crop-widget .jcrop-hline{height:1px!important;width:100%}.uploadcare-crop-widget .jcrop-vline.right{right:0}.uploadcare-crop-widget .jcrop-hline.bottom{bottom:0}.uploadcare-crop-widget .jcrop-tracker{height:100%;width:100%;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none}.uploadcare-crop-widget .jcrop-handle{border-radius:50%;width:13px;height:13px;z-index:330}.uploadcare-crop-widget .jcrop-handle:before,.uploadcare-crop-widget .jcrop-handle:after{content:"";position:absolute;display:block;width:1px;height:1px;background:white}.uploadcare-crop-widget .jcrop-handle:before{width:3px;top:6px}.uploadcare-crop-widget .jcrop-handle:after{height:3px;left:6px}.uploadcare-crop-widget .jcrop-handle.ord-nw:before,.uploadcare-crop-widget .jcrop-handle.ord-sw:before{left:12px}.uploadcare-crop-widget .jcrop-handle.ord-ne:before,.uploadcare-crop-widget .jcrop-handle.ord-se:before{left:-2px}.uploadcare-crop-widget .jcrop-handle.ord-nw:after,.uploadcare-crop-widget .jcrop-handle.ord-ne:after{top:12px}.uploadcare-crop-widget .jcrop-handle.ord-sw:after,.uploadcare-crop-widget .jcrop-handle.ord-se:after{top:-2px}.uploadcare-crop-widget .jcrop-handle.ord-nw{left:0;margin-left:-6px;margin-top:-6px;top:0}.uploadcare-crop-widget .jcrop-handle.ord-ne{margin-right:-6px;margin-top:-6px;right:0;top:0}.uploadcare-crop-widget .jcrop-handle.ord-se{bottom:0;margin-bottom:-6px;margin-right:-6px;right:0}.uploadcare-crop-widget .jcrop-handle.ord-sw{bottom:0;left:0;margin-bottom:-6px;margin-left:-6px}.uploadcare-crop-widget.jcrop-holder img,.uploadcare-crop-widget img.jcrop-preview{max-width:none}.uploadcare-crop-widget{display:inline-block;vertical-align:middle;white-space:normal}.uploadcare-crop-widget .jcrop-handle>div{width:35px;height:35px;margin:-11px}.uploadcare-crop-widget>div:first-child{-webkit-transform:translateZ(0)}.uploadcare-crop-widget>img{filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'.5\'/></filter></svg>#grayscale");-webkit-filter:grayscale(50%)}.uploadcare-crop-sizes{display:none;visibility:hidden;position:relative;top:433px;text-align:center}.uploadcare-dialog-preview--with-sizes .uploadcare-crop-sizes{display:block}.uploadcare-dialog-preview--loaded .uploadcare-crop-sizes{visibility:visible}.uploadcare-crop-size{position:relative;display:inline-block;width:40px;height:40px;line-height:40px;margin:0 20px;font-size:.55em;cursor:pointer;color:#444}.uploadcare-crop-size div{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:40px;height:30px;display:inline-block;vertical-align:middle;border:1px solid #ccc}.uploadcare-crop-size:after{content:attr(data-caption);position:absolute;top:1px;left:0;width:100%;text-align:center;margin:0}.uploadcare-crop-size--current div{background:white}.uploadcare-widget{position:relative;display:inline-block;vertical-align:baseline;line-height:2}.uploadcare-widget :focus{outline:2px dotted #0094c0}.uploadcare-widget :active,.uploadcare-widget .uploadcare-mouse-focused:focus{outline:none}.uploadcare-widget-status-ready .uploadcare-widget-button-open,.uploadcare-widget-status-started .uploadcare-widget-status,.uploadcare-widget-status-started .uploadcare-widget-text,.uploadcare-widget-status-started .uploadcare-widget-button-cancel,.uploadcare-widget-status-loaded .uploadcare-widget-text,.uploadcare-widget-status-error .uploadcare-widget-text,.uploadcare-widget-status-error .uploadcare-widget-button-open{display:inline-block!important}.uploadcare-widget-option-clearable.uploadcare-widget-status-error .uploadcare-widget-button-open{display:none!important}.uploadcare-widget-option-clearable.uploadcare-widget-status-loaded .uploadcare-widget-button-remove,.uploadcare-widget-option-clearable.uploadcare-widget-status-error .uploadcare-widget-button-remove{display:inline-block!important}.uploadcare-widget-status{display:none!important;width:1.8em;height:1.8em;margin:-1em 0;margin-right:1ex;line-height:0;vertical-align:middle}.uploadcare-widget-circle--text .uploadcare-widget-circle-back{width:100%;height:100%;display:table;white-space:normal}.uploadcare-widget-circle--text .uploadcare-widget-circle-text{display:table-cell;vertical-align:middle;text-align:center;font-size:60%;line-height:1}.uploadcare-widget-circle--canvas{color:#d0bf26;border-color:#e1e5e7}.uploadcare-widget-circle--canvas canvas{width:100%;height:100%}.uploadcare-widget-text{display:none!important;margin-right:1ex;white-space:nowrap}.uploadcare-widget-file-name{display:inline}.uploadcare-link,.uploadcare-link:link,.uploadcare-link:visited{cursor:pointer;color:#1a85ad;text-decoration:none;border-bottom:1px dotted #1a85ad;border-color:-moz-initial;border-color:initial}.uploadcare-link:hover{color:#176e8f}.uploadcare-widget-button{display:none!important;color:white;padding:.4em .6em;line-height:1;margin:-1em 0;margin-right:.5ex;border-radius:.25em;background:#c3c3c3;cursor:default;white-space:nowrap}.uploadcare-widget-button:hover{background:#b3b3b3}.uploadcare-widget-button-open{padding:.5em .8em;background:#18a5d0}.uploadcare-widget-button-open:hover{background:#0094c0}.uploadcare-widget-dragndrop-area{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:none;position:absolute;white-space:nowrap;top:50%;margin-top:-1.3em;left:-1em;padding:0 1em;line-height:2.6;min-width:100%;text-align:center;background-color:#f0f0f0;color:#707478;border:1px dashed #b3b5b6;border-radius:100px}.uploadcare-widget.uploadcare-dragging .uploadcare-widget-dragndrop-area{background-color:#f2f7fe;border-color:#438ae7;color:#438ae7}.uploadcare-dragging .uploadcare-widget-dragndrop-area{display:block}.uploadcare-dialog-opened .uploadcare-widget-dragndrop-area{display:none}\n');}return __p.join('');};uploadcare.templates.JST["tab-camera"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-camera-holder"><!--\n  --><video class="uploadcare-dialog-camera-video uploadcare-dialog-camera--mirrored"></video><!--\n  --><div class="uploadcare-dialog-camera-message">\n    <div class="uploadcare-dialog-error-tab-illustration"></div>\n\n    <div class="uploadcare-dialog-title uploadcare-dialog-camera-please-allow">\n      ',(''+ t('dialog.tabs.camera.pleaseAllow.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n    <div class="uploadcare-dialog-normal-text uploadcare-dialog-camera-please-allow">\n      ',(''+ t('dialog.tabs.camera.pleaseAllow.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n\n    <div class="uploadcare-dialog-title uploadcare-dialog-camera-not-found">\n      ',(''+ t('dialog.tabs.camera.notFound.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n    <div class="uploadcare-dialog-normal-text uploadcare-dialog-camera-not-found">\n      ',(''+ t('dialog.tabs.camera.notFound.text') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n\n    <div class="uploadcare-dialog-camera-retry uploadcare-dialog-button"\n         tabindex="0" role="button">\n      ',(''+ t('dialog.tabs.camera.retry') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n    </div>\n  </div><!--\n--></div>\n<div class="uploadcare-dialog-camera-controls">\n  <div class="uploadcare-dialog-camera-mirror uploadcare-dialog-button"\n       tabindex="0" role="button">\n    ',(''+ t('dialog.tabs.camera.mirror') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-camera-capture uploadcare-dialog-button-success"\n       tabindex="0" role="button">\n    ',(''+ t('dialog.tabs.camera.capture') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-file"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-file-drop-area">\n  <div class="uploadcare-dialog-file-title uploadcare-if-draganddrop">\n    ',(''+ t('dialog.tabs.file.drag') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-title uploadcare-if-no-draganddrop">\n    ',(''+ t('dialog.tabs.file.nodrop') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-or uploadcare-if-draganddrop">\n    ',(''+ t('dialog.tabs.file.or') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-clouds-tip uploadcare-if-mobile">\n    ',  t('dialog.tabs.file.cloudsTip') ,'\n  </div>\n  <div class="uploadcare-dialog-big-button needsclick">\n    ',(''+ t('dialog.tabs.file.button') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-or uploadcare-dialog-file-source-or">\n    ',(''+ t('dialog.tabs.file.also') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-dialog-file-sources">\n  </div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-error"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-error-tab-wrap uloadcare-dialog-error-tab-',(''+ error ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"><!--\n  --><div class="uploadcare-dialog-error-tab-wrap2">\n\n    <div class="uploadcare-dialog-error-tab-illustration"></div>\n\n    <div class="uploadcare-dialog-title">',(''+
-        t('dialog.tabs.preview.error.'+error+'.title') || t('dialog.tabs.preview.error.default.title')
-      ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n    <div class="uploadcare-dialog-normal-text">',(''+ 
-        t('dialog.tabs.preview.error.'+error+'.text') || t('dialog.tabs.preview.error.default.text') 
-      ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n    <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-back"\n         tabindex="0" role="button"\n            >',(''+ t('dialog.tabs.preview.error.'+error+'.back') || t('dialog.tabs.preview.error.default.back') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  </div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-image"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding uploadcare-dialog-preview-root">\n  <div class="uploadcare-dialog-title uploadcare-dialog-preview-title">\n    ',(''+ t('dialog.tabs.preview.image.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-crop-sizes uploadcare-dialog-preview-crop-sizes">\n    <div class="uploadcare-crop-size" data-caption="free"><div></div></div>\n  </div>\n\n  <div class="uploadcare-dialog-preview-image-wrap"><!--\n      1162x684 is 1.5 size of conteiner\n    --><img\n      src="',(''+ file.originalUrl ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'-/preview/1162x684/-/setfill/efefef/-/format/jpeg/-/progressive/yes/"\n      title="',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"\n      alt="',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'"\n      class="uploadcare-dialog-preview-image"\n    />\n  </div>\n</div>\n\n<div class="uploadcare-panel-footer">\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.image.change') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-multiple-file"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-file-item uploadcare-file-item_uploading">\n  <div class="uploadcare-file-item__preview">\n    <div class="uploadcare-file-icon"></div>\n  </div>\n  <div class="uploadcare-file-item__name">\n    ',(''+ t('dialog.tabs.preview.unknownName') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n  <div class="uploadcare-file-item__progressbar">\n    <div class="uploadcare-progressbar">\n      <div class="uploadcare-progressbar__value"></div>\n    </div>\n  </div>\n  <div class="uploadcare-file-item__size"></div>\n  <div class="uploadcare-file-item__error"></div>\n  <div class="uploadcare-file-item__remove">\n    <div class="uploadcare-remove"></div>\n  </div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-multiple"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n  <div class="uploadcare-dialog-title uploadcare-if-no-mobile uploadcare-dpm-title"></div>\n  <div class="uploadcare-dialog-title uploadcare-if-mobile uploadcare-dpm-mobile-title"></div>\n\n  <div class="uploadcare-file-list"></div>\n</div>\n\n<div class="uploadcare-panel-footer">\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.multiple.clear') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.multiple.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-panel-footer-text uploadcare-dpm-footer-text"></div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-regular"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n  <div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.preview.regular.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n  <div class="uploadcare-dialog-label">\n    ',(''+ (file.name || t('dialog.tabs.preview.unknownName')) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'',(''+
-        utils.readableFileSize(file.size, '', ', ') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-section uploadcare-dialog-normal-text">\n    ',(''+ t('dialog.tabs.preview.regular.line1') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'<br/>\n    ',(''+ t('dialog.tabs.preview.regular.line2') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div class="uploadcare-dialog-button uploadcare-dialog-preview-back"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.change') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-preview-unknown"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-padding">\n\n  <div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.preview.unknown.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n\n  <div class="uploadcare-dialog-label">\n    ',(''+ (file.name || "") ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'',(''+
-        utils.readableFileSize(file.size, '', ', ') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div>\n\n  <div class="uploadcare-dialog-button-success uploadcare-dialog-preview-done"\n       tabindex="0" role="button"\n          >',(''+ t('dialog.tabs.preview.unknown.done') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n');}return __p.join('');};uploadcare.templates.JST["tab-url"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-dialog-title">',(''+ t('dialog.tabs.url.title') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n<div class="uploadcare-dialog-section uploadcare-dialog-normal-text">\n  <div>',(''+ t('dialog.tabs.url.line1') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n  <div>',(''+ t('dialog.tabs.url.line2') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n</div>\n<form class="uploadcare-dialog-url-form">\n  <input type="text" class="uploadcare-dialog-input" placeholder="',(''+ t('dialog.tabs.url.input') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'">\n  <button class="uploadcare-dialog-button uploadcare-dialog-url-submit" type="submit">',(''+ t('dialog.tabs.url.button') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</button>\n</form>\n');}return __p.join('');};uploadcare.templates.JST["widget-button"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div tabindex="0" role="button"\n     class="uploadcare-widget-button uploadcare-widget-button-',  name ,'"\n>',(''+ caption ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>\n');}return __p.join('');};uploadcare.templates.JST["widget-file-name"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget-file-name uploadcare-link"\n     tabindex="0" role="link">',(''+ utils.fitText(name, 20) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'</div>,\n',(''+ utils.readableFileSize(size) ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n');}return __p.join('');};uploadcare.templates.JST["widget"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<div class="uploadcare-widget">\n  <div class="uploadcare-widget-dragndrop-area">\n    ',(''+ t('draghere') ).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;'),'\n  </div><div class="uploadcare-widget-status">\n  </div><div class="uploadcare-widget-text">\n</div></div>\n');}return __p.join('');};(function() {
+(function() {
   var $, tpl;
 
   $ = uploadcare.jQuery;
@@ -6070,6 +5196,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     function startDragMode(mode, pos) //{{{
     {
       docOffset = getPos($img);
+      Tracker.setCursor(mode === 'move' ? mode : mode + '-resize');
 
       if (mode === 'move') {
         return Tracker.activateHandlers(createMover(pos), doneSelect);
@@ -6213,8 +5340,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     function doneSelect(pos) //{{{
     {
       var c = Coords.getFixed();
-      Selection.enableHandles();
-      Selection.done();
+      if ((c.w > options.minSelect[0]) && (c.h > options.minSelect[1])) {
+        Selection.enableHandles();
+        Selection.done();
+      } else {
+        Selection.release();
+      }
     }
     //}}}
     function selectDrag(pos) //{{{
@@ -6313,6 +5444,9 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           overflow: 'hidden'
         }),
 
+        $hdl_holder = $('<div />') 
+        .width('100%').height('100%').css('zIndex', 320), 
+
         $sel = $('<div />') 
         .css({
           position: 'absolute',
@@ -6320,7 +5454,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }).dblclick(function(){
           var c = Coords.getFixed();
           options.onDblClick.call(api,c);
-        }).insertBefore($img).append($img_holder);
+        }).insertBefore($img).append($img_holder, $hdl_holder); 
 
     if (img_mode) {
 
@@ -6813,6 +5947,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     // Selection Module {{{
     var Selection = (function () {
       var awake,
+          hdep = 370,
           borders = {},
           handle = {},
           dragbar = {},
@@ -6822,31 +5957,48 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       function insertBorder(type) //{{{
       {
         var jq = $('<div />').css({
-          position: 'absolute'
+          position: 'absolute',
+          opacity: options.borderOpacity
         }).addClass(cssClass(type));
-        $sel.append(jq);
+        $img_holder.append(jq);
         return jq;
       }
       //}}}
-      function dragDiv(ord) //{{{
+      function dragDiv(ord, zi) //{{{
       {
         var jq = $('<div />').mousedown(createDragger(ord)).css({
           cursor: ord + '-resize',
-          position: 'absolute'
-        }).append('<div/>')
-          .addClass('ord-'+ord);
+          position: 'absolute',
+          zIndex: zi
+        }).addClass('ord-'+ord);
 
         if (Touch.support) {
           jq.bind('touchstart.jcrop', Touch.createDragger(ord));
         }
 
-        $sel.append(jq);
+        $hdl_holder.append(jq);
         return jq;
       }
       //}}}
       function insertHandle(ord) //{{{
       {
-        return dragDiv(ord).addClass(cssClass('handle'));
+        var hs = options.handleSize;
+        return dragDiv(ord, hdep++).css({
+          opacity: options.handleOpacity
+        }).width(hs).height(hs).addClass(cssClass('handle'));
+      }
+      //}}}
+      function insertDragbar(ord) //{{{
+      {
+        return dragDiv(ord, hdep++).addClass('jcrop-dragbar');
+      }
+      //}}}
+      function createDragbars(li) //{{{
+      {
+        var i;
+        for (i = 0; i < li.length; i++) {
+          dragbar[li[i]] = insertDragbar(li[i]);
+        }
       }
       //}}}
       function createBorders(li) //{{{
@@ -6963,10 +6115,18 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         options.onRelease.call(api);
       }
       //}}}
+      function showHandles() //{{{
+      {
+        if (seehandles) {
+          $hdl_holder.show();
+        }
+      }
+      //}}}
       function enableHandles() //{{{
       {
         seehandles = true;
         if (options.allowResize) {
+          $hdl_holder.show();
           return true;
         }
       }
@@ -6974,7 +6134,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       function disableHandles() //{{{
       {
         seehandles = false;
-      }
+        $hdl_holder.hide();
+      } 
       //}}}
       function animMode(v) //{{{
       {
@@ -6995,6 +6156,9 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       //}}}
       // Insert draggable elements {{{
       // Insert border divs for outline
+
+      if (options.dragEdges && $.isArray(options.createDragbars))
+        createDragbars(options.createDragbars);
 
       if ($.isArray(options.createHandles))
         createHandles(options.createHandles);
@@ -7037,6 +6201,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         enableOnly: function () {
           seehandles = true;
         },
+        showHandles: showHandles,
         disableHandles: disableHandles,
         animMode: animMode,
         setBgOpacity: setBgOpacity,
@@ -7127,6 +6292,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         return trackUp(e);
       }
       //}}}
+      function setCursor(t) //{{{
+      {
+        $trk.css('cursor', t);
+      }
+      //}}}
 
       if (!trackDoc) {
         $trk.mousemove(trackMove).mouseup(trackUp).mouseout(trackUp);
@@ -7134,7 +6304,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
       $img.before($trk);
       return {
-        activateHandlers: activateHandlers
+        activateHandlers: activateHandlers,
+        setCursor: setCursor
       };
     }());
     //}}}
@@ -7261,6 +6432,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       options.disabled = true;
       Selection.disableHandles();
       Selection.setCursor('default');
+      Tracker.setCursor('default');
     }
     //}}}
     function enableCrop() //{{{
@@ -7356,6 +6528,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     //}}}
     //}}}
 
+    $hdl_holder.hide();
     interfaceUpdate(true);
 
     var api = {
@@ -7470,10 +6643,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     bgColor: 'black',
     bgOpacity: 0.6,
     bgFade: false,
+    borderOpacity: 0.4,
+    handleOpacity: 0.5,
+    handleSize: 7,
 
     aspectRatio: 0,
     keySupport: true,
     createHandles: ['n','s','e','w','nw','ne','se','sw'],
+    createDragbars: ['n','s','e','w'],
     createBorders: ['n','s','e','w'],
     drawBorders: true,
     dragEdges: true,
@@ -7489,6 +6666,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     animationDelay: 20,
     swingSpeed: 3,
 
+    minSelect: [0, 0],
     maxSize: [0, 0],
     minSize: [0, 0],
 
@@ -7502,11 +6680,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
   // }}}
 }(uploadcare.jQuery));
 (function() {
-  var $, utils;
+  var $, namespace, tpl, utils, _ref;
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, (_ref = uploadcare.templates, tpl = _ref.tpl), utils = uploadcare.utils;
 
-  uploadcare.namespace('crop', function(ns) {
+  namespace('uploadcare.crop', function(ns) {
     return ns.CropWidget = (function() {
       var cropModifierRegExp;
 
@@ -7517,9 +6695,10 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           crop = {};
         }
         this.__api = $.Jcrop(this.element[0], {
+          handleSize: 10,
           trueSize: this.originalSize,
           addClass: 'uploadcare-crop-widget',
-          createHandles: ['nw', 'ne', 'se', 'sw'],
+          createDragbars: [],
           bgColor: 'transparent',
           bgOpacity: .8
         });
@@ -7589,8 +6768,28 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         };
       };
 
-      CropWidget.prototype.applySelectionToFile = function(file) {
-        return utils.applyCropSelectionToFile(file, this.crop, this.originalSize, this.getSelection());
+      CropWidget.prototype.getSelectionWithModifiers = function() {
+        var coords, downscale, h, modifiers, prefered, upscale, w, wholeImage;
+        coords = this.getSelection();
+        w = coords.width, h = coords.height;
+        prefered = this.crop.preferedSize;
+        modifiers = '';
+        wholeImage = w === this.originalSize[0] && h === this.originalSize[1];
+        if (!wholeImage) {
+          modifiers += "-/crop/" + w + "x" + h + "/" + coords.left + "," + coords.top + "/";
+        }
+        downscale = this.crop.downscale && (w > prefered[0] || h > prefered[1]);
+        upscale = this.crop.upscale && (w < prefered[0] || h < prefered[1]);
+        if (downscale || upscale) {
+          coords.sw = prefered[0], coords.sh = prefered[1];
+          modifiers += "-/resize/" + (prefered.join('x')) + "/";
+        } else if (!wholeImage) {
+          modifiers += "-/preview/";
+        }
+        return {
+          crop: coords,
+          modifiers: modifiers
+        };
       };
 
       return CropWidget;
@@ -7601,12 +6800,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 }).call(this);
 (function() {
   var $, namespace, s, utils,
-    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
-    __slice = [].slice;
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   namespace = uploadcare.namespace, s = uploadcare.settings, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
-  namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     return ns.BaseFile = (function() {
       function BaseFile(settings) {
         this.settings = settings;
@@ -7621,14 +6819,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.__completeUpload = __bind(this.__completeUpload, this);
         this.fileId = null;
         this.fileName = null;
-        this.sanitizedName = null;
         this.fileSize = null;
         this.isStored = null;
         this.cdnUrlModifiers = null;
         this.isImage = null;
         this.imageInfo = null;
         this.sourceInfo = null;
-        this.s3Bucket = null;
         this.onInfoReady = $.Callbacks('once memory');
         this.__setupValidation();
         this.__initApi();
@@ -7639,24 +6835,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       BaseFile.prototype.__completeUpload = function() {
-        var check, logger, ncalls, timeout,
+        var check, timeout,
           _this = this;
-        ncalls = 0;
-        if (this.settings.debugUploads) {
-          utils.debug("Load file info.", this.fileId, this.settings.publicKey);
-          logger = setInterval(function() {
-            return utils.debug("Still waiting for file ready.", ncalls, _this.fileId, _this.settings.publicKey);
-          }, 5000);
-          this.apiDeferred.done(function() {
-            return utils.debug("File uploaded.", ncalls, _this.fileId, _this.settings.publicKey);
-          }).always(function() {
-            return clearInterval(logger);
-          });
-        }
         timeout = 100;
         return (check = function() {
           if (_this.apiDeferred.state() === 'pending') {
-            ncalls += 1;
             return _this.__updateInfo().done(function() {
               setTimeout(check, timeout);
               return timeout += 50;
@@ -7667,17 +6850,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
       BaseFile.prototype.__handleFileData = function(data) {
         this.fileName = data.original_filename;
-        this.sanitizedName = data.filename;
         this.fileSize = data.size;
         this.isImage = data.is_image;
         this.imageInfo = data.image_info;
         this.isStored = data.is_stored;
-        this.s3Bucket = data.s3_bucket;
         if (data.default_effects) {
           this.cdnUrlModifiers = "-/" + data.default_effects;
-        }
-        if (this.s3Bucket && this.cdnUrlModifiers) {
-          this.__rejectApi('baddata');
         }
         if (!this.onInfoReady.fired()) {
           this.onInfoReady.fire(this.__fileInfo());
@@ -7690,14 +6868,9 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       BaseFile.prototype.__updateInfo = function() {
         var _this = this;
         return utils.jsonp("" + this.settings.urlBase + "/info/", {
-          jsonerrors: 1,
           file_id: this.fileId,
-          pub_key: this.settings.publicKey,
-          wait_is_ready: +this.onInfoReady.fired()
-        }).fail(function(reason) {
-          if (_this.settings.debugUploads) {
-            utils.log("Can't load file info. Probably removed.", _this.fileId, _this.settings.publicKey, reason);
-          }
+          pub_key: this.settings.publicKey
+        }).fail(function() {
           return _this.__rejectApi('info');
         }).done(this.__handleFileData);
       };
@@ -7713,21 +6886,15 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       BaseFile.prototype.__fileInfo = function() {
-        var urlBase;
-        if (this.s3Bucket) {
-          urlBase = "https://" + this.s3Bucket + ".s3.amazonaws.com/" + this.fileId + "/" + this.sanitizedName;
-        } else {
-          urlBase = "" + this.settings.cdnBase + "/" + this.fileId + "/";
-        }
         return {
           uuid: this.fileId,
           name: this.fileName,
           size: this.fileSize,
           isStored: this.isStored,
-          isImage: !this.s3Bucket && this.isImage,
+          isImage: this.isImage,
           originalImageInfo: this.imageInfo,
-          originalUrl: this.fileId ? urlBase : null,
-          cdnUrl: this.fileId ? "" + urlBase + (this.cdnUrlModifiers || '') : null,
+          originalUrl: this.fileId ? "" + this.settings.cdnBase + "/" + this.fileId + "/" : null,
+          cdnUrl: this.fileId ? "" + this.settings.cdnBase + "/" + this.fileId + "/" + (this.cdnUrlModifiers || '') : null,
           cdnUrlModifiers: this.cdnUrlModifiers,
           sourceInfo: this.sourceInfo
         };
@@ -7767,10 +6934,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       BaseFile.prototype.__extendApi = function(api) {
-        var _this = this;
+        var __then,
+          _this = this;
         api.cancel = this.__cancel;
+        __then = api.then;
         api.pipe = api.then = function() {
-          return _this.__extendApi(utils.fixedPipe.apply(utils, [api].concat(__slice.call(arguments))));
+          return _this.__extendApi(__then.apply(api, arguments));
         };
         return api;
       };
@@ -7832,7 +7001,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     })();
   });
 
-  namespace('utils', function(utils) {
+  namespace('uploadcare.utils', function(utils) {
     utils.isFile = function(obj) {
       return obj && obj.done && obj.fail && obj.cancel;
     };
@@ -7840,26 +7009,32 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       if (value && !utils.isFile(value)) {
         value = uploadcare.fileFrom('uploaded', value, settings);
       }
-      return value || null;
+      return value;
     };
   });
 
 }).call(this);
 (function() {
-  var $, utils,
+  var $, namespace, utils,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
-  uploadcare.namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     return ns.ObjectFile = (function(_super) {
-      var _directRunner;
-
       __extends(ObjectFile, _super);
 
-      _directRunner = null;
+      ObjectFile.prototype.MP_MIN_SIZE = 25 * 1024 * 1024;
+
+      ObjectFile.prototype.MP_PART_SIZE = 5 * 1024 * 1024;
+
+      ObjectFile.prototype.MP_MIN_LAST_PART_SIZE = 1024 * 1024;
+
+      ObjectFile.prototype.MP_CONCURRENCY = 4;
+
+      ObjectFile.prototype.MP_MAX_ATTEMPTS = 3;
 
       function ObjectFile(settings, __file) {
         this.__file = __file;
@@ -7878,9 +7053,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }
         this.fileSize = this.__file.size;
         this.fileType = this.__file.type || 'application/octet-stream';
-        if (this.settings.debugUploads) {
-          utils.debug("Use local file.", this.fileName, this.fileType, this.fileSize);
-        }
         this.__runValidators();
         return this.__notifyApi();
       };
@@ -7891,29 +7063,31 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.apiDeferred.always(function() {
           return _this.__file = null;
         });
-        if (this.__file.size >= this.settings.multipartMinSize && utils.abilities.blob) {
+        if (this.__file.size >= this.MP_MIN_SIZE && utils.abilities.blob) {
           this.setFile();
           return this.multipartUpload();
+        } else {
+          ios = utils.abilities.iOSVersion;
+          if (this.settings.imageShrink && (!ios || ios >= 8)) {
+            df = $.Deferred();
+            resizeShare = .4;
+            utils.imageProcessor.shrinkFile(this.__file, this.settings.imageShrink).progress(function(progress) {
+              return df.notify(progress * resizeShare);
+            }).done(this.setFile).fail(function() {
+              _this.setFile();
+              return resizeShare = resizeShare * .1;
+            }).always(function() {
+              df.notify(resizeShare);
+              return _this.directUpload().done(df.resolve).fail(df.reject).progress(function(progress) {
+                return df.notify(resizeShare + progress * (1 - resizeShare));
+              });
+            });
+            return df;
+          } else {
+            this.setFile();
+            return this.directUpload();
+          }
         }
-        ios = utils.abilities.iOSVersion;
-        if (!this.settings.imageShrink || (ios && ios < 8)) {
-          this.setFile();
-          return this.directUpload();
-        }
-        df = $.Deferred();
-        resizeShare = .4;
-        utils.imageProcessor.shrinkFile(this.__file, this.settings.imageShrink).progress(function(progress) {
-          return df.notify(progress * resizeShare);
-        }).done(this.setFile).fail(function() {
-          _this.setFile();
-          return resizeShare = resizeShare * .1;
-        }).always(function() {
-          df.notify(resizeShare);
-          return _this.directUpload().done(df.resolve).fail(df.reject).progress(function(progress) {
-            return df.notify(resizeShare + progress * (1 - resizeShare));
-          });
-        });
-        return df;
       };
 
       ObjectFile.prototype.__autoAbort = function(xhr) {
@@ -7921,68 +7095,56 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         return xhr;
       };
 
-      ObjectFile.prototype.directRunner = function(task) {
-        if (!_directRunner) {
-          _directRunner = utils.taskRunner(this.settings.parallelDirectUploads);
-        }
-        return _directRunner(task);
-      };
-
       ObjectFile.prototype.directUpload = function() {
-        var df,
+        var df, formData,
           _this = this;
         df = $.Deferred();
         if (!this.__file) {
-          this.__rejectApi('baddata');
           return df;
         }
         if (this.fileSize > 100 * 1024 * 1024) {
           this.__rejectApi('size');
           return df;
         }
-        this.directRunner(function(release) {
-          var formData;
-          df.always(release);
-          if (_this.apiDeferred.state() !== 'pending') {
-            return;
-          }
-          formData = new FormData();
-          formData.append('UPLOADCARE_PUB_KEY', _this.settings.publicKey);
-          formData.append('UPLOADCARE_STORE', _this.settings.doNotStore ? '' : 'auto');
-          formData.append('file', _this.__file, _this.fileName);
-          formData.append('file_name', _this.fileName);
-          return _this.__autoAbort($.ajax({
-            xhr: function() {
-              var xhr;
-              xhr = $.ajaxSettings.xhr();
-              if (xhr.upload) {
-                xhr.upload.addEventListener('progress', function(e) {
-                  return df.notify(e.loaded / e.total);
-                }, false);
-              }
-              return xhr;
-            },
-            crossDomain: true,
-            type: 'POST',
-            url: "" + _this.settings.urlBase + "/base/?jsonerrors=1",
-            headers: {
-              'X-PINGOTHER': 'pingpong'
-            },
-            contentType: false,
-            processData: false,
-            data: formData,
-            dataType: 'json',
-            error: df.reject,
-            success: function(data) {
-              if (data != null ? data.file : void 0) {
-                _this.fileId = data.file;
-                return df.resolve();
-              } else {
-                return df.reject();
-              }
+        formData = new FormData();
+        formData.append('UPLOADCARE_PUB_KEY', this.settings.publicKey);
+        formData.append('UPLOADCARE_STORE', this.settings.doNotStore ? '' : 'auto');
+        formData.append('file', this.__file, this.fileName);
+        formData.append('file_name', this.fileName);
+        this.__autoAbort($.ajax({
+          xhr: function() {
+            var xhr;
+            xhr = $.ajaxSettings.xhr();
+            if (xhr.upload) {
+              xhr.upload.addEventListener('progress', function(e) {
+                return df.notify(e.loaded / e.total);
+              }, false);
             }
-          }));
-        });
+            return xhr;
+          },
+          crossDomain: true,
+          type: 'POST',
+          url: "" + this.settings.urlBase + "/base/?jsonerrors=1",
+          xhrFields: {
+            withCredentials: true
+          },
+          headers: {
+            'X-PINGOTHER': 'pingpong'
+          },
+          contentType: false,
+          processData: false,
+          data: formData,
+          dataType: 'json',
+          error: df.reject,
+          success: function(data) {
+            if (data != null ? data.file : void 0) {
+              _this.fileId = data.file;
+              return df.resolve();
+            } else {
+              return df.reject();
+            }
+          }
+        }));
         return df;
       };
 
@@ -7998,7 +7160,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           return df;
         }
         this.multipartStart().done(function(data) {
-          return _this.uploadParts(data.parts, data.uuid).done(function() {
+          return _this.uploadParts(data.parts).done(function() {
             return _this.multipartComplete(data.uuid).done(function(data) {
               _this.fileId = data.uuid;
               _this.__handleFileData(data);
@@ -8010,24 +7172,18 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       ObjectFile.prototype.multipartStart = function() {
-        var data,
-          _this = this;
+        var data;
         data = {
           UPLOADCARE_PUB_KEY: this.settings.publicKey,
           filename: this.fileName,
           size: this.fileSize,
           content_type: this.fileType,
-          part_size: this.settings.multipartPartSize,
           UPLOADCARE_STORE: this.settings.doNotStore ? '' : 'auto'
         };
-        return this.__autoAbort(utils.jsonp("" + this.settings.urlBase + "/multipart/start/?jsonerrors=1", 'POST', data).fail(function(reason) {
-          if (_this.settings.debugUploads) {
-            return utils.log("Can't start multipart upload.", reason, data);
-          }
-        }));
+        return this.__autoAbort(utils.jsonp("" + this.settings.urlBase + "/multipart/start/?jsonerrors=1", 'POST', data));
       };
 
-      ObjectFile.prototype.uploadParts = function(parts, uuid) {
+      ObjectFile.prototype.uploadParts = function(parts) {
         var df, i, inProgress, lastUpdate, progress, submit, submittedBytes, submittedParts, updateProgress, _i, _ref,
           _this = this;
         progress = [];
@@ -8055,8 +7211,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           if (submittedBytes >= _this.fileSize) {
             return;
           }
-          bytesToSubmit = submittedBytes + _this.settings.multipartPartSize;
-          if (_this.fileSize < bytesToSubmit + _this.settings.multipartMinLastPartSize) {
+          bytesToSubmit = submittedBytes + _this.MP_PART_SIZE;
+          if (_this.fileSize < bytesToSubmit + _this.MP_MIN_LAST_PART_SIZE) {
             bytesToSubmit = _this.fileSize;
           }
           blob = _this.__file.slice(submittedBytes, bytesToSubmit);
@@ -8067,6 +7223,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           attempts = 0;
           return (retry = function() {
             if (_this.apiDeferred.state() !== 'pending') {
+              return;
+            }
+            attempts += 1;
+            if (attempts > _this.MP_MAX_ATTEMPTS) {
+              df.reject();
               return;
             }
             progress[partNo] = 0;
@@ -8087,20 +7248,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
               processData: false,
               contentType: _this.fileType,
               data: blob,
-              error: function() {
-                attempts += 1;
-                if (attempts > _this.settings.multipartMaxAttempts) {
-                  if (_this.settings.debugUploads) {
-                    utils.info("Part #" + partNo + " and file upload is failed.", uuid);
-                  }
-                  return df.reject();
-                } else {
-                  if (_this.settings.debugUploads) {
-                    utils.debug("Part #" + partNo + "(" + attempts + ") upload is failed.", uuid);
-                  }
-                  return retry();
-                }
-              },
+              error: retry,
               success: function() {
                 inProgress -= 1;
                 submit();
@@ -8111,24 +7259,19 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
             }));
           })();
         };
-        for (i = _i = 0, _ref = this.settings.multipartConcurrency; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
+        for (i = _i = 0, _ref = this.MP_CONCURRENCY; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
           submit();
         }
         return df;
       };
 
       ObjectFile.prototype.multipartComplete = function(uuid) {
-        var data,
-          _this = this;
+        var data;
         data = {
           UPLOADCARE_PUB_KEY: this.settings.publicKey,
           uuid: uuid
         };
-        return this.__autoAbort(utils.jsonp("" + this.settings.urlBase + "/multipart/complete/?jsonerrors=1", "POST", data).fail(function(reason) {
-          if (_this.settings.debugUploads) {
-            return utils.log("Can't complete multipart upload.", uuid, _this.settings.publicKey, reason);
-          }
-        }));
+        return this.__autoAbort(utils.jsonp("" + this.settings.urlBase + "/multipart/complete/?jsonerrors=1", "POST", data));
       };
 
       return ObjectFile;
@@ -8138,14 +7281,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, utils,
+  var $, namespace, utils,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
-  uploadcare.namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     return ns.InputFile = (function(_super) {
       __extends(InputFile, _super);
 
@@ -8203,16 +7346,16 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, pusher, utils,
+  var $, namespace, pusher, utils,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
   pusher = uploadcare.utils.pusher;
 
-  uploadcare.namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     var PollWatcher, PusherWatcher;
     ns.UrlFile = (function(_super) {
       __extends(UrlFile, _super);
@@ -8256,63 +7399,27 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         var data, df, pollWatcher, pusherWatcher,
           _this = this;
         df = $.Deferred();
-        pusherWatcher = new PusherWatcher(this.settings);
-        pollWatcher = new PollWatcher(this.settings);
+        pusherWatcher = new PusherWatcher(this.settings.pusherKey);
+        pollWatcher = new PollWatcher("" + this.settings.urlBase + "/status/");
+        this.__listenWatcher(df, $([pusherWatcher, pollWatcher]));
+        $(pusherWatcher).one(this.allEvents, function() {
+          return pollWatcher.stopWatching();
+        });
         data = {
           pub_key: this.settings.publicKey,
           source_url: this.__url,
           filename: this.__realFileName || '',
-          store: this.settings.doNotStore ? '' : 'auto',
-          jsonerrors: 1
+          store: this.settings.doNotStore ? '' : 'auto'
         };
-        if (this.sourceInfo) {
-          data.source = this.sourceInfo.source;
-        }
-        utils.defer(function() {
-          if (_this.apiDeferred.state() !== 'pending') {
-            return;
-          }
-          return utils.jsonp("" + _this.settings.urlBase + "/from_url/", data).fail(function(reason) {
-            if (_this.settings.debugUploads) {
-              utils.debug("Can't start upload from URL.", reason, data);
-            }
-            return df.reject();
-          }).done(function(data) {
-            var logger;
-            if (_this.apiDeferred.state() !== 'pending') {
-              return;
-            }
-            if (_this.settings.debugUploads) {
-              utils.debug("Start watchers.", data.token);
-              logger = setInterval(function() {
-                return utils.debug("Still watching.", data.token);
-              }, 5000);
-              df.done(function() {
-                return utils.debug("Stop watchers.", data.token);
-              }).always(function() {
-                return clearInterval(logger);
-              });
-            }
-            _this.__listenWatcher(df, $([pusherWatcher, pollWatcher]));
-            df.always(function() {
-              $([pusherWatcher, pollWatcher]).off(_this.allEvents);
-              pusherWatcher.stopWatching();
-              return pollWatcher.stopWatching();
-            });
-            $(pusherWatcher).one(_this.allEvents, function() {
-              if (!pollWatcher.interval) {
-                return;
-              }
-              if (_this.settings.debugUploads) {
-                utils.debug("Start using pusher.", data.token);
-              }
-              return pollWatcher.stopWatching();
-            });
-            pusherWatcher.watch(data.token);
-            return pollWatcher.watch(data.token);
-          });
+        utils.jsonp("" + this.settings.urlBase + "/from_url/", data).fail(df.reject).done(function(data) {
+          pusherWatcher.watch(data.token);
+          return pollWatcher.watch(data.token);
         });
-        return df;
+        return df.always(function() {
+          $([pusherWatcher, pollWatcher]).off(_this.allEvents);
+          pusherWatcher.stopWatching();
+          return pollWatcher.stopWatching();
+        });
       };
 
       UrlFile.prototype.__listenWatcher = function(df, watcher) {
@@ -8323,7 +7430,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }).on('success', function(e, data) {
           $(e.target).trigger('progress', data);
           _this.fileId = data.uuid;
-          _this.__handleFileData(data);
+          _this.fileName = data.original_filename;
           return df.resolve();
         }).on('error fail', df.reject);
       };
@@ -8332,57 +7439,43 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
     })(ns.BaseFile);
     PusherWatcher = (function() {
-      function PusherWatcher(settings) {
-        this.settings = settings;
-        try {
-          this.pusher = pusher.getPusher(this.settings.pusherKey);
-        } catch (_error) {
-          this.pusher = null;
-        }
+      function PusherWatcher(pusherKey) {
+        this.pusher = pusher.getPusher(pusherKey, 'url-upload');
       }
 
       PusherWatcher.prototype.watch = function(token) {
         var channel,
           _this = this;
-        this.token = token;
-        if (!this.pusher) {
-          return;
-        }
-        channel = this.pusher.subscribe("task-status-" + this.token);
+        channel = this.pusher.subscribe("task-status-" + token);
         return channel.bind_all(function(ev, data) {
           return $(_this).trigger(ev, data);
         });
       };
 
       PusherWatcher.prototype.stopWatching = function() {
-        if (!this.pusher) {
-          return;
-        }
-        return this.pusher.unsubscribe("task-status-" + this.token);
+        return this.pusher.release();
       };
 
       return PusherWatcher;
 
     })();
     return PollWatcher = (function() {
-      function PollWatcher(settings) {
-        this.settings = settings;
-        this.poolUrl = "" + this.settings.urlBase + "/from_url/status/";
+      function PollWatcher(poolUrl) {
+        this.poolUrl = poolUrl;
       }
 
       PollWatcher.prototype.watch = function(token) {
         var bind,
           _this = this;
         this.token = token;
-        return (bind = function() {
-          return _this.interval = setTimeout(function() {
-            return _this.__updateStatus().done(function() {
-              if (_this.interval) {
-                return bind();
-              }
-            });
-          }, 333);
-        })();
+        bind = function() {
+          return _this.__updateStatus().done(function() {
+            if (_this.interval) {
+              return _this.interval = setTimeout(bind, 250);
+            }
+          });
+        };
+        return this.interval = utils.defer(bind);
       };
 
       PollWatcher.prototype.stopWatching = function() {
@@ -8396,7 +7489,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         var _this = this;
         return utils.jsonp(this.poolUrl, {
           token: this.token
-        }).fail(function(reason) {
+        }).fail(function(error) {
+          _this.stopWatching();
           return $(_this).trigger('error');
         }).done(function(data) {
           return $(_this).trigger(data.status, data);
@@ -8410,13 +7504,13 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, utils,
+  var $, namespace, utils,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils;
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils;
 
-  uploadcare.namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     ns.UploadedFile = (function(_super) {
       __extends(UploadedFile, _super);
 
@@ -8464,7 +7558,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
   namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils, (_ref = uploadcare.locale, t = _ref.t), s = uploadcare.settings;
 
-  namespace('files', function(ns) {
+  namespace('uploadcare.files', function(ns) {
     ns.FileGroup = (function() {
       function FileGroup(files, settings) {
         var _this = this;
@@ -8539,7 +7633,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           return _this.__apiDf.notify(_this.__progressInfo());
         };
         notify();
-        this.__fileColl.onAnyProgress(notify);
+        this.__fileColl.onAnyProgress.add(notify);
         this.__allFilesDf.done(function() {
           _this.__progressState = 'uploaded';
           return notify();
@@ -8613,12 +7707,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
                 }
                 return _results;
               })()
-            }).fail(function(reason) {
-              if (_this.settings.debugUploads) {
-                utils.log("Can't create group.", _this.settings.publicKey, reason);
-              }
-              return df.reject();
-            }).done(df.resolve);
+            }).fail(df.reject).done(df.resolve);
           });
         } else {
           df.reject();
@@ -8655,7 +7744,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     })(ns.FileGroup);
   });
 
-  namespace('', function(ns) {
+  namespace('uploadcare', function(ns) {
     ns.FileGroup = function(filesAndGroups, settings) {
       var file, files, item, _i, _j, _len, _len1, _ref1;
       if (filesAndGroups == null) {
@@ -8677,22 +7766,15 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       return new uploadcare.files.FileGroup(files, settings).api();
     };
     return ns.loadFileGroup = function(groupIdOrUrl, settings) {
-      var df, id,
-        _this = this;
+      var df, id;
       settings = s.build(settings);
       df = $.Deferred();
       id = utils.groupIdRegex.exec(groupIdOrUrl);
       if (id) {
         utils.jsonp("" + settings.urlBase + "/group/info/", {
-          jsonerrors: 1,
           pub_key: settings.publicKey,
           group_id: id[0]
-        }).fail(function(reason) {
-          if (settings.debugUploads) {
-            utils.log("Can't load group info. Probably removed.", id[0], settings.publicKey, reason);
-          }
-          return df.reject();
-        }).done(function(data) {
+        }).fail(df.reject).done(function(data) {
           var group;
           group = new uploadcare.files.SavedFileGroup(data, settings);
           return df.resolve(group.api());
@@ -8704,7 +7786,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     };
   });
 
-  namespace('utils', function(utils) {
+  namespace('uploadcare.utils', function(utils) {
     utils.isFileGroup = function(obj) {
       return obj && obj.files && obj.promise;
     };
@@ -8728,7 +7810,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           }
         }
       }
-      return utils.wrapToPromise(value || null);
+      return utils.wrapToPromise(value);
     };
     return utils.isFileGroupsEqual = function(group1, group2) {
       var file, files1, files2, i, _i, _len;
@@ -8755,11 +7837,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, f, settings, utils;
+  var $, f, namespace, settings, utils;
 
-  utils = uploadcare.utils, $ = uploadcare.jQuery, f = uploadcare.files, settings = uploadcare.settings;
+  namespace = uploadcare.namespace, utils = uploadcare.utils, $ = uploadcare.jQuery, f = uploadcare.files, settings = uploadcare.settings;
 
-  uploadcare.namespace('', function(ns) {
+  namespace('uploadcare', function(ns) {
     var converters;
     ns.fileFrom = function(type, data, s) {
       return ns.filesFrom(type, [data], s)[0];
@@ -8785,11 +7867,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, s, utils;
+  var $, namespace, s, utils;
 
-  utils = uploadcare.utils, s = uploadcare.settings, $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, utils = uploadcare.utils, s = uploadcare.settings, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('dragdrop', function(ns) {
+  namespace('uploadcare.dragdrop', function(ns) {
     ns.support = utils.abilities.fileDragAndDrop;
     ns.uploadDrop = function(el, callback, settings) {
       settings = s.build(settings);
@@ -8870,14 +7952,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, abilities, files, tpl, _ref, _ref1,
+  var $, abilities, files, namespace, tpl, _ref, _ref1,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  files = uploadcare.files, $ = uploadcare.jQuery, (_ref = uploadcare.utils, abilities = _ref.abilities), (_ref1 = uploadcare.templates, tpl = _ref1.tpl);
+  namespace = uploadcare.namespace, files = uploadcare.files, $ = uploadcare.jQuery, (_ref = uploadcare.utils, abilities = _ref.abilities), (_ref1 = uploadcare.templates, tpl = _ref1.tpl);
 
-  uploadcare.namespace('ui.progress', function(ns) {
+  namespace('uploadcare.ui.progress', function(ns) {
     ns.Circle = (function() {
       function Circle(element) {
         this.update = __bind(this.update, this);
@@ -9048,11 +8130,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, progress, t, tpl, utils, _ref, _ref1, _ref2;
+  var $, namespace, progress, t, tpl, utils, _ref, _ref1, _ref2;
 
-  $ = uploadcare.jQuery, utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.locale, t = _ref1.t), (_ref2 = uploadcare.templates, tpl = _ref2.tpl);
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.locale, t = _ref1.t), (_ref2 = uploadcare.templates, tpl = _ref2.tpl);
 
-  uploadcare.namespace('widget', function(ns) {
+  namespace('uploadcare.widget', function(ns) {
     return ns.Template = (function() {
       function Template(settings, element) {
         this.settings = settings;
@@ -9061,7 +8143,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.element.after(this.content);
         this.circle = new progress.Circle(this.content.find('.uploadcare-widget-status'));
         this.statusText = this.content.find('.uploadcare-widget-text');
-        this.content.toggleClass('uploadcare-widget-option-clearable', this.settings.clearable);
       }
 
       Template.prototype.addButton = function(name, caption) {
@@ -9075,12 +8156,13 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       Template.prototype.setStatus = function(status) {
-        var prefix;
+        var form, prefix;
         prefix = 'uploadcare-widget-status-';
         this.content.removeClass(prefix + this.content.attr('data-status'));
         this.content.attr('data-status', status);
         this.content.addClass(prefix + status);
-        return this.element.trigger("" + status + ".uploadcare");
+        form = this.element.closest('@uploadcare-upload-form');
+        return form.trigger("" + status + ".uploadcare");
       };
 
       Template.prototype.reset = function() {
@@ -9127,12 +8209,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, dragdrop, t, tpl, utils, _ref, _ref1,
+  var $, dragdrop, namespace, t, tpl, utils, _ref, _ref1,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  utils = uploadcare.utils, dragdrop = uploadcare.dragdrop, (_ref = uploadcare.locale, t = _ref.t), $ = uploadcare.jQuery, (_ref1 = uploadcare.templates, tpl = _ref1.tpl);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, dragdrop = uploadcare.dragdrop, (_ref = uploadcare.locale, t = _ref.t), $ = uploadcare.jQuery, (_ref1 = uploadcare.templates, tpl = _ref1.tpl);
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.FileTab = (function() {
       function FileTab(container, tabButton, dialogApi, settings, name) {
         var _this = this;
@@ -9170,20 +8252,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         var fileButton,
           _this = this;
         fileButton = this.container.find('.uploadcare-dialog-big-button');
-        if (utils.abilities.sendFileAPI) {
-          return fileButton.on('click', function() {
-            utils.fileSelectDialog(_this.container, _this.settings, function(input) {
-              _this.dialogApi.addFiles('object', input.files);
-              return _this.dialogApi.switchTab('preview');
-            });
-            return false;
-          });
-        } else {
-          return utils.fileInput(fileButton, this.settings, function(input) {
+        return utils.fileInput(fileButton, this.settings, function(input) {
+          if (utils.abilities.sendFileAPI) {
+            _this.dialogApi.addFiles('object', input.files);
+          } else {
             _this.dialogApi.addFiles('input', [input]);
-            return _this.dialogApi.switchTab('preview');
-          });
-        }
+          }
+          return _this.dialogApi.switchTab('preview');
+        });
       };
 
       FileTab.prototype.__updateTabsList = function() {
@@ -9219,13 +8295,13 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, t, tpl, _ref;
+  var $, namespace, t, tpl, _ref;
 
-  $ = uploadcare.jQuery, (_ref = uploadcare.templates, tpl = _ref.tpl);
+  namespace = uploadcare.namespace, $ = uploadcare.jQuery, (_ref = uploadcare.templates, tpl = _ref.tpl);
 
   t = uploadcare.locale.t;
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.UrlTab = (function() {
       var fixUrl, urlRegexp;
 
@@ -9272,12 +8348,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, tpl, utils, _ref,
+  var $, namespace, tpl, utils, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  utils = uploadcare.utils, $ = uploadcare.jQuery, (_ref = uploadcare.templates, tpl = _ref.tpl);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, $ = uploadcare.jQuery, (_ref = uploadcare.templates, tpl = _ref.tpl);
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.CameraTab = (function() {
       function CameraTab(container, tabButton, dialogApi, settings, name) {
         var _this = this;
@@ -9288,7 +8364,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.name = name;
         this.__capture = __bind(this.__capture, this);
         this.__mirror = __bind(this.__mirror, this);
-        this.__revoke = __bind(this.__revoke, this);
         this.__requestCamera = __bind(this.__requestCamera, this);
         if (!this.__checkCompatibility()) {
           this.dialogApi.hideTab(this.name);
@@ -9306,17 +8381,17 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           return this.play();
         });
         this.dialogApi.progress(function(name) {
-          if (name === _this.name) {
-            if (!_this.__loaded) {
-              return _this.__requestCamera();
-            }
-          } else {
-            if (_this.__loaded && document.location.protocol === 'https:') {
-              return _this.__revoke();
-            }
+          if (name === _this.name && !_this.__loaded) {
+            return _this.__requestCamera();
           }
         });
-        this.dialogApi.always(this.__revoke);
+        this.dialogApi.always(function() {
+          var _ref1, _ref2;
+          if ((_ref1 = _this.URL) != null) {
+            _ref1.revokeObjectURL(_this.video.prop('src'));
+          }
+          return (_ref2 = _this.__stream) != null ? typeof _ref2.stop === "function" ? _ref2.stop() : void 0 : void 0;
+        });
       }
 
       CameraTab.prototype.__checkCompatibility = function() {
@@ -9363,24 +8438,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         });
       };
 
-      CameraTab.prototype.__revoke = function() {
-        var _base;
-        this.__loaded = false;
-        this.container.removeClass('uploadcare-dialog-camera-denied').removeClass('uploadcare-dialog-camera-ready').addClass('uploadcare-dialog-camera-requested');
-        if (!this.__stream) {
-          return;
-        }
-        if (this.URL) {
-          this.URL.revokeObjectURL(this.video.prop('src'));
-        }
-        if (this.__stream.getVideoTracks) {
-          $.each(this.__stream.getVideoTracks(), function() {
-            return typeof this.stop === "function" ? this.stop() : void 0;
-          });
-        }
-        return typeof (_base = this.__stream).stop === "function" ? _base.stop() : void 0;
-      };
-
       CameraTab.prototype.__mirror = function() {
         this.mirrored = !this.mirrored;
         return this.video.toggleClass('uploadcare-dialog-camera--mirrored', this.mirrored);
@@ -9417,12 +8474,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, files, locale, t, tabsCss, utils, _ref,
+  var $, files, locale, namespace, t, tabsCss, utils, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  locale = uploadcare.locale, utils = uploadcare.utils, tabsCss = uploadcare.tabsCss, $ = uploadcare.jQuery, (_ref = uploadcare.locale, t = _ref.t), files = uploadcare.files;
+  namespace = uploadcare.namespace, locale = uploadcare.locale, utils = uploadcare.utils, tabsCss = uploadcare.tabsCss, $ = uploadcare.jQuery, (_ref = uploadcare.locale, t = _ref.t), files = uploadcare.files;
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.RemoteTab = (function() {
       function RemoteTab(container, tabButton, dialogApi, settings, name) {
         var _this = this;
@@ -9449,8 +8506,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           lang: this.settings.locale,
           public_key: this.settings.publicKey,
           widget_version: uploadcare.version,
-          images_only: this.settings.imagesOnly,
-          pass_window_open: this.settings.passWindowOpen
+          images_only: this.settings.imagesOnly
         });
       };
 
@@ -9460,8 +8516,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       RemoteTab.prototype.__createIframe = function() {
-        var iframe,
-          _this = this;
+        var _this = this;
         if (this.iframe) {
           return;
         }
@@ -9491,74 +8546,50 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
             });
           }
         });
-        iframe = this.iframe[0].contentWindow;
-        utils.registerMessage('file-selected', iframe, function(message) {
-          var file, info, url;
-          url = (function() {
-            var key, type, _i, _len, _ref1;
-            if (message.alternatives) {
-              _ref1 = _this.settings.preferredTypes;
-              for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-                type = _ref1[_i];
-                type = utils.globRegexp(type);
-                for (key in message.alternatives) {
-                  if (type.test(key)) {
-                    return message.alternatives[key];
+        return $(window).on("message", function(_arg) {
+          var e, file, info, message, url;
+          e = _arg.originalEvent;
+          if (e.source !== _this.iframe[0].contentWindow) {
+            return;
+          }
+          try {
+            message = JSON.parse(e.data);
+          } catch (_error) {
+            return;
+          }
+          if (message.type === 'file-selected') {
+            url = (function() {
+              var key, type, _i, _len, _ref1;
+              if (message.alternatives) {
+                _ref1 = _this.settings.preferredTypes;
+                for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                  type = _ref1[_i];
+                  type = utils.globRegexp(type);
+                  for (key in message.alternatives) {
+                    if (type.test(key)) {
+                      return message.alternatives[key];
+                    }
                   }
                 }
               }
+              return message.url;
+            })();
+            file = new files.UrlFile(_this.settings, url);
+            if (message.filename) {
+              file.setName(message.filename);
             }
-            return message.url;
-          })();
-          file = new files.UrlFile(_this.settings, url);
-          if (message.filename) {
-            file.setName(message.filename);
-          }
-          if (message.is_image != null) {
-            file.setIsImage(message.is_image);
-          }
-          info = {
-            source: _this.name
-          };
-          if (message.info) {
-            $.extend(info, message.info);
-          }
-          file.setSourceInfo(info);
-          return _this.dialogApi.addFiles([file.promise()]);
-        });
-        utils.registerMessage('open-new-window', iframe, function(message) {
-          var interval, popup, resolve;
-          if (_this.settings.debugUploads) {
-            utils.debug("Open new window message.", _this.name);
-          }
-          popup = window.open(message.url, '_blank');
-          if (!popup) {
-            utils.warn("Can't open new window. Possible blocked.", _this.name);
-            return;
-          }
-          resolve = function() {
-            if (_this.settings.debugUploads) {
-              utils.debug("Window is closed.", _this.name);
+            if (message.is_image != null) {
+              file.setIsImage(message.is_image);
             }
-            return _this.__sendMessage({
-              type: 'navigate',
-              fragment: ''
-            });
-          };
-          if ('closed' in popup) {
-            return interval = setInterval(function() {
-              if (popup.closed) {
-                clearInterval(interval);
-                return resolve();
-              }
-            }, 100);
-          } else {
-            return popup.addEventListener('exit', resolve);
+            info = {
+              source: _this.name
+            };
+            if (message.info) {
+              $.extend(info, message.info);
+            }
+            file.setSourceInfo(info);
+            return _this.dialogApi.addFiles([file.promise()]);
           }
-        });
-        return this.dialogApi.done(function() {
-          utils.unregisterMessage('file-selected', iframe);
-          return utils.unregisterMessage('open-new-window', iframe);
         });
       };
 
@@ -9569,11 +8600,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, Circle, _ref, _ref1;
+  var $, Circle, namespace, _ref, _ref1;
 
-  (_ref = uploadcare.ui, (_ref1 = _ref.progress, Circle = _ref1.Circle)), $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, (_ref = uploadcare.ui, (_ref1 = _ref.progress, Circle = _ref1.Circle)), $ = uploadcare.jQuery;
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.BasePreviewTab = (function() {
       var PREFIX;
 
@@ -9610,7 +8641,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           }
           return circleDf.notify(progress);
         };
-        this.dialogApi.fileColl.onAnyProgress(update);
+        this.dialogApi.fileColl.onAnyProgress.add(update);
         this.dialogApi.fileColl.onAdd.add(update);
         this.dialogApi.fileColl.onRemove.add(update);
         update();
@@ -9625,14 +8656,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, CropWidget, progress, t, tpl, utils, _ref, _ref1, _ref2, _ref3,
+  var $, CropWidget, namespace, progress, t, tpl, utils, _ref, _ref1, _ref2, _ref3,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), $ = uploadcare.jQuery, (_ref2 = uploadcare.crop, CropWidget = _ref2.CropWidget), (_ref3 = uploadcare.locale, t = _ref3.t);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), $ = uploadcare.jQuery, (_ref2 = uploadcare.crop, CropWidget = _ref2.CropWidget), (_ref3 = uploadcare.locale, t = _ref3.t);
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.PreviewTab = (function(_super) {
       __extends(PreviewTab, _super);
 
@@ -9710,11 +8741,16 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           done.removeClass('uploadcare-disabled-el');
           _this.widget = new CropWidget(img, imgSize, _this.settings.crop[0]);
           _this.widget.setSelectionFromModifiers(info.cdnUrlModifiers);
-          return done.on('click', function() {
-            var newFile;
-            newFile = _this.widget.applySelectionToFile(_this.file);
-            _this.dialogApi.fileColl.replace(_this.file, newFile);
-            return true;
+          return done.click(function() {
+            var newFile, opts;
+            opts = _this.widget.getSelectionWithModifiers();
+            newFile = _this.file.then(function(info) {
+              info.cdnUrlModifiers = opts.modifiers;
+              info.cdnUrl = "" + info.originalUrl + (opts.modifiers || '');
+              info.crop = opts.crop;
+              return info;
+            });
+            return _this.dialogApi.fileColl.replace(_this.file, newFile);
           });
         };
         if (this.settings.crop) {
@@ -9773,19 +8809,22 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, progress, t, tpl, utils, _ref, _ref1, _ref2,
+  var $, namespace, progress, t, tpl, utils, _ref, _ref1, _ref2,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), $ = uploadcare.jQuery, (_ref2 = uploadcare.locale, t = _ref2.t);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, (_ref = uploadcare.ui, progress = _ref.progress), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), $ = uploadcare.jQuery, (_ref2 = uploadcare.locale, t = _ref2.t);
 
-  uploadcare.namespace('widget.tabs', function(ns) {
+  namespace('uploadcare.widget.tabs', function(ns) {
     return ns.PreviewTabMultiple = (function(_super) {
+      var CLASS_PREFIX;
+
       __extends(PreviewTabMultiple, _super);
 
+      CLASS_PREFIX = 'uploadcare-dpm-';
+
       function PreviewTabMultiple() {
-        this.__fileReplaced = __bind(this.__fileReplaced, this);
         this.__fileRemoved = __bind(this.__fileRemoved, this);
         this.__fileAdded = __bind(this.__fileAdded, this);
         this.__fileFailed = __bind(this.__fileFailed, this);
@@ -9796,22 +8835,27 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         PreviewTabMultiple.__super__.constructor.apply(this, arguments);
         this.container.append(tpl('tab-preview-multiple'));
         this.__fileTpl = $(tpl('tab-preview-multiple-file'));
-        this.fileListEl = this.container.find('.uploadcare-file-list');
+        this.fileListEl = this.__find('file-list');
         this.titleEl = this.__find('title');
         this.mobileTitleEl = this.__find('mobile-title');
         this.footerTextEl = this.__find('footer-text');
         this.doneBtnEl = this.container.find('.uploadcare-dialog-preview-done');
         $.each(this.dialogApi.fileColl.get(), function(i, file) {
-          return _this.__fileAdded(file);
+          _this.__fileAdded(file);
+          return file.then(function(info) {
+            return _this.__fileDone(file, info);
+          }, function(info) {
+            return _this.__fileFailed(file, info);
+          }, function(info) {
+            return _this.__fileProgress(file, info);
+          });
         });
         this.__updateContainerView();
         this.dialogApi.fileColl.onAdd.add(this.__fileAdded, this.__updateContainerView);
         this.dialogApi.fileColl.onRemove.add(this.__fileRemoved, this.__updateContainerView);
-        this.dialogApi.fileColl.onReplace.add(this.__fileReplaced, this.__updateContainerView);
-        this.dialogApi.fileColl.onAnyProgress(this.__fileProgress);
-        this.dialogApi.fileColl.onAnyDone(this.__fileDone);
-        this.dialogApi.fileColl.onAnyFail(this.__fileFailed);
-        this.fileListEl.addClass(this.settings.imagesOnly ? 'uploadcare-file-list_tiles' : 'uploadcare-file-list_table');
+        this.dialogApi.fileColl.onAnyDone.add(this.__fileDone);
+        this.dialogApi.fileColl.onAnyFail.add(this.__fileFailed);
+        this.dialogApi.fileColl.onAnyProgress.add(this.__fileProgress);
         this.__setupSorting();
       }
 
@@ -9819,14 +8863,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         var _this = this;
         return this.fileListEl.uploadcareSortable({
           touch: false,
-          axis: this.settings.imagesOnly ? 'xy' : 'y',
+          axis: 'y',
           start: function(info) {
             return info.dragged.css('visibility', 'hidden');
           },
           finish: function(info) {
             var elements, index;
             info.dragged.css('visibility', 'visible');
-            elements = _this.container.find('.uploadcare-file-item');
+            elements = _this.__find('file-item');
             index = function(file) {
               return elements.index(_this.__fileToEl(file));
             };
@@ -9841,7 +8885,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         if (context == null) {
           context = this.container;
         }
-        return $('.uploadcare-dpm-' + s, context);
+        return $('.' + CLASS_PREFIX + s, context);
       };
 
       PreviewTabMultiple.prototype.__updateContainerView = function() {
@@ -9858,67 +8902,55 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       PreviewTabMultiple.prototype.__updateFileInfo = function(fileEl, info) {
-        fileEl.find('.uploadcare-file-item__name').text(info.name || t('dialog.tabs.preview.unknownName'));
-        return fileEl.find('.uploadcare-file-item__size').text(utils.readableFileSize(info.size, '–'));
+        this.__find('file-name', fileEl).text(info.name || t('dialog.tabs.preview.unknownName'));
+        return this.__find('file-size', fileEl).text(utils.readableFileSize(info.size, '–'));
       };
 
       PreviewTabMultiple.prototype.__fileProgress = function(file, progressInfo) {
         var fileEl;
         fileEl = this.__fileToEl(file);
-        fileEl.find('.uploadcare-progressbar__value').css('width', Math.round(progressInfo.progress * 100) + '%');
+        this.__find('file-progressbar-value', fileEl).css('width', Math.round(progressInfo.progress * 100) + '%');
         return this.__updateFileInfo(fileEl, progressInfo.incompleteFileInfo);
       };
 
       PreviewTabMultiple.prototype.__fileDone = function(file, info) {
-        var cdnURL, fileEl,
-          _this = this;
-        fileEl = this.__fileToEl(file).removeClass('uploadcare-file-item_uploading').addClass('uploadcare-file-item_uploaded');
-        fileEl.find('.uploadcare-progressbar__value').css('width', '100%');
+        var fileEl;
+        fileEl = this.__fileToEl(file);
+        fileEl.addClass(CLASS_PREFIX + 'uploaded');
+        this.__find('file-progressbar-value', fileEl).css('width', '100%');
         this.__updateFileInfo(fileEl, info);
         if (info.isImage) {
-          cdnURL = ("" + info.cdnUrl + "-/quality/lightest/") + (this.settings.imagesOnly ? "-/preview/340x340/" : "-/scale_crop/110x110/center/");
-          return fileEl.find('.uploadcare-file-item__preview').addClass('uploadcare-zoomable-icon').html($('<img>').attr('src', cdnURL)).on('click', function() {
-            return uploadcare.openPreviewDialog(file, _this.settings).done(function(newFile) {
-              return _this.dialogApi.fileColl.replace(file, newFile);
-            });
-          });
+          return this.__find('file-preview-wrap', fileEl).html($('<img>').attr('src', "" + info.originalUrl + "-/scale_crop/90x90/center/").css({
+            width: 'auto',
+            height: 45
+          }));
         }
       };
 
       PreviewTabMultiple.prototype.__fileFailed = function(file, error, info) {
-        return this.__fileToEl(file).removeClass('uploadcare-file-item_uploading').addClass('uploadcare-file-item_error').find('.uploadcare-file-item__error').text(t("errors." + error));
+        var fileEl;
+        fileEl = this.__fileToEl(file);
+        fileEl.addClass(CLASS_PREFIX + 'error');
+        return this.__find('file-error', fileEl).text(t("errors." + error));
       };
 
       PreviewTabMultiple.prototype.__fileAdded = function(file) {
-        var fileEl;
-        fileEl = this.__createFileEl(file);
-        return fileEl.appendTo(this.fileListEl);
+        return $(file).data('dmp-el', this.__createFileEl(file));
       };
 
       PreviewTabMultiple.prototype.__fileRemoved = function(file) {
-        this.__fileToEl(file).remove();
-        return $(file).removeData();
-      };
-
-      PreviewTabMultiple.prototype.__fileReplaced = function(oldFile, newFile) {
-        var fileEl;
-        fileEl = this.__createFileEl(newFile);
-        fileEl.insertAfter(this.__fileToEl(oldFile));
-        return this.__fileRemoved(oldFile);
+        return this.__fileToEl(file).remove();
       };
 
       PreviewTabMultiple.prototype.__fileToEl = function(file) {
-        return $(file).data('dpm-el') || $();
+        return $(file).data('dmp-el');
       };
 
       PreviewTabMultiple.prototype.__createFileEl = function(file) {
-        var fileEl,
-          _this = this;
-        fileEl = this.__fileTpl.clone().on('click', '.uploadcare-remove', function() {
+        var _this = this;
+        return this.__fileTpl.clone().appendTo(this.fileListEl).on('click', '.' + CLASS_PREFIX + 'file-remove', function() {
           return _this.dialogApi.fileColl.remove(file);
         });
-        $(file).data('dpm-el', fileEl);
-        return fileEl;
       };
 
       return PreviewTabMultiple;
@@ -9928,12 +8960,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, files, s, t, tabs, tpl, utils, _ref, _ref1, _ref2,
+  var $, Circle, files, namespace, s, t, tabs, tpl, utils, _ref, _ref1, _ref2, _ref3, _ref4,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  utils = uploadcare.utils, (_ref = uploadcare.locale, t = _ref.t), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), files = uploadcare.files, (_ref2 = uploadcare.widget, tabs = _ref2.tabs), s = uploadcare.settings, $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, utils = uploadcare.utils, (_ref = uploadcare.locale, t = _ref.t), (_ref1 = uploadcare.templates, tpl = _ref1.tpl), (_ref2 = uploadcare.ui, (_ref3 = _ref2.progress, Circle = _ref3.Circle)), files = uploadcare.files, (_ref4 = uploadcare.widget, tabs = _ref4.tabs), s = uploadcare.settings, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('', function(ns) {
+  namespace('uploadcare', function(ns) {
     var Panel, currentDialogPr, lockScroll, openedClass, registeredTabs,
       _this = this;
     lockScroll = function(el, toTop) {
@@ -9951,7 +8983,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       if (ns.isDialogOpened()) {
         if (e.which === 27) {
           e.stopImmediatePropagation();
-          return typeof currentDialogPr !== "undefined" && currentDialogPr !== null ? currentDialogPr.reject() : void 0;
+          return ns.closeDialog();
         }
       }
     });
@@ -9961,23 +8993,13 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       return currentDialogPr !== null;
     };
     ns.closeDialog = function() {
-      var _results;
-      _results = [];
-      while (currentDialogPr) {
-        _results.push(currentDialogPr.reject());
-      }
-      return _results;
+      return currentDialogPr != null ? currentDialogPr.reject() : void 0;
     };
     ns.openDialog = function(files, tab, settings) {
-      var cancelLock, dialog, dialogPr;
+      var cancelLock, dialog;
       ns.closeDialog();
       dialog = $(tpl('dialog')).appendTo('body');
-      dialogPr = ns.openPanel(dialog.find('.uploadcare-dialog-placeholder'), files, tab, settings);
-      dialog.addClass('uploadcare-active');
-      dialogPr.dialogElement = dialog;
-      cancelLock = lockScroll($(window), dialog.css('position') === 'absolute');
-      $('html, body').addClass(openedClass);
-      dialog.on('click', '.uploadcare-dialog-close', dialogPr.reject);
+      dialog.on('click', '.uploadcare-dialog-close', ns.closeDialog);
       dialog.on('dblclick', function(e) {
         var showStoppers;
         if (!$.contains(document.documentElement, e.target)) {
@@ -9987,37 +9009,18 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         if ($(e.target).is(showStoppers) || $(e.target).parents(showStoppers).length) {
           return;
         }
-        return dialogPr.reject();
+        return ns.closeDialog();
       });
-      return currentDialogPr = dialogPr.always(function() {
+      currentDialogPr = ns.openPanel(dialog.find('.uploadcare-dialog-placeholder'), files, tab, settings);
+      dialog.addClass('uploadcare-active');
+      cancelLock = lockScroll($(window), dialog.css('position') === 'absolute');
+      $('html, body').addClass(openedClass);
+      return currentDialogPr.always(function() {
         $('html, body').removeClass(openedClass);
         currentDialogPr = null;
         dialog.remove();
         return cancelLock();
       });
-    };
-    ns.openPreviewDialog = function(file, settings) {
-      var dialog, oldDialogPr,
-        _this = this;
-      oldDialogPr = currentDialogPr;
-      currentDialogPr = null;
-      settings = $.extend({}, settings, {
-        multiple: false,
-        tabs: ''
-      });
-      dialog = uploadcare.openDialog(file, 'preview', settings);
-      oldDialogPr.dialogElement.addClass('uploadcare-inactive');
-      dialog.always(function() {
-        currentDialogPr = oldDialogPr;
-        $('html, body').addClass(openedClass);
-        return oldDialogPr.dialogElement.removeClass('uploadcare-inactive');
-      });
-      dialog.onTabVisibility(function(tab, shown) {
-        if (tab === 'preview' && !shown) {
-          return dialog.reject();
-        }
-      });
-      return dialog;
     };
     ns.openPanel = function(placeholder, files, tab, settings) {
       var filter, panel;
@@ -10102,7 +9105,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
             return _this.hideTab('preview');
           }
         });
-        this.__autoCrop(this.files);
         this.tabs = {};
         this.__prepareFooter();
         this.onTabVisibility = $.Callbacks().add(function(tab, show) {
@@ -10142,12 +9144,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }
         for (_i = 0, _len = files.length; _i < _len; _i++) {
           file = files[_i];
-          if (this.settings.multipleMaxStrict && this.settings.multipleMax !== 0) {
-            if (this.files.length() >= this.settings.multipleMax) {
-              file.cancel();
-              continue;
-            }
-          }
           this.files.add(file);
         }
         if (this.settings.previewStep) {
@@ -10160,36 +9156,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }
       };
 
-      Panel.prototype.__autoCrop = function(files) {
-        var crop, _i, _len, _ref3,
-          _this = this;
-        if (!this.settings.crop || !this.settings.multiple) {
-          return;
-        }
-        _ref3 = this.settings.crop;
-        for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-          crop = _ref3[_i];
-          if (!crop.preferedSize) {
-            return;
-          }
-        }
-        return files.onAnyDone(function(file, fileInfo) {
-          var info, newFile, size;
-          if (!fileInfo.isImage || fileInfo.cdnUrlModifiers || fileInfo.crop) {
-            return;
-          }
-          info = fileInfo.originalImageInfo;
-          size = uploadcare.utils.fitSize(_this.settings.crop[0].preferedSize, [info.width, info.height], true);
-          newFile = utils.applyCropSelectionToFile(file, _this.settings.crop[0], [info.width, info.height], {
-            width: size[0],
-            height: size[1],
-            left: Math.round((info.width - size[0]) / 2),
-            top: Math.round((info.height - size[1]) / 2)
-          });
-          return files.replace(file, newFile);
-        });
-      };
-
       Panel.prototype.__resolve = function() {
         return this.dfd.resolve(this.files.get());
       };
@@ -10199,22 +9165,19 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       Panel.prototype.__prepareTabs = function(tab) {
-        var tabName, _i, _len, _ref3;
+        var tabName, _i, _len, _ref5;
         this.addTab('preview');
-        _ref3 = this.settings.tabs;
-        for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-          tabName = _ref3[_i];
+        _ref5 = this.settings.tabs;
+        for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
+          tabName = _ref5[_i];
           this.addTab(tabName);
         }
         if (this.files.length()) {
           this.showTab('preview');
-          this.switchTab('preview');
+          return this.switchTab('preview');
         } else {
           this.hideTab('preview');
-          this.switchTab(tab || this.__firstVisibleTab());
-        }
-        if (this.settings.tabs.length === 0) {
-          return this.panel.addClass('uploadcare-panel-hide-tabs');
+          return this.switchTab(tab || this.__firstVisibleTab());
         }
       };
 
@@ -10302,10 +9265,10 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       Panel.prototype.__firstVisibleTab = function() {
-        var tab, _i, _len, _ref3;
-        _ref3 = this.settings.tabs;
-        for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-          tab = _ref3[_i];
+        var tab, _i, _len, _ref5;
+        _ref5 = this.settings.tabs;
+        for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
+          tab = _ref5[_i];
           if (this.isTabVisible(tab)) {
             return tab;
           }
@@ -10313,12 +9276,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       Panel.prototype.__welcome = function() {
-        var tabName, _i, _len, _ref3;
+        var tabName, _i, _len, _ref5;
         this.addTab('empty-pubkey');
         this.switchTab('empty-pubkey');
-        _ref3 = this.settings.tabs;
-        for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-          tabName = _ref3[_i];
+        _ref5 = this.settings.tabs;
+        for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
+          tabName = _ref5[_i];
           this.__addFakeTab(tabName);
         }
         return null;
@@ -10335,12 +9298,12 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, dragdrop, t, utils, _ref,
+  var $, dragdrop, namespace, t, utils, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  utils = uploadcare.utils, $ = uploadcare.jQuery, dragdrop = uploadcare.dragdrop, (_ref = uploadcare.locale, t = _ref.t);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, $ = uploadcare.jQuery, dragdrop = uploadcare.dragdrop, (_ref = uploadcare.locale, t = _ref.t);
 
-  uploadcare.namespace('widget', function(ns) {
+  namespace('uploadcare.widget', function(ns) {
     return ns.BaseWidget = (function() {
       function BaseWidget(element, settings) {
         var _this = this;
@@ -10351,7 +9314,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.__reset = __bind(this.__reset, this);
         this.validators = this.settings.validators = [];
         this.currentObject = null;
-        this.__onDialogOpen = $.Callbacks();
         this.__onUploadComplete = $.Callbacks();
         this.__onChange = $.Callbacks().add(function(object) {
           return object != null ? object.promise().done(function(info) {
@@ -10381,9 +9343,11 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         this.template.addButton('cancel', t('buttons.cancel')).on('click', function() {
           return _this.__setObject(null);
         });
-        this.template.addButton('remove', t('buttons.remove')).on('click', function() {
-          return _this.__setObject(null);
-        });
+        if (this.settings.clearable) {
+          this.template.addButton('remove', t('buttons.remove')).on('click', function() {
+            return _this.__setObject(null);
+          });
+        }
         this.template.content.on('click', '.uploadcare-widget-file-name', function() {
           return _this.openDialog();
         });
@@ -10412,17 +9376,17 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       };
 
       BaseWidget.prototype.__setObject = function(newFile) {
-        if (newFile === this.currentObject) {
-          return;
+        if (newFile !== this.currentObject) {
+          this.__reset();
+          if (newFile) {
+            this.currentObject = newFile;
+            this.__watchCurrentObject();
+          }
+          this.__onChange.fire(this.currentObject);
         }
-        this.__reset();
-        if (newFile) {
-          this.currentObject = newFile;
-          this.__watchCurrentObject();
-        } else {
-          this.element.val('');
+        if (!newFile) {
+          return this.element.val('');
         }
-        return this.__onChange.fire(this.currentObject);
       };
 
       BaseWidget.prototype.__watchCurrentObject = function() {
@@ -10479,15 +9443,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
             return _this.__handleDirectSelection('object', input.files);
           });
         } else {
-          return this.__openDialog(tab);
+          return uploadcare.openDialog(this.currentObject, tab, this.settings).done(this.__setObject);
         }
-      };
-
-      BaseWidget.prototype.__openDialog = function(tab) {
-        var dialogApi;
-        dialogApi = uploadcare.openDialog(this.currentObject, tab, this.settings);
-        this.__onDialogOpen.fire(dialogApi);
-        return dialogApi.done(this.__setObject);
       };
 
       BaseWidget.prototype.api = function() {
@@ -10495,7 +9452,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
           this.__api = utils.bindAll(this, ['openDialog', 'reloadInfo', 'value', 'validators']);
           this.__api.onChange = utils.publicCallbacks(this.__onChange);
           this.__api.onUploadComplete = utils.publicCallbacks(this.__onUploadComplete);
-          this.__api.onDialogOpen = utils.publicCallbacks(this.__onDialogOpen);
           this.__api.inputElement = this.element.get(0);
         }
         return this.__api;
@@ -10508,14 +9464,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, files, utils,
+  var $, files, namespace, utils,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  utils = uploadcare.utils, files = uploadcare.files, $ = uploadcare.jQuery;
+  namespace = uploadcare.namespace, utils = uploadcare.utils, files = uploadcare.files, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('widget', function(ns) {
+  namespace('uploadcare.widget', function(ns) {
     var _ref;
     return ns.Widget = (function(_super) {
       __extends(Widget, _super);
@@ -10536,7 +9492,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         if (this.settings.systemDialog || !this.settings.previewStep) {
           return this.__setObject(file);
         } else {
-          return this.__openDialog('preview').addFiles([file]);
+          return uploadcare.openDialog(file, this.settings).done(this.__setObject);
         }
       };
 
@@ -10547,14 +9503,14 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, t, utils, _ref,
+  var $, namespace, t, utils, _ref,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  utils = uploadcare.utils, $ = uploadcare.jQuery, (_ref = uploadcare.locale, t = _ref.t);
+  namespace = uploadcare.namespace, utils = uploadcare.utils, $ = uploadcare.jQuery, (_ref = uploadcare.locale, t = _ref.t);
 
-  uploadcare.namespace('widget', function(ns) {
+  namespace('uploadcare.widget', function(ns) {
     var _ref1;
     return ns.MultipleWidget = (function(_super) {
       __extends(MultipleWidget, _super);
@@ -10574,9 +9530,6 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       MultipleWidget.prototype.__setObject = function(group) {
         if (!utils.isFileGroupsEqual(this.currentObject, group)) {
           return MultipleWidget.__super__.__setObject.apply(this, arguments);
-        } else if (!group) {
-          this.__reset();
-          return this.element.val('');
         }
       };
 
@@ -10605,7 +9558,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         if (this.settings.systemDialog) {
           return this.__setObject(uploadcare.FileGroup(files, this.settings));
         } else {
-          return this.__openDialog('preview').addFiles(files);
+          return uploadcare.openDialog(files, this.settings).done(this.__setObject);
         }
       };
 
@@ -10616,19 +9569,18 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, settings, utils;
+  var $, namespace, settings, utils;
 
-  utils = uploadcare.utils, settings = uploadcare.settings, $ = uploadcare.jQuery;
+  utils = uploadcare.utils, namespace = uploadcare.namespace, settings = uploadcare.settings, $ = uploadcare.jQuery;
 
-  uploadcare.namespace('', function(ns) {
-    var cleanup, dataAttr, initialize, initializeWidget, selector;
+  namespace('uploadcare', function(ns) {
+    var cleanup, dataAttr, initialize, initializeWidget;
     dataAttr = 'uploadcareWidget';
-    selector = '[role~="uploadcare-uploader"]';
     ns.initialize = function(container) {
       if (container == null) {
-        container = ':root';
+        container = 'body';
       }
-      return initialize($(container).find(selector));
+      return initialize($(container).find('@uploadcare-uploader'));
     };
     initialize = function(targets) {
       var target, widget, _i, _len, _results;
@@ -10680,16 +9632,15 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
         }
       });
     };
-    ns.start = utils.once(function(s, isolated) {
-      s = settings.common(s, isolated);
-      if (isolated) {
-        return;
+    ns.start = function(s) {
+      var live;
+      (live = function() {
+        return initialize($('@uploadcare-uploader'));
+      })();
+      if (settings.common(s).live) {
+        return setInterval(live, 100);
       }
-      if (s.live) {
-        setInterval(ns.initialize, 100);
-      }
-      return ns.initialize();
-    });
+    };
     return $(function() {
       if (!window["UPLOADCARE_MANUAL_START"]) {
         return ns.start();
@@ -10699,7 +9650,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
 
 }).call(this);
 (function() {
-  var $, canSubmit, cancelEvents, submitPreventionState, submittedForm, uploadForm;
+  var $, canSubmit, cancelEvents, submitPreventionState, submittedForm;
 
   $ = uploadcare.jQuery;
 
@@ -10714,11 +9665,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
     return form.find(':submit').attr('disabled', prevent);
   };
 
-  uploadForm = '[role~="uploadcare-upload-form"]';
-
-  submittedForm = uploadForm + '[data-uploadcare-submitted]';
-
-  $(document).on('submit', uploadForm, function() {
+  $(document).on('submit', '@uploadcare-upload-form', function() {
     var form;
     form = $(this);
     if (canSubmit(form)) {
@@ -10728,6 +9675,8 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
       return false;
     }
   });
+
+  submittedForm = '@uploadcare-upload-form[data-uploadcare-submitted]';
 
   $(document).on('loaded.uploadcare', submittedForm, function() {
     return $(this).submit();
@@ -10776,7 +9725,7 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
   var expose, key,
     __hasProp = {}.hasOwnProperty;
 
-  uploadcare.version = '2.5.9';
+  uploadcare.version = '2.1.6';
 
   expose = uploadcare.expose;
 
@@ -10844,4 +9793,4 @@ uploadcare.templates.JST["circle-text"] = function(obj){var __p=[],print=functio
   jQuery.noConflict(true);
 
 }).call(this);
-}({}, '//ucarecdn.com/widget/2.5.9/uploadcare/'));
+}({}, '//ucarecdn.com/widget/2.1.6/uploadcare/'));
